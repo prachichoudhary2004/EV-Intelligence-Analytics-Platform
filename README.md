@@ -78,8 +78,3 @@ pip install -r requirements.txt
 *   [System Design Specifications](SYSTEM_DESIGN.md)
 *   [Product Roadmap](ROADMAP.md)
 
----
-
-## 👨‍💻 Author
-**Your Name** - Senior Analytics Engineer / BI Architect
-[LinkedIn](https://linkedin.com/in/yourprofile) | [Portfolio](https://yourportfolio.com)
