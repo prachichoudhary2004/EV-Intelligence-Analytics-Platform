@@ -6,22 +6,22 @@ import os
 
 class ReportService:
     """
-    Service for generating executive reports in PDF and CSV formats.
+    Creates PDF and CSV reports for execs.
     """
     
     def export_to_csv(self, df, filename="market_report.csv"):
-        """Export dataframe to CSV."""
+        """Save dataframe as CSV file."""
         path = config.BASE_DIR / "reports" / filename
         df.to_csv(path, index=False)
         logger.info(f"Report exported to CSV: {path}")
         return path
 
     def generate_pdf_report(self, kpis, narrative):
-        """Generate a professional PDF executive summary."""
+        """Make a nice PDF report for execs."""
         pdf = FPDF()
         pdf.add_page()
         
-        # Header
+        # Title section
         pdf.set_font("Arial", "B", 24)
         pdf.set_text_color(0, 255, 65) # Primary Green
         pdf.cell(200, 20, "EV Market Intelligence Platform", ln=True, align="C")
@@ -31,7 +31,7 @@ class ReportService:
         pdf.cell(200, 10, "Executive Performance Report - Enterprise Edition", ln=True, align="C")
         pdf.ln(10)
         
-        # KPI Section
+        # Show the KPIs
         pdf.set_font("Arial", "B", 16)
         pdf.set_text_color(0, 0, 0)
         pdf.cell(200, 10, "Market Performance Indicators", ln=True)
@@ -42,17 +42,17 @@ class ReportService:
         
         pdf.ln(10)
         
-        # Narrative Section
+        # Add the insights
         pdf.set_font("Arial", "B", 16)
         pdf.cell(200, 10, "Strategic Insights", ln=True)
         pdf.set_font("Arial", "", 11)
         pdf.multi_cell(0, 10, narrative.replace("#", "").replace("*", "-"))
         
-        # Save
+        # Save the file
         report_path = config.BASE_DIR / "reports" / "executive_summary.pdf"
         pdf.output(str(report_path))
         logger.info(f"Executive PDF generated at: {report_path}")
         return report_path
 
-# Global instance
+# Available app-wide
 report_service = ReportService()

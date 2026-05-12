@@ -2,12 +2,12 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load environment variables from .env file if it exists
+# Load env vars from .env file
 load_dotenv()
 
 class Config:
     """
-    Centralized configuration management for the Enterprise EV Platform.
+    Holds all app settings and paths.
     """
     # Project Paths
     BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,14 +40,14 @@ class Config:
     
     @classmethod
     def ensure_dirs(cls):
-        """Ensure all required directories exist."""
+        """Create folders if they don't exist."""
         for attr in dir(cls):
             if attr.endswith("_DIR"):
                 path = getattr(cls, attr)
                 if isinstance(path, Path):
                     path.mkdir(parents=True, exist_ok=True)
 
-# Create an instance for easy access
+# Easy access to config
 config = Config()
 if __name__ == "__main__":
     config.ensure_dirs()

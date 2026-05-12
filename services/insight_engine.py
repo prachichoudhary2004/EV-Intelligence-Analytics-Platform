@@ -3,11 +3,11 @@ from utils.logger import logger
 
 class InsightEngine:
     """
-    Executive Narrative Engine for automated business summaries and recommendations.
+    Creates business summaries and recommendations for execs.
     """
     
     def generate_executive_summary(self, kpis, top_states):
-        """Generate a natural language summary of the market status."""
+        """Create a readable summary of what's happening in the market."""
         logger.info("Generating Executive Narrative...")
         
         status = "positive" if kpis['yoy_growth'] > 10 else "stable"
@@ -29,7 +29,7 @@ class InsightEngine:
         return narrative
 
     def detect_anomalies(self, df):
-        """Simple rule-based anomaly detection for alerts."""
+        """Find weird stuff in the data that might need attention."""
         latest_sales = df.groupby('state')['sales_amount'].last()
         avg_sales = df.groupby('state')['sales_amount'].mean()
         
@@ -42,5 +42,5 @@ class InsightEngine:
                 
         return alerts
 
-# Global instance
+# Available everywhere in the app
 insight_engine = InsightEngine()

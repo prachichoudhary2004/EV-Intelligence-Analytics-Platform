@@ -20,7 +20,7 @@ except ImportError:
 
 class SparkEngine:
     """
-    Simulates or executes an enterprise Spark ETL pipeline following the Medallion architecture.
+    Runs our ETL pipeline using Spark or Pandas.
     """
     def __init__(self):
         if SPARK_AVAILABLE:
@@ -32,37 +32,37 @@ class SparkEngine:
 
     def ingest_bronze_to_silver(self):
         """
-        Process Raw (Bronze) data into Cleaned (Silver) data.
-        - Handles types
-        - Deduplication
-        - Basic filtering
+        Clean up raw data and make it usable.
+        - Fix data types
+        - Remove duplicates
+        - Basic cleanup
         """
         logger.info("Starting Bronze to Silver transformation...")
         
-        # Load Raw Data
+        # Load the raw files
         sales_raw = pd.read_csv(config.RAW_SALES_FILE)
         charging_raw = pd.read_csv(config.RAW_CHARGING_FILE)
         market_raw = pd.read_csv(config.RAW_MARKET_FILE)
         
-        # Run DQ checks on Bronze
+        # Check data quality on raw data
         dq_monitor.check_dataframe(sales_raw, "Bronze_EV_Sales")
         
-        # 1. Clean EV Sales
+        # 1. Clean up sales data
         sales_silver = sales_raw.copy()
         sales_silver['date'] = pd.to_datetime(sales_silver['date'])
         sales_silver = sales_silver.drop_duplicates()
         sales_silver['sales_amount'] = pd.to_numeric(sales_silver['sales_amount'], errors='coerce').fillna(0)
         
-        # 2. Clean Charging Stations
+        # 2. Clean up charging station data
         charging_silver = charging_raw.copy()
         charging_silver['date_installed'] = pd.to_datetime(charging_silver['date_installed'])
         charging_silver = charging_silver.drop_duplicates()
         
-        # 3. Clean Market Metrics
+        # 3. Clean up market metrics
         market_silver = market_raw.copy()
         market_silver['date'] = pd.to_datetime(market_silver['date'])
         
-        # Save to Silver (Simulating Delta Lake with Parquet)
+        # Save to silver layer (using Parquet like Delta Lake)
         sales_silver.to_parquet(config.SILVER_DIR / "ev_sales_silver.parquet", index=False)
         charging_silver.to_parquet(config.SILVER_DIR / "charging_stations_silver.parquet", index=False)
         market_silver.to_parquet(config.SILVER_DIR / "market_metrics_silver.parquet", index=False)
@@ -84,39 +84,70 @@ class SparkEngine:
         charging = pd.read_parquet(config.SILVER_DIR / "charging_stations_silver.parquet")
         market = pd.read_parquet(config.SILVER_DIR / "market_metrics_silver.parquet")
         
-        # Feature Engineering: Sales Growth & Moving Averages
-        sales = sales.sort_values(['state', 'date'])
-        sales['sales_rolling_3m'] = sales.groupby('state')['sales_amount'].transform(lambda x: x.rolling(3).mean())
+        # 0. Create Enriched Base (for all Gold tables)
+        # We need to simulate 'price' for revenue calculation if not present
+        if 'price' not in sales.columns:
+            # Assigning a synthetic price based on price_range or random
+            sales['price'] = np.random.randint(35000, 75000, size=len(sales))
         
-        # Join Datasets
-        # Aggregating charging by state for joining
+        sales['revenue'] = sales['sales_amount'] * sales['price']
+        
         charging_agg = charging.groupby('state').agg({
             'total_stations': 'sum',
             'fast_chargers': 'sum'
         }).reset_index()
         
-        gold_df = sales.merge(market, on=['state', 'date'], how='left')
-        gold_df = gold_df.merge(charging_agg, on='state', how='left')
+        base_df = sales.merge(market, on=['state', 'date'], how='left')
+        base_df = base_df.merge(charging_agg, on='state', how='left')
         
-        # Calculate Advanced Metrics
-        gold_df['ev_penetration_index'] = (gold_df['sales_amount'] / gold_df['total_population']) * 1000
+        # 1. Gold: State Performance (Leaderboard style)
+        logger.info("Generating Gold: State Performance...")
+        state_performance = base_df.groupby('state').agg({
+            'sales_amount': 'sum',
+            'revenue': 'sum',
+            'ev_penetration_rate': 'mean'
+        }).reset_index()
+        state_performance['rank'] = state_performance['sales_amount'].rank(ascending=False)
+        state_performance.to_parquet(config.GOLD_DIR / "state_performance_gold.parquet", index=False)
         
-        # Save to Gold
-        gold_df.to_parquet(config.GOLD_DIR / "master_analytics_gold.parquet", index=False)
+        # 2. Gold: Manufacturer Market Share
+        logger.info("Generating Gold: Manufacturer Insights...")
+        manufacturer_gold = base_df.groupby('manufacturer').agg({
+            'sales_amount': 'sum',
+            'revenue': 'sum',
+            'market_share': 'mean'
+        }).reset_index()
+        manufacturer_gold.to_parquet(config.GOLD_DIR / "manufacturer_gold.parquet", index=False)
+        
+        # 3. Gold: Infrastructure Readiness
+        logger.info("Generating Gold: Infrastructure Readiness...")
+        infra_gold = base_df.groupby('state').agg({
+            'total_stations': 'first',
+            'fast_chargers': 'first',
+            'ev_penetration_rate': 'mean'
+        }).reset_index()
+        infra_gold['fast_charger_ratio'] = infra_gold['fast_chargers'] / infra_gold['total_stations']
+        infra_gold.to_parquet(config.GOLD_DIR / "infrastructure_gold.parquet", index=False)
+        
+        # 4. Master Analytics Table (Full grain)
+        base_df['ev_penetration_index'] = (base_df['sales_amount'] / base_df['total_population']) * 1000
+        base_df.to_parquet(config.GOLD_DIR / "master_analytics_gold.parquet", index=False)
         
         # Feature Store Generation
-        gold_df.to_parquet(config.FEATURE_STORE_DIR / "sales_features.parquet", index=False)
+        base_df.to_parquet(config.FEATURE_STORE_DIR / "sales_features.parquet", index=False)
         
-        logger.info("Gold layer and Feature Store populated successfully.")
-        return gold_df
+        logger.info("All Gold tables and Feature Store populated successfully.")
+        return base_df
 
     def run_pipeline(self):
-        """Execute the full Medallion pipeline."""
+        """Run the whole ETL pipeline."""
         self.ingest_bronze_to_silver()
         gold_data = self.enrich_silver_to_gold()
         return gold_data
 
+# Easy to import anywhere
+spark_engine = SparkEngine()
+
 if __name__ == "__main__":
-    engine = SparkEngine()
-    engine.run_pipeline()
+    spark_engine.run_pipeline()
     print("ETL Pipeline Execution Complete.")

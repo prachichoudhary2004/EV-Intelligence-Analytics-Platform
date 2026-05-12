@@ -7,7 +7,7 @@ from plotly.subplots import make_subplots
 import sys
 import os
 
-# Add parent directory to path
+# Add parent so imports work
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 st.set_page_config(
@@ -16,7 +16,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom CSS
+# Make it look nice
 st.markdown("""
 <style>
     .main {

@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 import os
 import sys
 
-# Add root to path for imports
+# Add root so imports work
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from config.config import config
@@ -27,18 +27,24 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Apply Premium Styling
+# Make app look good
 theme.apply_custom_css()
 with open("assets/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # --- DATA LOADING ---
 @st.cache_data
-def get_gold_data():
-    if not (config.GOLD_DIR / "master_analytics_gold.parquet").exists():
-        # Auto-run mini ETL if gold is missing
+def load_all_gold_data():
+    """Load all specific Gold tables for the platform."""
+    if not (config.GOLD_DIR / "state_performance_gold.parquet").exists():
         spark_engine.run_pipeline()
-    return pd.read_parquet(config.GOLD_DIR / "master_analytics_gold.parquet")
+    
+    return {
+        "master": pd.read_parquet(config.GOLD_DIR / "master_analytics_gold.parquet"),
+        "state_perf": pd.read_parquet(config.GOLD_DIR / "state_performance_gold.parquet"),
+        "manufacturer": pd.read_parquet(config.GOLD_DIR / "manufacturer_gold.parquet"),
+        "infra": pd.read_parquet(config.GOLD_DIR / "infrastructure_gold.parquet")
+    }
 
 def main():
     # --- HEADER & TICKER ---
@@ -54,16 +60,17 @@ def main():
     
     # --- LOAD DATA ---
     try:
-        df = get_gold_data()
+        data = load_all_gold_data()
+        df = data["master"]
     except Exception as e:
         st.error(f"Failed to load platform data: {e}")
         return
 
     # --- ROUTING ---
     if page == "📊 Executive Summary":
-        render_executive_dashboard(df)
+        render_executive_dashboard(df, data["state_perf"])
     elif page == "🌐 Market Intelligence":
-        render_market_intelligence(df)
+        render_market_intelligence(df, data["manufacturer"], data["infra"])
     elif page == "📈 ML Sales Forecasting":
         render_ml_forecasting(df)
     elif page == "🧪 Data Health & ML Ops":
@@ -71,7 +78,7 @@ def main():
     elif page == "🛂 API & Integration":
         render_api_docs()
 
-def render_executive_dashboard(df):
+def render_executive_dashboard(df, state_perf):
     st.markdown("<h1 class='animate-fade-in'>Executive Intelligence Dashboard</h1>", unsafe_allow_html=True)
     
     # KPIs
@@ -93,6 +100,13 @@ def render_executive_dashboard(df):
     narrative = insight_engine.generate_executive_summary(kpis, top_states)
     st.markdown(f"<div class='glass-card'>{narrative}</div>", unsafe_allow_html=True)
 
+    # 📊 State Leaderboard (Similar to Points Table)
+    st.markdown("### 🏆 State Performance Leaderboard")
+    st.dataframe(
+        state_perf.sort_values("sales_amount", ascending=False).style.background_gradient(cmap="Greens", subset=["sales_amount"]),
+        use_container_width=True
+    )
+
     # Visuals
     col1, col2 = st.columns([2, 1])
     with col1:
@@ -111,21 +125,35 @@ def render_executive_dashboard(df):
         fig.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)')
         st.plotly_chart(fig, use_container_width=True)
 
-def render_market_intelligence(df):
+def render_market_intelligence(df, manufacturer_gold, infra_gold):
     st.markdown("<h1>Market Intelligence Hub</h1>", unsafe_allow_html=True)
-    
-    # State Selector
-    selected_state = st.selectbox("Select State for Deep Dive", df['state'].unique())
-    state_df = df[df['state'] == selected_state]
     
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown(f"### {selected_state} Infrastructure")
-        fig = px.pie(values=[state_df['fast_chargers'].iloc[0], state_df['total_stations'].iloc[0] - state_df['fast_chargers'].iloc[0]], 
-                    names=['Fast Chargers', 'Standard'], hole=0.6, template="plotly_dark")
+        st.markdown("### 🏬 Manufacturer Market Share")
+        fig = px.pie(manufacturer_gold, values='sales_amount', names='manufacturer', 
+                    hole=0.6, template="plotly_dark", color_discrete_sequence=px.colors.qualitative.Plotly)
         st.plotly_chart(fig, use_container_width=True)
     
     with col2:
+        st.markdown("### ⚡ Infrastructure Readiness Score")
+        fig = px.bar(infra_gold.sort_values("fast_charger_ratio", ascending=False).head(10), 
+                    x='state', y='fast_charger_ratio', template="plotly_dark",
+                    color='fast_charger_ratio', color_continuous_scale='Aggrnyl')
+        st.plotly_chart(fig, use_container_width=True)
+
+    st.markdown("---")
+    
+    # State Selector Deep Dive
+    selected_state = st.selectbox("Select State for Deep Dive", df['state'].unique())
+    state_df = df[df['state'] == selected_state]
+    
+    col3, col4 = st.columns(2)
+    with col3:
+        st.markdown(f"### {selected_state} Metrics")
+        st.dataframe(state_df[['date', 'sales_amount', 'ev_penetration_rate', 'gdp_per_capita']].tail(10), use_container_width=True)
+    
+    with col4:
         st.markdown("### Correlation Heatmap")
         corr = df[['sales_amount', 'ev_penetration_rate', 'gdp_per_capita', 'gasoline_price', 'total_stations']].corr()
         fig = px.imshow(corr, text_auto=True, color_continuous_scale='RdBu_r', template="plotly_dark")
@@ -154,7 +182,7 @@ def render_ml_forecasting(df):
 def render_data_health(df):
     st.markdown("<h1>Data Health & ML Ops Center</h1>", unsafe_allow_html=True)
     
-    # Health Score
+    # Health metrics
     report = dq_monitor.check_dataframe(df, "Gold_Master_Table")
     
     col1, col2, col3 = st.columns(3)

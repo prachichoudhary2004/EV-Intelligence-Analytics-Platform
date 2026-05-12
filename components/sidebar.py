@@ -2,7 +2,7 @@ import streamlit as st
 
 def render_sidebar():
     """
-    Renders a professional enterprise sidebar with branding and navigation.
+    Creates the sidebar with navigation.
     """
     with st.sidebar:
         st.markdown("""
@@ -13,7 +13,7 @@ def render_sidebar():
         <hr style="border: 0.5px solid rgba(255,255,255,0.1);">
         """, unsafe_allow_html=True)
         
-        # Navigation
+        # Menu options
         st.markdown("### 🧭 NAVIGATION")
         page = st.radio("", [
             "📊 Executive Summary",
@@ -25,7 +25,7 @@ def render_sidebar():
         
         st.markdown("---")
         
-        # System Status
+        # System info
         st.markdown("### ⚙️ SYSTEM STATUS")
         st.success("API: Operational")
         st.info("Engine: Spark 3.4.1")

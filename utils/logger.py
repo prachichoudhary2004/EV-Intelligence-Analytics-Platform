@@ -5,7 +5,7 @@ from datetime import datetime
 
 def setup_logger(name="ev_intelligence"):
     """
-    Sets up a professional logger with console and file handlers.
+    Creates logger for the app.
     """
     logger = logging.getLogger(name)
     
@@ -14,21 +14,21 @@ def setup_logger(name="ev_intelligence"):
         
     logger.setLevel(logging.INFO)
     
-    # Create logs directory if it doesn't exist
+    # Make logs folder if needed
     log_dir = "logs"
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
         
-    # Formatting
+    # Make logs look nice
     format_str = '%(asctime)s | %(name)s | %(levelname)s | %(message)s'
     formatter = logging.Formatter(format_str)
     
-    # Console Handler
+    # Console output
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setFormatter(formatter)
     logger.addHandler(console_handler)
     
-    # File Handler
+    # File output
     log_filename = f"{log_dir}/app_{datetime.now().strftime('%Y%m%d')}.log"
     file_handler = logging.FileHandler(log_filename)
     file_handler.setFormatter(formatter)
@@ -36,5 +36,5 @@ def setup_logger(name="ev_intelligence"):
     
     return logger
 
-# Global logger instance
+# Logger we can use anywhere
 logger = setup_logger()

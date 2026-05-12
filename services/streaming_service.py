@@ -5,14 +5,14 @@ from utils.logger import logger
 
 class StreamingService:
     """
-    Simulates a real-time data stream for market updates and ticker feeds.
+    Fakes real-time data for testing our dashboard.
     """
     def __init__(self):
         self.manufacturers = ["Tesla", "BYD", "Rivian", "Lucid", "Ford", "GM"]
         self.states = ["California", "Texas", "Florida", "New York", "Washington"]
 
     def generate_live_sale(self):
-        """Simulate a single live sale event."""
+        """Make up a fake sale event."""
         sale = {
             "timestamp": datetime.now().strftime("%H:%M:%S"),
             "manufacturer": random.choice(self.manufacturers),
@@ -23,7 +23,7 @@ class StreamingService:
         return sale
 
     def get_ticker_update(self):
-        """Simulate market price/index movements for a live ticker."""
+        """Create fake market data for ticker."""
         update = {
             "market_index": round(random.uniform(100, 150), 2),
             "index_change": round(random.uniform(-2, 2), 2),
@@ -32,5 +32,5 @@ class StreamingService:
         }
         return update
 
-# Global instance
+# Use this anywhere
 streaming_service = StreamingService()

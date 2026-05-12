@@ -2,14 +2,14 @@ from utils.logger import logger
 
 class AlertService:
     """
-    Simulates an enterprise alerting system for anomalies and threshold violations.
+    Handles alerts for when things go wrong or need attention.
     """
     
     def __init__(self):
         self.alert_history = []
 
     def trigger_alert(self, level, message):
-        """Log and store a system alert."""
+        """Log an alert and keep track of it."""
         if level == "CRITICAL":
             logger.error(f"🚨 ALERT: {message}")
         else:
@@ -22,7 +22,7 @@ class AlertService:
         })
 
     def check_thresholds(self, kpis):
-        """Automated check against business threshold targets."""
+        """Check if any KPIs are below what we expect."""
         if kpis['yoy_growth'] < 5:
             self.trigger_alert("CRITICAL", f"Market stagnation detected. YoY growth at {kpis['yoy_growth']}% is below the 5% threshold.")
         
@@ -30,8 +30,8 @@ class AlertService:
             self.trigger_alert("WARNING", f"Charging infrastructure bottleneck. Score: {kpis['infrastructure_score']}.")
 
     def get_unread_alerts(self):
-        """Retrieve all unread alerts for the dashboard."""
+        """Get all alerts that haven't been read yet."""
         return [a for a in self.alert_history if a['status'] == "UNREAD"]
 
-# Global instance
+# So we can use it anywhere in the app
 alert_service = AlertService()

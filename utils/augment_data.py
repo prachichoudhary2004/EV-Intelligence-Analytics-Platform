@@ -3,7 +3,7 @@ import sys
 import pandas as pd
 import numpy as np
 
-# Add parent directory to path for imports
+# Add parent so imports work
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from datetime import datetime, timedelta
@@ -11,15 +11,15 @@ from config.config import config
 
 def augment_data():
     """
-    Augments the single-date raw data into a multi-month time series for professional analytics.
+    Creates fake time series data from single date.
     """
     print("Augmenting data for multi-month time series...")
     
-    # Load Bronze data
+    # Load raw data
     sales_df = pd.read_csv(config.RAW_SALES_FILE)
     market_df = pd.read_csv(config.RAW_MARKET_FILE)
     
-    # Create 24 months of data
+    # Make 24 months of data
     start_date = datetime(2022, 1, 1)
     dates = [start_date + pd.DateOffset(months=i) for i in range(24)]
     
@@ -32,7 +32,7 @@ def augment_data():
         temp_sales['date'] = date
         # Ensure numeric
         temp_sales['sales_amount'] = pd.to_numeric(temp_sales['sales_amount'], errors='coerce').fillna(0)
-        # Add some growth and randomness
+        # Add growth and random changes
         growth_factor = 1 + (dates.index(date) * 0.05) + np.random.normal(0, 0.02)
         temp_sales['sales_amount'] = (temp_sales['sales_amount'] * growth_factor).astype(int)
         new_sales_list.append(temp_sales)
@@ -48,7 +48,7 @@ def augment_data():
     augmented_sales = pd.concat(new_sales_list)
     augmented_market = pd.concat(new_market_list)
     
-    # Save back to Bronze (overwriting or creating a new version)
+    # Save back to bronze files
     augmented_sales.to_csv(config.RAW_SALES_FILE, index=False)
     augmented_market.to_csv(config.RAW_MARKET_FILE, index=False)
     

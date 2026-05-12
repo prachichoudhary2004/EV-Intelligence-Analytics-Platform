@@ -2,7 +2,7 @@ import streamlit as st
 
 def kpi_card(label, value, trend=None, trend_up=True, prefix="", suffix=""):
     """
-    Renders a premium glassmorphism KPI card.
+    Creates nice looking KPI cards.
     """
     trend_html = ""
     if trend is not None:
@@ -20,7 +20,7 @@ def kpi_card(label, value, trend=None, trend_up=True, prefix="", suffix=""):
 
 def live_ticker(data_items):
     """
-    Renders a live market ticker.
+    Shows a scrolling market ticker.
     """
     ticker_content = "".join([f'<span class="ticker-item">{item}</span>' for item in data_items])
     st.markdown(f"""

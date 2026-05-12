@@ -4,7 +4,7 @@ from utils.logger import logger
 
 class KPIEngine:
     """
-    Semantic layer for centralized KPI definitions and business logic.
+    Handles all our KPI calculations and business logic.
     """
     
     @staticmethod
@@ -16,7 +16,7 @@ class KPIEngine:
 
     @staticmethod
     def calculate_yoy_growth(current_df, date_col='date', value_col='sales_amount'):
-        """Calculate Year-over-Year growth."""
+        """Figure out Year-over-Year growth."""
         df = current_df.copy()
         df = df.sort_values(date_col)
         df['last_year'] = df[value_col].shift(12)
@@ -24,7 +24,7 @@ class KPIEngine:
         return df
 
     def get_market_kpis(self, df):
-        """Generate a suite of market-level KPIs."""
+        """Get all the important market KPIs."""
         logger.info("Generating Market KPIs...")
         
         latest_date = df['date'].max()
@@ -50,7 +50,7 @@ class KPIEngine:
         return kpis
 
     def benchmark_states(self, df):
-        """Compare states against national averages."""
+        """See how states stack up against the national average."""
         latest_date = df['date'].max()
         latest_df = df[df['date'] == latest_date]
         
@@ -61,5 +61,5 @@ class KPIEngine:
         
         return benchmarks[['state', 'ev_penetration_rate', 'vs_national_avg']]
 
-# Global instance
+# Use this anywhere in the app
 kpi_engine = KPIEngine()

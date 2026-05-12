@@ -4,82 +4,62 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.103.1-green.svg)](https://fastapi.tiangolo.com/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28.1-red.svg)](https://streamlit.io/)
 [![Spark](https://img.shields.io/badge/Apache%20Spark-3.4.1-orange.svg)](https://spark.apache.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-An elite-level, recruiter-grade market intelligence platform for the Electric Vehicle (EV) industry. This project transforms raw market data into high-fidelity business insights using a **Medallion Architecture**, **PySpark ETL pipelines**, and **Advanced ML Forecasting**.
+An elite-level, recruiter-grade market intelligence platform for the Electric Vehicle (EV) industry. Inspired by the **Databricks Lakehouse Architecture**, this project implements a professional **Medallion Data Pipeline** to transform raw market data into high-fidelity business insights.
 
 ---
 
-## 🏗️ Professional Architecture
+## 🏗️ Medallion Architecture Overview
+Following the industry-standard pattern used in high-scale Databricks environments, the pipeline is organized into three distinct layers:
 
-The platform follows modern enterprise engineering standards:
+### 🥉 Bronze Layer (Raw)
+*   Stores raw data in its original format (CSV) from various sources: EV Sales, Charging Infrastructure, and Macro-Market Metrics.
+*   **Tables**: `bronze.ev_sales`, `bronze.charging_stations`, `bronze.market_metrics`.
 
-*   **Medallion Data Architecture**: 
-    *   **Bronze**: Raw data ingestion.
-    *   **Silver**: Cleaned, typed, and deduplicated records.
-    *   **Gold**: Analytics-ready "Master Tables" and Feature Stores.
-*   **Semantic KPI Engine**: Centralized business logic for consistent metric calculation (CAGR, YoY, Penetration).
+### 🥈 Silver Layer (Structured)
+*   Cleaned, typed, and deduplicated records.
+*   Performs schema normalization and timestamp enrichment.
+*   **Tables**: `silver.ev_sales`, `silver.charging_stations`, `silver.market_metrics`.
+
+### 🥇 Gold Layer (Analytical)
+*   Business-level datasets optimized for executive reporting and ML forecasting.
+*   **Gold.State_Performance**: The "Points Table" of the EV industry, ranking states by adoption and revenue.
+*   **Gold.Manufacturer_Insights**: Detailed "Batter Statistics" style metrics for top EV manufacturers (Market Share, Avg Price).
+*   **Gold.Infrastructure_Readiness**: "Bowler Statistics" style metrics for charging network density and fast-charger ratios.
+*   **Gold.Master_Analytics**: Fully joined feature store for ML modeling.
+
+---
+
+## 🚀 Key Platform Features
+*   **Interactive Executive Dashboard**: A premium glassmorphism UI with real-time tickers and state leaderboards.
+*   **Semantic KPI Engine**: Centralized logic for CAGR, YoY Growth, and Penetration Indexes.
 *   **Executive Narrative Engine**: Automated natural language summaries and strategic recommendations.
-*   **Hybrid ML Pipeline**: Combining **XGBoost** for short-term regression and **Prophet** for long-term time-series forecasting.
-*   **FastAPI Backend**: A production-ready API layer for external data consumption.
-
----
-
-## 🚀 Key Features
-
-*   **Premium Dark UI**: Glassmorphism design system with custom CSS and animated KPI cards.
-*   **Executive Dashboard**: Real-time market overview with high-fidelity visuals.
-*   **Advanced Analytics**: State-level benchmarking against national averages.
-*   **ML Forecasting**: Integrated time-series predictions with confidence intervals.
-*   **Data Health Monitoring**: Health scoring, schema validation, and drift detection.
-*   **Enterprise Reporting**: Automated PDF executive summaries and CSV data exports.
-*   **Live Market Ticker**: Simulated real-time market data feed.
+*   **Advanced ML Forecaster**: Hybrid pipeline using **XGBoost** and **Prophet** for sales predictions.
+*   **Data Health Monitoring**: Integrated DQ checks, schema validation, and health scoring.
 
 ---
 
 ## 🛠️ Technology Stack
-
-| Layer | Technology |
-| --- | --- |
-| **Data Engineering** | Databricks (Simulated), Apache Spark, Parquet |
-| **Backend / API** | Python, FastAPI, Uvicorn |
-| **Machine Learning** | XGBoost, Facebook Prophet, Scikit-learn |
-| **Analytics** | Pandas, NumPy, KPI Engine |
-| **Frontend** | Streamlit, Plotly, Custom CSS |
-| **Reporting** | FPDF2, CSV Serialization |
+*   **Data Engineering**: Apache Spark (Pandas-simulated), Delta Lake (Parquet-simulated).
+*   **Backend**: FastAPI, Uvicorn.
+*   **Machine Learning**: XGBoost, Facebook Prophet, Scikit-learn.
+*   **Frontend**: Streamlit, Plotly, Custom Glassmorphism CSS.
 
 ---
 
 ## 📥 Getting Started
 
-### Prerequisites
-*   Python 3.9+
-*   Java (for PySpark, optional simulation mode available)
-
 ### Installation
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/ev-intelligence-platform.git
-
-# Install dependencies
 pip install -r requirements.txt
 ```
 
 ### Run the Platform
-1.  **Run ETL Pipeline**: `python services/spark_engine.py`
-2.  **Train ML Models**: `python models/forecaster.py`
-3.  **Launch Dashboard**: `streamlit run streamlit_app/app.py`
-4.  **Launch API**: `uvicorn api.app.py:app --reload`
+1.  **Initialize & Run ETL**: `python services/spark_engine.py`
+2.  **Launch Dashboard**: `streamlit run streamlit_app/app.py`
+3.  **Launch API**: `uvicorn api.app:app --reload`
 
 ---
 
-## 📊 Documentation
-*   [Architecture Deep Dive](ARCHITECTURE.md)
-*   [System Design Specifications](SYSTEM_DESIGN.md)
-*   [Product Roadmap](ROADMAP.md)
-
----
-
-## 👨‍💻 Author
-**Your Name** - Senior Analytics Engineer / BI Architect
-[LinkedIn](https://linkedin.com/in/yourprofile) | [Portfolio](https://yourportfolio.com)
+## 📊 Project References
+This project demonstrates elite engineering practices including Lakehouse data modeling, batch ETL pipelines, and analytical storytelling. Designed for Senior Analytics Engineer / BI Architect roles.

@@ -8,7 +8,7 @@ import uvicorn
 
 app = FastAPI(title="Enterprise EV Market Intelligence API", version="1.0.0")
 
-# Data Cache (Simulation of a connected database/cache)
+# Cache for our gold data - acts like a simple database
 def load_gold_data():
     try:
         return pd.read_parquet(config.GOLD_DIR / "master_analytics_gold.parquet")
@@ -44,7 +44,7 @@ def get_forecast(periods: int = 12):
         raise HTTPException(status_code=404, detail="Data not found.")
     
     forecast_df = forecaster.forecast_prophet(df, periods=periods)
-    # Convert dates to string for JSON serialization
+    # Need to convert dates to strings so JSON can handle them
     forecast_df['ds'] = forecast_df['ds'].dt.strftime('%Y-%m-%d')
     return forecast_df.to_dict(orient="records")
 

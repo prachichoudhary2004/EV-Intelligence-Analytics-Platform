@@ -4,13 +4,13 @@ from utils.logger import logger
 
 class DataQualityMonitor:
     """
-    Enterprise-level data quality monitoring and health checks.
+    Checks data quality and makes sure our data looks good.
     """
     def __init__(self):
         self.health_reports = {}
 
     def check_dataframe(self, df, name="Dataset"):
-        """Perform a suite of health checks on a dataframe."""
+        """Run health checks on a dataframe."""
         logger.info(f"Running data quality checks on: {name}")
         
         report = {
@@ -24,7 +24,7 @@ class DataQualityMonitor:
             "numeric_stats": df.describe().to_dict() if not df.select_dtypes(include=[np.number]).empty else {}
         }
         
-        # Calculate overall quality score (simple heuristic)
+        # Figure out the quality score (simple but works)
         missing_penalty = (df.isnull().sum().sum() / (df.size)) * 100 if df.size > 0 else 0
         duplicate_penalty = (report["duplicate_rows"] / len(df)) * 100 if len(df) > 0 else 0
         
@@ -41,7 +41,7 @@ class DataQualityMonitor:
         return report
 
     def validate_schema(self, df, expected_columns):
-        """Check for schema drift."""
+        """Make sure the schema hasn't changed."""
         missing_cols = set(expected_columns) - set(df.columns)
         extra_cols = set(df.columns) - set(expected_columns)
         
@@ -51,8 +51,8 @@ class DataQualityMonitor:
         return True
 
     def get_summary_report(self):
-        """Return all health reports as a single summary."""
+        """Get all health reports in one go."""
         return self.health_reports
 
-# Global instance
+# Global instance we can use everywhere
 dq_monitor = DataQualityMonitor()
