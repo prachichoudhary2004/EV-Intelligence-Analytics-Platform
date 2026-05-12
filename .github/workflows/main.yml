@@ -1,0 +1,36 @@
+name: Enterprise EV Platform CI/CD
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Lint with black
+      run: |
+        black --check .
+
+    - name: Run Data Quality Checks
+      run: |
+        python services/spark_engine.py
+
+    - name: Build Docker Image
+      run: |
+        docker build -t ev-platform:latest .

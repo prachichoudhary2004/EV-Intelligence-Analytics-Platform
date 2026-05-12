@@ -1,0 +1,85 @@
+/* Premium Enterprise Design System */
+
+:root {
+    --primary: #00FF41;
+    --secondary: #FF6B6B;
+    --background: #0E1117;
+    --surface: #1E2139;
+    --text: #FFFFFF;
+    --glass: rgba(255, 255, 255, 0.03);
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+/* Base Styles */
+.stApp {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Glassmorphism Cards */
+.metric-card {
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.metric-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(0, 255, 65, 0.1);
+}
+
+/* KPI Typography */
+.kpi-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #A0A0A0;
+    margin-bottom: 8px;
+}
+
+.kpi-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin: 4px 0;
+}
+
+.kpi-trend {
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Live Ticker Styling */
+.ticker-container {
+    background: #000;
+    color: var(--primary);
+    padding: 10px;
+    font-family: 'Space Mono', monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: 1px solid var(--primary);
+}
+
+.ticker-item {
+    display: inline-block;
+    padding-right: 50px;
+}
