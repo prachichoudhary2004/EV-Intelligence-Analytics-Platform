@@ -61,5 +61,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📊 Project References
-This project demonstrates elite engineering practices including Lakehouse data modeling, batch ETL pipelines, and analytical storytelling. Designed for Senior Analytics Engineer / BI Architect roles.
+## 📊 Documentation
+*   [Architecture Deep Dive](ARCHITECTURE.md)
+*   [System Design Specifications](SYSTEM_DESIGN.md)
+*   [Product Roadmap](ROADMAP.md)
