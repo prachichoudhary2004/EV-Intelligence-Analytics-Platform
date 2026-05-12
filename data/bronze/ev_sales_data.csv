@@ -1,0 +1,1489 @@
+date,state,manufacturer,vehicle_type,vehicle_category,sales_amount,price_range,battery_capacity,charging_time,market_share
+2022-01-01,California,Tesla,Electric,Sedan,12330,75000-85000,75,45.0,0.28
+2022-01-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2022-01-01,California,BYD,Electric,Sedan,6609,45000-55000,60,35.0,0.15
+2022-01-01,California,Nissan,Electric,Hatchback,4439,35000-45000,40,25.0,0.1
+2022-01-01,California,Ford,Electric,Truck,3156,55000-65000,98,40.0,0.07
+2022-01-01,California,Volkswagen,Electric,SUV,2762,45000-55000,77,35.0,0.06
+2022-01-01,California,Hyundai,Electric,SUV,2367,40000-50000,64,30.0,0.05
+2022-01-01,California,Kia,Electric,SUV,2071,38000-48000,64,30.0,0.05
+2022-01-01,California,Audi,Electric,SUV,1775,65000-75000,95,40.0,0.04
+2022-01-01,California,Mercedes,Electric,Sedan,1479,75000-85000,90,35.0,0.03
+2022-01-01,New York,Tesla,Electric,Sedan,8779,75000-85000,75,45.0,0.25
+2022-01-01,New York,Ford,Electric,Truck,2071,55000-65000,98,40.0,0.06
+2022-01-01,New York,Nissan,Electric,Hatchback,1775,35000-45000,40,25.0,0.05
+2022-01-01,New York,Hyundai,Electric,SUV,1578,40000-50000,64,30.0,0.04
+2022-01-01,New York,BYD,Electric,Sedan,1381,45000-55000,60,35.0,0.04
+2022-01-01,New York,Volkswagen,Electric,SUV,1183,45000-55000,77,35.0,0.03
+2022-01-01,New York,Kia,Electric,SUV,1085,38000-48000,64,30.0,0.03
+2022-01-01,New York,Audi,Electric,SUV,887,65000-75000,95,40.0,0.03
+2022-01-01,New York,Mercedes,Electric,Sedan,789,75000-85000,90,35.0,0.02
+2022-01-01,New York,Rivian,Electric,Truck,690,70000-80000,135,50.0,0.02
+2022-01-01,Texas,Tesla,Electric,SUV,6609,85000-95000,100,60.0,0.22
+2022-01-01,Texas,Ford,Electric,Truck,3353,55000-65000,98,40.0,0.11
+2022-01-01,Texas,BYD,Electric,Sedan,2268,45000-55000,60,35.0,0.08
+2022-01-01,Texas,Nissan,Electric,Hatchback,1775,35000-45000,40,25.0,0.06
+2022-01-01,Texas,Hyundai,Electric,SUV,1578,40000-50000,64,30.0,0.05
+2022-01-01,Texas,Volkswagen,Electric,SUV,1381,45000-55000,77,35.0,0.05
+2022-01-01,Texas,Kia,Electric,SUV,1183,38000-48000,64,30.0,0.04
+2022-01-01,Texas,Rivian,Electric,Truck,1085,70000-80000,135,50.0,0.04
+2022-01-01,Texas,Chevrolet,Electric,SUV,887,40000-50000,65,30.0,0.03
+2022-01-01,Texas,Audi,Electric,SUV,789,65000-75000,95,40.0,0.03
+2022-01-01,Florida,Tesla,Electric,Sedan,5524,75000-85000,75,45.0,0.24
+2022-01-01,Florida,BYD,Electric,Sedan,2762,45000-55000,60,35.0,0.12
+2022-01-01,Florida,Nissan,Electric,Hatchback,1874,35000-45000,40,25.0,0.08
+2022-01-01,Florida,Ford,Electric,Truck,1381,55000-65000,98,40.0,0.06
+2022-01-01,Florida,Hyundai,Electric,SUV,1183,40000-50000,64,30.0,0.05
+2022-01-01,Florida,Volkswagen,Electric,SUV,986,45000-55000,77,35.0,0.04
+2022-01-01,Florida,Kia,Electric,SUV,887,38000-48000,64,30.0,0.04
+2022-01-01,Florida,Chevrolet,Electric,SUV,690,40000-50000,65,30.0,0.03
+2022-01-01,Florida,Audi,Electric,SUV,591,65000-75000,95,40.0,0.03
+2022-01-01,Florida,Mercedes,Electric,Sedan,493,75000-85000,90,35.0,0.02
+2022-01-01,Washington,Tesla,Electric,SUV,3353,85000-95000,100,60.0,0.26
+2022-01-01,Washington,BYD,Electric,Sedan,1676,45000-55000,60,35.0,0.13
+2022-01-01,Washington,Nissan,Electric,Hatchback,1085,35000-45000,40,25.0,0.08
+2022-01-01,Washington,Hyundai,Electric,SUV,887,40000-50000,64,30.0,0.07
+2022-01-01,Washington,Volkswagen,Electric,SUV,789,45000-55000,77,35.0,0.06
+2022-01-01,Washington,Ford,Electric,Truck,690,55000-65000,98,40.0,0.05
+2022-01-01,Washington,Kia,Electric,SUV,591,38000-48000,64,30.0,0.05
+2022-01-01,Washington,Audi,Electric,SUV,493,65000-75000,95,40.0,0.04
+2022-01-01,Washington,Chevrolet,Electric,SUV,394,40000-50000,65,30.0,0.03
+2022-01-01,Washington,Rivian,Electric,Truck,295,70000-80000,135,50.0,0.02
+2022-01-01,Washington,Mercedes,Electric,Sedan,197,75000-85000,90,35.0,0.02
+2022-01-01,Arizona,Tesla,Electric,Sedan,2762,75000-85000,75,45.0,0.25
+2022-01-01,Arizona,BYD,Electric,Sedan,1381,45000-55000,60,35.0,0.12
+2022-01-01,Arizona,Nissan,Electric,Hatchback,887,35000-45000,40,25.0,0.08
+2022-01-01,Arizona,Hyundai,Electric,SUV,690,40000-50000,64,30.0,0.06
+2022-01-01,Arizona,Ford,Electric,Truck,591,55000-65000,98,40.0,0.05
+2022-01-01,Arizona,Volkswagen,Electric,SUV,493,45000-55000,77,35.0,0.04
+2022-01-01,Arizona,Kia,Electric,SUV,394,38000-48000,64,30.0,0.04
+2022-01-01,Arizona,Chevrolet,Electric,SUV,295,40000-50000,65,30.0,0.03
+2022-01-01,Arizona,Audi,Electric,SUV,197,65000-75000,95,40.0,0.02
+2022-01-01,Arizona,Rivian,Electric,Truck,197,70000-80000,135,50.0,0.02
+2022-01-01,Arizona,Mercedes,Electric,Sedan,98,75000-85000,90,35.0,0.01
+2022-02-01,California,Tesla,Electric,Sedan,13123,75000-85000,75,45.0,0.28
+2022-02-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2022-02-01,California,BYD,Electric,Sedan,7034,45000-55000,60,35.0,0.15
+2022-02-01,California,Nissan,Electric,Hatchback,4724,35000-45000,40,25.0,0.1
+2022-02-01,California,Ford,Electric,Truck,3359,55000-65000,98,40.0,0.07
+2022-02-01,California,Volkswagen,Electric,SUV,2939,45000-55000,77,35.0,0.06
+2022-02-01,California,Hyundai,Electric,SUV,2519,40000-50000,64,30.0,0.05
+2022-02-01,California,Kia,Electric,SUV,2204,38000-48000,64,30.0,0.05
+2022-02-01,California,Audi,Electric,SUV,1889,65000-75000,95,40.0,0.04
+2022-02-01,California,Mercedes,Electric,Sedan,1574,75000-85000,90,35.0,0.03
+2022-02-01,New York,Tesla,Electric,Sedan,9344,75000-85000,75,45.0,0.25
+2022-02-01,New York,Ford,Electric,Truck,2204,55000-65000,98,40.0,0.06
+2022-02-01,New York,Nissan,Electric,Hatchback,1889,35000-45000,40,25.0,0.05
+2022-02-01,New York,Hyundai,Electric,SUV,1679,40000-50000,64,30.0,0.04
+2022-02-01,New York,BYD,Electric,Sedan,1469,45000-55000,60,35.0,0.04
+2022-02-01,New York,Volkswagen,Electric,SUV,1259,45000-55000,77,35.0,0.03
+2022-02-01,New York,Kia,Electric,SUV,1154,38000-48000,64,30.0,0.03
+2022-02-01,New York,Audi,Electric,SUV,944,65000-75000,95,40.0,0.03
+2022-02-01,New York,Mercedes,Electric,Sedan,839,75000-85000,90,35.0,0.02
+2022-02-01,New York,Rivian,Electric,Truck,734,70000-80000,135,50.0,0.02
+2022-02-01,Texas,Tesla,Electric,SUV,7034,85000-95000,100,60.0,0.22
+2022-02-01,Texas,Ford,Electric,Truck,3569,55000-65000,98,40.0,0.11
+2022-02-01,Texas,BYD,Electric,Sedan,2414,45000-55000,60,35.0,0.08
+2022-02-01,Texas,Nissan,Electric,Hatchback,1889,35000-45000,40,25.0,0.06
+2022-02-01,Texas,Hyundai,Electric,SUV,1679,40000-50000,64,30.0,0.05
+2022-02-01,Texas,Volkswagen,Electric,SUV,1469,45000-55000,77,35.0,0.05
+2022-02-01,Texas,Kia,Electric,SUV,1259,38000-48000,64,30.0,0.04
+2022-02-01,Texas,Rivian,Electric,Truck,1154,70000-80000,135,50.0,0.04
+2022-02-01,Texas,Chevrolet,Electric,SUV,944,40000-50000,65,30.0,0.03
+2022-02-01,Texas,Audi,Electric,SUV,839,65000-75000,95,40.0,0.03
+2022-02-01,Florida,Tesla,Electric,Sedan,5879,75000-85000,75,45.0,0.24
+2022-02-01,Florida,BYD,Electric,Sedan,2939,45000-55000,60,35.0,0.12
+2022-02-01,Florida,Nissan,Electric,Hatchback,1994,35000-45000,40,25.0,0.08
+2022-02-01,Florida,Ford,Electric,Truck,1469,55000-65000,98,40.0,0.06
+2022-02-01,Florida,Hyundai,Electric,SUV,1259,40000-50000,64,30.0,0.05
+2022-02-01,Florida,Volkswagen,Electric,SUV,1049,45000-55000,77,35.0,0.04
+2022-02-01,Florida,Kia,Electric,SUV,944,38000-48000,64,30.0,0.04
+2022-02-01,Florida,Chevrolet,Electric,SUV,734,40000-50000,65,30.0,0.03
+2022-02-01,Florida,Audi,Electric,SUV,629,65000-75000,95,40.0,0.03
+2022-02-01,Florida,Mercedes,Electric,Sedan,524,75000-85000,90,35.0,0.02
+2022-02-01,Washington,Tesla,Electric,SUV,3569,85000-95000,100,60.0,0.26
+2022-02-01,Washington,BYD,Electric,Sedan,1784,45000-55000,60,35.0,0.13
+2022-02-01,Washington,Nissan,Electric,Hatchback,1154,35000-45000,40,25.0,0.08
+2022-02-01,Washington,Hyundai,Electric,SUV,944,40000-50000,64,30.0,0.07
+2022-02-01,Washington,Volkswagen,Electric,SUV,839,45000-55000,77,35.0,0.06
+2022-02-01,Washington,Ford,Electric,Truck,734,55000-65000,98,40.0,0.05
+2022-02-01,Washington,Kia,Electric,SUV,629,38000-48000,64,30.0,0.05
+2022-02-01,Washington,Audi,Electric,SUV,524,65000-75000,95,40.0,0.04
+2022-02-01,Washington,Chevrolet,Electric,SUV,419,40000-50000,65,30.0,0.03
+2022-02-01,Washington,Rivian,Electric,Truck,314,70000-80000,135,50.0,0.02
+2022-02-01,Washington,Mercedes,Electric,Sedan,209,75000-85000,90,35.0,0.02
+2022-02-01,Arizona,Tesla,Electric,Sedan,2939,75000-85000,75,45.0,0.25
+2022-02-01,Arizona,BYD,Electric,Sedan,1469,45000-55000,60,35.0,0.12
+2022-02-01,Arizona,Nissan,Electric,Hatchback,944,35000-45000,40,25.0,0.08
+2022-02-01,Arizona,Hyundai,Electric,SUV,734,40000-50000,64,30.0,0.06
+2022-02-01,Arizona,Ford,Electric,Truck,629,55000-65000,98,40.0,0.05
+2022-02-01,Arizona,Volkswagen,Electric,SUV,524,45000-55000,77,35.0,0.04
+2022-02-01,Arizona,Kia,Electric,SUV,419,38000-48000,64,30.0,0.04
+2022-02-01,Arizona,Chevrolet,Electric,SUV,314,40000-50000,65,30.0,0.03
+2022-02-01,Arizona,Audi,Electric,SUV,209,65000-75000,95,40.0,0.02
+2022-02-01,Arizona,Rivian,Electric,Truck,209,70000-80000,135,50.0,0.02
+2022-02-01,Arizona,Mercedes,Electric,Sedan,104,75000-85000,90,35.0,0.01
+2022-03-01,California,Tesla,Electric,Sedan,13499,75000-85000,75,45.0,0.28
+2022-03-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2022-03-01,California,BYD,Electric,Sedan,7235,45000-55000,60,35.0,0.15
+2022-03-01,California,Nissan,Electric,Hatchback,4859,35000-45000,40,25.0,0.1
+2022-03-01,California,Ford,Electric,Truck,3455,55000-65000,98,40.0,0.07
+2022-03-01,California,Volkswagen,Electric,SUV,3023,45000-55000,77,35.0,0.06
+2022-03-01,California,Hyundai,Electric,SUV,2591,40000-50000,64,30.0,0.05
+2022-03-01,California,Kia,Electric,SUV,2267,38000-48000,64,30.0,0.05
+2022-03-01,California,Audi,Electric,SUV,1943,65000-75000,95,40.0,0.04
+2022-03-01,California,Mercedes,Electric,Sedan,1619,75000-85000,90,35.0,0.03
+2022-03-01,New York,Tesla,Electric,Sedan,9611,75000-85000,75,45.0,0.25
+2022-03-01,New York,Ford,Electric,Truck,2267,55000-65000,98,40.0,0.06
+2022-03-01,New York,Nissan,Electric,Hatchback,1943,35000-45000,40,25.0,0.05
+2022-03-01,New York,Hyundai,Electric,SUV,1727,40000-50000,64,30.0,0.04
+2022-03-01,New York,BYD,Electric,Sedan,1511,45000-55000,60,35.0,0.04
+2022-03-01,New York,Volkswagen,Electric,SUV,1295,45000-55000,77,35.0,0.03
+2022-03-01,New York,Kia,Electric,SUV,1187,38000-48000,64,30.0,0.03
+2022-03-01,New York,Audi,Electric,SUV,971,65000-75000,95,40.0,0.03
+2022-03-01,New York,Mercedes,Electric,Sedan,863,75000-85000,90,35.0,0.02
+2022-03-01,New York,Rivian,Electric,Truck,755,70000-80000,135,50.0,0.02
+2022-03-01,Texas,Tesla,Electric,SUV,7235,85000-95000,100,60.0,0.22
+2022-03-01,Texas,Ford,Electric,Truck,3671,55000-65000,98,40.0,0.11
+2022-03-01,Texas,BYD,Electric,Sedan,2483,45000-55000,60,35.0,0.08
+2022-03-01,Texas,Nissan,Electric,Hatchback,1943,35000-45000,40,25.0,0.06
+2022-03-01,Texas,Hyundai,Electric,SUV,1727,40000-50000,64,30.0,0.05
+2022-03-01,Texas,Volkswagen,Electric,SUV,1511,45000-55000,77,35.0,0.05
+2022-03-01,Texas,Kia,Electric,SUV,1295,38000-48000,64,30.0,0.04
+2022-03-01,Texas,Rivian,Electric,Truck,1187,70000-80000,135,50.0,0.04
+2022-03-01,Texas,Chevrolet,Electric,SUV,971,40000-50000,65,30.0,0.03
+2022-03-01,Texas,Audi,Electric,SUV,863,65000-75000,95,40.0,0.03
+2022-03-01,Florida,Tesla,Electric,Sedan,6047,75000-85000,75,45.0,0.24
+2022-03-01,Florida,BYD,Electric,Sedan,3023,45000-55000,60,35.0,0.12
+2022-03-01,Florida,Nissan,Electric,Hatchback,2051,35000-45000,40,25.0,0.08
+2022-03-01,Florida,Ford,Electric,Truck,1511,55000-65000,98,40.0,0.06
+2022-03-01,Florida,Hyundai,Electric,SUV,1295,40000-50000,64,30.0,0.05
+2022-03-01,Florida,Volkswagen,Electric,SUV,1079,45000-55000,77,35.0,0.04
+2022-03-01,Florida,Kia,Electric,SUV,971,38000-48000,64,30.0,0.04
+2022-03-01,Florida,Chevrolet,Electric,SUV,755,40000-50000,65,30.0,0.03
+2022-03-01,Florida,Audi,Electric,SUV,647,65000-75000,95,40.0,0.03
+2022-03-01,Florida,Mercedes,Electric,Sedan,539,75000-85000,90,35.0,0.02
+2022-03-01,Washington,Tesla,Electric,SUV,3671,85000-95000,100,60.0,0.26
+2022-03-01,Washington,BYD,Electric,Sedan,1835,45000-55000,60,35.0,0.13
+2022-03-01,Washington,Nissan,Electric,Hatchback,1187,35000-45000,40,25.0,0.08
+2022-03-01,Washington,Hyundai,Electric,SUV,971,40000-50000,64,30.0,0.07
+2022-03-01,Washington,Volkswagen,Electric,SUV,863,45000-55000,77,35.0,0.06
+2022-03-01,Washington,Ford,Electric,Truck,755,55000-65000,98,40.0,0.05
+2022-03-01,Washington,Kia,Electric,SUV,647,38000-48000,64,30.0,0.05
+2022-03-01,Washington,Audi,Electric,SUV,539,65000-75000,95,40.0,0.04
+2022-03-01,Washington,Chevrolet,Electric,SUV,431,40000-50000,65,30.0,0.03
+2022-03-01,Washington,Rivian,Electric,Truck,323,70000-80000,135,50.0,0.02
+2022-03-01,Washington,Mercedes,Electric,Sedan,215,75000-85000,90,35.0,0.02
+2022-03-01,Arizona,Tesla,Electric,Sedan,3023,75000-85000,75,45.0,0.25
+2022-03-01,Arizona,BYD,Electric,Sedan,1511,45000-55000,60,35.0,0.12
+2022-03-01,Arizona,Nissan,Electric,Hatchback,971,35000-45000,40,25.0,0.08
+2022-03-01,Arizona,Hyundai,Electric,SUV,755,40000-50000,64,30.0,0.06
+2022-03-01,Arizona,Ford,Electric,Truck,647,55000-65000,98,40.0,0.05
+2022-03-01,Arizona,Volkswagen,Electric,SUV,539,45000-55000,77,35.0,0.04
+2022-03-01,Arizona,Kia,Electric,SUV,431,38000-48000,64,30.0,0.04
+2022-03-01,Arizona,Chevrolet,Electric,SUV,323,40000-50000,65,30.0,0.03
+2022-03-01,Arizona,Audi,Electric,SUV,215,65000-75000,95,40.0,0.02
+2022-03-01,Arizona,Rivian,Electric,Truck,215,70000-80000,135,50.0,0.02
+2022-03-01,Arizona,Mercedes,Electric,Sedan,107,75000-85000,90,35.0,0.01
+2022-04-01,California,Tesla,Electric,Sedan,14503,75000-85000,75,45.0,0.28
+2022-04-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2022-04-01,California,BYD,Electric,Sedan,7774,45000-55000,60,35.0,0.15
+2022-04-01,California,Nissan,Electric,Hatchback,5221,35000-45000,40,25.0,0.1
+2022-04-01,California,Ford,Electric,Truck,3713,55000-65000,98,40.0,0.07
+2022-04-01,California,Volkswagen,Electric,SUV,3248,45000-55000,77,35.0,0.06
+2022-04-01,California,Hyundai,Electric,SUV,2784,40000-50000,64,30.0,0.05
+2022-04-01,California,Kia,Electric,SUV,2436,38000-48000,64,30.0,0.05
+2022-04-01,California,Audi,Electric,SUV,2088,65000-75000,95,40.0,0.04
+2022-04-01,California,Mercedes,Electric,Sedan,1740,75000-85000,90,35.0,0.03
+2022-04-01,New York,Tesla,Electric,Sedan,10326,75000-85000,75,45.0,0.25
+2022-04-01,New York,Ford,Electric,Truck,2436,55000-65000,98,40.0,0.06
+2022-04-01,New York,Nissan,Electric,Hatchback,2088,35000-45000,40,25.0,0.05
+2022-04-01,New York,Hyundai,Electric,SUV,1856,40000-50000,64,30.0,0.04
+2022-04-01,New York,BYD,Electric,Sedan,1624,45000-55000,60,35.0,0.04
+2022-04-01,New York,Volkswagen,Electric,SUV,1392,45000-55000,77,35.0,0.03
+2022-04-01,New York,Kia,Electric,SUV,1276,38000-48000,64,30.0,0.03
+2022-04-01,New York,Audi,Electric,SUV,1044,65000-75000,95,40.0,0.03
+2022-04-01,New York,Mercedes,Electric,Sedan,928,75000-85000,90,35.0,0.02
+2022-04-01,New York,Rivian,Electric,Truck,812,70000-80000,135,50.0,0.02
+2022-04-01,Texas,Tesla,Electric,SUV,7774,85000-95000,100,60.0,0.22
+2022-04-01,Texas,Ford,Electric,Truck,3945,55000-65000,98,40.0,0.11
+2022-04-01,Texas,BYD,Electric,Sedan,2668,45000-55000,60,35.0,0.08
+2022-04-01,Texas,Nissan,Electric,Hatchback,2088,35000-45000,40,25.0,0.06
+2022-04-01,Texas,Hyundai,Electric,SUV,1856,40000-50000,64,30.0,0.05
+2022-04-01,Texas,Volkswagen,Electric,SUV,1624,45000-55000,77,35.0,0.05
+2022-04-01,Texas,Kia,Electric,SUV,1392,38000-48000,64,30.0,0.04
+2022-04-01,Texas,Rivian,Electric,Truck,1276,70000-80000,135,50.0,0.04
+2022-04-01,Texas,Chevrolet,Electric,SUV,1044,40000-50000,65,30.0,0.03
+2022-04-01,Texas,Audi,Electric,SUV,928,65000-75000,95,40.0,0.03
+2022-04-01,Florida,Tesla,Electric,Sedan,6497,75000-85000,75,45.0,0.24
+2022-04-01,Florida,BYD,Electric,Sedan,3248,45000-55000,60,35.0,0.12
+2022-04-01,Florida,Nissan,Electric,Hatchback,2204,35000-45000,40,25.0,0.08
+2022-04-01,Florida,Ford,Electric,Truck,1624,55000-65000,98,40.0,0.06
+2022-04-01,Florida,Hyundai,Electric,SUV,1392,40000-50000,64,30.0,0.05
+2022-04-01,Florida,Volkswagen,Electric,SUV,1160,45000-55000,77,35.0,0.04
+2022-04-01,Florida,Kia,Electric,SUV,1044,38000-48000,64,30.0,0.04
+2022-04-01,Florida,Chevrolet,Electric,SUV,812,40000-50000,65,30.0,0.03
+2022-04-01,Florida,Audi,Electric,SUV,696,65000-75000,95,40.0,0.03
+2022-04-01,Florida,Mercedes,Electric,Sedan,580,75000-85000,90,35.0,0.02
+2022-04-01,Washington,Tesla,Electric,SUV,3945,85000-95000,100,60.0,0.26
+2022-04-01,Washington,BYD,Electric,Sedan,1972,45000-55000,60,35.0,0.13
+2022-04-01,Washington,Nissan,Electric,Hatchback,1276,35000-45000,40,25.0,0.08
+2022-04-01,Washington,Hyundai,Electric,SUV,1044,40000-50000,64,30.0,0.07
+2022-04-01,Washington,Volkswagen,Electric,SUV,928,45000-55000,77,35.0,0.06
+2022-04-01,Washington,Ford,Electric,Truck,812,55000-65000,98,40.0,0.05
+2022-04-01,Washington,Kia,Electric,SUV,696,38000-48000,64,30.0,0.05
+2022-04-01,Washington,Audi,Electric,SUV,580,65000-75000,95,40.0,0.04
+2022-04-01,Washington,Chevrolet,Electric,SUV,464,40000-50000,65,30.0,0.03
+2022-04-01,Washington,Rivian,Electric,Truck,348,70000-80000,135,50.0,0.02
+2022-04-01,Washington,Mercedes,Electric,Sedan,232,75000-85000,90,35.0,0.02
+2022-04-01,Arizona,Tesla,Electric,Sedan,3248,75000-85000,75,45.0,0.25
+2022-04-01,Arizona,BYD,Electric,Sedan,1624,45000-55000,60,35.0,0.12
+2022-04-01,Arizona,Nissan,Electric,Hatchback,1044,35000-45000,40,25.0,0.08
+2022-04-01,Arizona,Hyundai,Electric,SUV,812,40000-50000,64,30.0,0.06
+2022-04-01,Arizona,Ford,Electric,Truck,696,55000-65000,98,40.0,0.05
+2022-04-01,Arizona,Volkswagen,Electric,SUV,580,45000-55000,77,35.0,0.04
+2022-04-01,Arizona,Kia,Electric,SUV,464,38000-48000,64,30.0,0.04
+2022-04-01,Arizona,Chevrolet,Electric,SUV,348,40000-50000,65,30.0,0.03
+2022-04-01,Arizona,Audi,Electric,SUV,232,65000-75000,95,40.0,0.02
+2022-04-01,Arizona,Rivian,Electric,Truck,232,70000-80000,135,50.0,0.02
+2022-04-01,Arizona,Mercedes,Electric,Sedan,116,75000-85000,90,35.0,0.01
+2022-05-01,California,Tesla,Electric,Sedan,14940,75000-85000,75,45.0,0.28
+2022-05-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2022-05-01,California,BYD,Electric,Sedan,8008,45000-55000,60,35.0,0.15
+2022-05-01,California,Nissan,Electric,Hatchback,5378,35000-45000,40,25.0,0.1
+2022-05-01,California,Ford,Electric,Truck,3824,55000-65000,98,40.0,0.07
+2022-05-01,California,Volkswagen,Electric,SUV,3346,45000-55000,77,35.0,0.06
+2022-05-01,California,Hyundai,Electric,SUV,2868,40000-50000,64,30.0,0.05
+2022-05-01,California,Kia,Electric,SUV,2510,38000-48000,64,30.0,0.05
+2022-05-01,California,Audi,Electric,SUV,2151,65000-75000,95,40.0,0.04
+2022-05-01,California,Mercedes,Electric,Sedan,1792,75000-85000,90,35.0,0.03
+2022-05-01,New York,Tesla,Electric,Sedan,10637,75000-85000,75,45.0,0.25
+2022-05-01,New York,Ford,Electric,Truck,2510,55000-65000,98,40.0,0.06
+2022-05-01,New York,Nissan,Electric,Hatchback,2151,35000-45000,40,25.0,0.05
+2022-05-01,New York,Hyundai,Electric,SUV,1912,40000-50000,64,30.0,0.04
+2022-05-01,New York,BYD,Electric,Sedan,1673,45000-55000,60,35.0,0.04
+2022-05-01,New York,Volkswagen,Electric,SUV,1434,45000-55000,77,35.0,0.03
+2022-05-01,New York,Kia,Electric,SUV,1314,38000-48000,64,30.0,0.03
+2022-05-01,New York,Audi,Electric,SUV,1075,65000-75000,95,40.0,0.03
+2022-05-01,New York,Mercedes,Electric,Sedan,956,75000-85000,90,35.0,0.02
+2022-05-01,New York,Rivian,Electric,Truck,836,70000-80000,135,50.0,0.02
+2022-05-01,Texas,Tesla,Electric,SUV,8008,85000-95000,100,60.0,0.22
+2022-05-01,Texas,Ford,Electric,Truck,4063,55000-65000,98,40.0,0.11
+2022-05-01,Texas,BYD,Electric,Sedan,2749,45000-55000,60,35.0,0.08
+2022-05-01,Texas,Nissan,Electric,Hatchback,2151,35000-45000,40,25.0,0.06
+2022-05-01,Texas,Hyundai,Electric,SUV,1912,40000-50000,64,30.0,0.05
+2022-05-01,Texas,Volkswagen,Electric,SUV,1673,45000-55000,77,35.0,0.05
+2022-05-01,Texas,Kia,Electric,SUV,1434,38000-48000,64,30.0,0.04
+2022-05-01,Texas,Rivian,Electric,Truck,1314,70000-80000,135,50.0,0.04
+2022-05-01,Texas,Chevrolet,Electric,SUV,1075,40000-50000,65,30.0,0.03
+2022-05-01,Texas,Audi,Electric,SUV,956,65000-75000,95,40.0,0.03
+2022-05-01,Florida,Tesla,Electric,Sedan,6693,75000-85000,75,45.0,0.24
+2022-05-01,Florida,BYD,Electric,Sedan,3346,45000-55000,60,35.0,0.12
+2022-05-01,Florida,Nissan,Electric,Hatchback,2270,35000-45000,40,25.0,0.08
+2022-05-01,Florida,Ford,Electric,Truck,1673,55000-65000,98,40.0,0.06
+2022-05-01,Florida,Hyundai,Electric,SUV,1434,40000-50000,64,30.0,0.05
+2022-05-01,Florida,Volkswagen,Electric,SUV,1195,45000-55000,77,35.0,0.04
+2022-05-01,Florida,Kia,Electric,SUV,1075,38000-48000,64,30.0,0.04
+2022-05-01,Florida,Chevrolet,Electric,SUV,836,40000-50000,65,30.0,0.03
+2022-05-01,Florida,Audi,Electric,SUV,717,65000-75000,95,40.0,0.03
+2022-05-01,Florida,Mercedes,Electric,Sedan,597,75000-85000,90,35.0,0.02
+2022-05-01,Washington,Tesla,Electric,SUV,4063,85000-95000,100,60.0,0.26
+2022-05-01,Washington,BYD,Electric,Sedan,2031,45000-55000,60,35.0,0.13
+2022-05-01,Washington,Nissan,Electric,Hatchback,1314,35000-45000,40,25.0,0.08
+2022-05-01,Washington,Hyundai,Electric,SUV,1075,40000-50000,64,30.0,0.07
+2022-05-01,Washington,Volkswagen,Electric,SUV,956,45000-55000,77,35.0,0.06
+2022-05-01,Washington,Ford,Electric,Truck,836,55000-65000,98,40.0,0.05
+2022-05-01,Washington,Kia,Electric,SUV,717,38000-48000,64,30.0,0.05
+2022-05-01,Washington,Audi,Electric,SUV,597,65000-75000,95,40.0,0.04
+2022-05-01,Washington,Chevrolet,Electric,SUV,478,40000-50000,65,30.0,0.03
+2022-05-01,Washington,Rivian,Electric,Truck,358,70000-80000,135,50.0,0.02
+2022-05-01,Washington,Mercedes,Electric,Sedan,239,75000-85000,90,35.0,0.02
+2022-05-01,Arizona,Tesla,Electric,Sedan,3346,75000-85000,75,45.0,0.25
+2022-05-01,Arizona,BYD,Electric,Sedan,1673,45000-55000,60,35.0,0.12
+2022-05-01,Arizona,Nissan,Electric,Hatchback,1075,35000-45000,40,25.0,0.08
+2022-05-01,Arizona,Hyundai,Electric,SUV,836,40000-50000,64,30.0,0.06
+2022-05-01,Arizona,Ford,Electric,Truck,717,55000-65000,98,40.0,0.05
+2022-05-01,Arizona,Volkswagen,Electric,SUV,597,45000-55000,77,35.0,0.04
+2022-05-01,Arizona,Kia,Electric,SUV,478,38000-48000,64,30.0,0.04
+2022-05-01,Arizona,Chevrolet,Electric,SUV,358,40000-50000,65,30.0,0.03
+2022-05-01,Arizona,Audi,Electric,SUV,239,65000-75000,95,40.0,0.02
+2022-05-01,Arizona,Rivian,Electric,Truck,239,70000-80000,135,50.0,0.02
+2022-05-01,Arizona,Mercedes,Electric,Sedan,119,75000-85000,90,35.0,0.01
+2022-06-01,California,Tesla,Electric,Sedan,15122,75000-85000,75,45.0,0.28
+2022-06-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2022-06-01,California,BYD,Electric,Sedan,8105,45000-55000,60,35.0,0.15
+2022-06-01,California,Nissan,Electric,Hatchback,5444,35000-45000,40,25.0,0.1
+2022-06-01,California,Ford,Electric,Truck,3871,55000-65000,98,40.0,0.07
+2022-06-01,California,Volkswagen,Electric,SUV,3387,45000-55000,77,35.0,0.06
+2022-06-01,California,Hyundai,Electric,SUV,2903,40000-50000,64,30.0,0.05
+2022-06-01,California,Kia,Electric,SUV,2540,38000-48000,64,30.0,0.05
+2022-06-01,California,Audi,Electric,SUV,2177,65000-75000,95,40.0,0.04
+2022-06-01,California,Mercedes,Electric,Sedan,1814,75000-85000,90,35.0,0.03
+2022-06-01,New York,Tesla,Electric,Sedan,10767,75000-85000,75,45.0,0.25
+2022-06-01,New York,Ford,Electric,Truck,2540,55000-65000,98,40.0,0.06
+2022-06-01,New York,Nissan,Electric,Hatchback,2177,35000-45000,40,25.0,0.05
+2022-06-01,New York,Hyundai,Electric,SUV,1935,40000-50000,64,30.0,0.04
+2022-06-01,New York,BYD,Electric,Sedan,1693,45000-55000,60,35.0,0.04
+2022-06-01,New York,Volkswagen,Electric,SUV,1451,45000-55000,77,35.0,0.03
+2022-06-01,New York,Kia,Electric,SUV,1330,38000-48000,64,30.0,0.03
+2022-06-01,New York,Audi,Electric,SUV,1088,65000-75000,95,40.0,0.03
+2022-06-01,New York,Mercedes,Electric,Sedan,967,75000-85000,90,35.0,0.02
+2022-06-01,New York,Rivian,Electric,Truck,846,70000-80000,135,50.0,0.02
+2022-06-01,Texas,Tesla,Electric,SUV,8105,85000-95000,100,60.0,0.22
+2022-06-01,Texas,Ford,Electric,Truck,4113,55000-65000,98,40.0,0.11
+2022-06-01,Texas,BYD,Electric,Sedan,2782,45000-55000,60,35.0,0.08
+2022-06-01,Texas,Nissan,Electric,Hatchback,2177,35000-45000,40,25.0,0.06
+2022-06-01,Texas,Hyundai,Electric,SUV,1935,40000-50000,64,30.0,0.05
+2022-06-01,Texas,Volkswagen,Electric,SUV,1693,45000-55000,77,35.0,0.05
+2022-06-01,Texas,Kia,Electric,SUV,1451,38000-48000,64,30.0,0.04
+2022-06-01,Texas,Rivian,Electric,Truck,1330,70000-80000,135,50.0,0.04
+2022-06-01,Texas,Chevrolet,Electric,SUV,1088,40000-50000,65,30.0,0.03
+2022-06-01,Texas,Audi,Electric,SUV,967,65000-75000,95,40.0,0.03
+2022-06-01,Florida,Tesla,Electric,Sedan,6774,75000-85000,75,45.0,0.24
+2022-06-01,Florida,BYD,Electric,Sedan,3387,45000-55000,60,35.0,0.12
+2022-06-01,Florida,Nissan,Electric,Hatchback,2298,35000-45000,40,25.0,0.08
+2022-06-01,Florida,Ford,Electric,Truck,1693,55000-65000,98,40.0,0.06
+2022-06-01,Florida,Hyundai,Electric,SUV,1451,40000-50000,64,30.0,0.05
+2022-06-01,Florida,Volkswagen,Electric,SUV,1209,45000-55000,77,35.0,0.04
+2022-06-01,Florida,Kia,Electric,SUV,1088,38000-48000,64,30.0,0.04
+2022-06-01,Florida,Chevrolet,Electric,SUV,846,40000-50000,65,30.0,0.03
+2022-06-01,Florida,Audi,Electric,SUV,725,65000-75000,95,40.0,0.03
+2022-06-01,Florida,Mercedes,Electric,Sedan,604,75000-85000,90,35.0,0.02
+2022-06-01,Washington,Tesla,Electric,SUV,4113,85000-95000,100,60.0,0.26
+2022-06-01,Washington,BYD,Electric,Sedan,2056,45000-55000,60,35.0,0.13
+2022-06-01,Washington,Nissan,Electric,Hatchback,1330,35000-45000,40,25.0,0.08
+2022-06-01,Washington,Hyundai,Electric,SUV,1088,40000-50000,64,30.0,0.07
+2022-06-01,Washington,Volkswagen,Electric,SUV,967,45000-55000,77,35.0,0.06
+2022-06-01,Washington,Ford,Electric,Truck,846,55000-65000,98,40.0,0.05
+2022-06-01,Washington,Kia,Electric,SUV,725,38000-48000,64,30.0,0.05
+2022-06-01,Washington,Audi,Electric,SUV,604,65000-75000,95,40.0,0.04
+2022-06-01,Washington,Chevrolet,Electric,SUV,483,40000-50000,65,30.0,0.03
+2022-06-01,Washington,Rivian,Electric,Truck,362,70000-80000,135,50.0,0.02
+2022-06-01,Washington,Mercedes,Electric,Sedan,241,75000-85000,90,35.0,0.02
+2022-06-01,Arizona,Tesla,Electric,Sedan,3387,75000-85000,75,45.0,0.25
+2022-06-01,Arizona,BYD,Electric,Sedan,1693,45000-55000,60,35.0,0.12
+2022-06-01,Arizona,Nissan,Electric,Hatchback,1088,35000-45000,40,25.0,0.08
+2022-06-01,Arizona,Hyundai,Electric,SUV,846,40000-50000,64,30.0,0.06
+2022-06-01,Arizona,Ford,Electric,Truck,725,55000-65000,98,40.0,0.05
+2022-06-01,Arizona,Volkswagen,Electric,SUV,604,45000-55000,77,35.0,0.04
+2022-06-01,Arizona,Kia,Electric,SUV,483,38000-48000,64,30.0,0.04
+2022-06-01,Arizona,Chevrolet,Electric,SUV,362,40000-50000,65,30.0,0.03
+2022-06-01,Arizona,Audi,Electric,SUV,241,65000-75000,95,40.0,0.02
+2022-06-01,Arizona,Rivian,Electric,Truck,241,70000-80000,135,50.0,0.02
+2022-06-01,Arizona,Mercedes,Electric,Sedan,120,75000-85000,90,35.0,0.01
+2022-07-01,California,Tesla,Electric,Sedan,16034,75000-85000,75,45.0,0.28
+2022-07-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2022-07-01,California,BYD,Electric,Sedan,8594,45000-55000,60,35.0,0.15
+2022-07-01,California,Nissan,Electric,Hatchback,5772,35000-45000,40,25.0,0.1
+2022-07-01,California,Ford,Electric,Truck,4104,55000-65000,98,40.0,0.07
+2022-07-01,California,Volkswagen,Electric,SUV,3591,45000-55000,77,35.0,0.06
+2022-07-01,California,Hyundai,Electric,SUV,3078,40000-50000,64,30.0,0.05
+2022-07-01,California,Kia,Electric,SUV,2693,38000-48000,64,30.0,0.05
+2022-07-01,California,Audi,Electric,SUV,2308,65000-75000,95,40.0,0.04
+2022-07-01,California,Mercedes,Electric,Sedan,1924,75000-85000,90,35.0,0.03
+2022-07-01,New York,Tesla,Electric,Sedan,11416,75000-85000,75,45.0,0.25
+2022-07-01,New York,Ford,Electric,Truck,2693,55000-65000,98,40.0,0.06
+2022-07-01,New York,Nissan,Electric,Hatchback,2308,35000-45000,40,25.0,0.05
+2022-07-01,New York,Hyundai,Electric,SUV,2052,40000-50000,64,30.0,0.04
+2022-07-01,New York,BYD,Electric,Sedan,1795,45000-55000,60,35.0,0.04
+2022-07-01,New York,Volkswagen,Electric,SUV,1539,45000-55000,77,35.0,0.03
+2022-07-01,New York,Kia,Electric,SUV,1411,38000-48000,64,30.0,0.03
+2022-07-01,New York,Audi,Electric,SUV,1154,65000-75000,95,40.0,0.03
+2022-07-01,New York,Mercedes,Electric,Sedan,1026,75000-85000,90,35.0,0.02
+2022-07-01,New York,Rivian,Electric,Truck,897,70000-80000,135,50.0,0.02
+2022-07-01,Texas,Tesla,Electric,SUV,8594,85000-95000,100,60.0,0.22
+2022-07-01,Texas,Ford,Electric,Truck,4361,55000-65000,98,40.0,0.11
+2022-07-01,Texas,BYD,Electric,Sedan,2950,45000-55000,60,35.0,0.08
+2022-07-01,Texas,Nissan,Electric,Hatchback,2308,35000-45000,40,25.0,0.06
+2022-07-01,Texas,Hyundai,Electric,SUV,2052,40000-50000,64,30.0,0.05
+2022-07-01,Texas,Volkswagen,Electric,SUV,1795,45000-55000,77,35.0,0.05
+2022-07-01,Texas,Kia,Electric,SUV,1539,38000-48000,64,30.0,0.04
+2022-07-01,Texas,Rivian,Electric,Truck,1411,70000-80000,135,50.0,0.04
+2022-07-01,Texas,Chevrolet,Electric,SUV,1154,40000-50000,65,30.0,0.03
+2022-07-01,Texas,Audi,Electric,SUV,1026,65000-75000,95,40.0,0.03
+2022-07-01,Florida,Tesla,Electric,Sedan,7183,75000-85000,75,45.0,0.24
+2022-07-01,Florida,BYD,Electric,Sedan,3591,45000-55000,60,35.0,0.12
+2022-07-01,Florida,Nissan,Electric,Hatchback,2437,35000-45000,40,25.0,0.08
+2022-07-01,Florida,Ford,Electric,Truck,1795,55000-65000,98,40.0,0.06
+2022-07-01,Florida,Hyundai,Electric,SUV,1539,40000-50000,64,30.0,0.05
+2022-07-01,Florida,Volkswagen,Electric,SUV,1282,45000-55000,77,35.0,0.04
+2022-07-01,Florida,Kia,Electric,SUV,1154,38000-48000,64,30.0,0.04
+2022-07-01,Florida,Chevrolet,Electric,SUV,897,40000-50000,65,30.0,0.03
+2022-07-01,Florida,Audi,Electric,SUV,769,65000-75000,95,40.0,0.03
+2022-07-01,Florida,Mercedes,Electric,Sedan,641,75000-85000,90,35.0,0.02
+2022-07-01,Washington,Tesla,Electric,SUV,4361,85000-95000,100,60.0,0.26
+2022-07-01,Washington,BYD,Electric,Sedan,2180,45000-55000,60,35.0,0.13
+2022-07-01,Washington,Nissan,Electric,Hatchback,1411,35000-45000,40,25.0,0.08
+2022-07-01,Washington,Hyundai,Electric,SUV,1154,40000-50000,64,30.0,0.07
+2022-07-01,Washington,Volkswagen,Electric,SUV,1026,45000-55000,77,35.0,0.06
+2022-07-01,Washington,Ford,Electric,Truck,897,55000-65000,98,40.0,0.05
+2022-07-01,Washington,Kia,Electric,SUV,769,38000-48000,64,30.0,0.05
+2022-07-01,Washington,Audi,Electric,SUV,641,65000-75000,95,40.0,0.04
+2022-07-01,Washington,Chevrolet,Electric,SUV,513,40000-50000,65,30.0,0.03
+2022-07-01,Washington,Rivian,Electric,Truck,384,70000-80000,135,50.0,0.02
+2022-07-01,Washington,Mercedes,Electric,Sedan,256,75000-85000,90,35.0,0.02
+2022-07-01,Arizona,Tesla,Electric,Sedan,3591,75000-85000,75,45.0,0.25
+2022-07-01,Arizona,BYD,Electric,Sedan,1795,45000-55000,60,35.0,0.12
+2022-07-01,Arizona,Nissan,Electric,Hatchback,1154,35000-45000,40,25.0,0.08
+2022-07-01,Arizona,Hyundai,Electric,SUV,897,40000-50000,64,30.0,0.06
+2022-07-01,Arizona,Ford,Electric,Truck,769,55000-65000,98,40.0,0.05
+2022-07-01,Arizona,Volkswagen,Electric,SUV,641,45000-55000,77,35.0,0.04
+2022-07-01,Arizona,Kia,Electric,SUV,513,38000-48000,64,30.0,0.04
+2022-07-01,Arizona,Chevrolet,Electric,SUV,384,40000-50000,65,30.0,0.03
+2022-07-01,Arizona,Audi,Electric,SUV,256,65000-75000,95,40.0,0.02
+2022-07-01,Arizona,Rivian,Electric,Truck,256,70000-80000,135,50.0,0.02
+2022-07-01,Arizona,Mercedes,Electric,Sedan,128,75000-85000,90,35.0,0.01
+2022-08-01,California,Tesla,Electric,Sedan,17040,75000-85000,75,45.0,0.28
+2022-08-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2022-08-01,California,BYD,Electric,Sedan,9133,45000-55000,60,35.0,0.15
+2022-08-01,California,Nissan,Electric,Hatchback,6134,35000-45000,40,25.0,0.1
+2022-08-01,California,Ford,Electric,Truck,4362,55000-65000,98,40.0,0.07
+2022-08-01,California,Volkswagen,Electric,SUV,3817,45000-55000,77,35.0,0.06
+2022-08-01,California,Hyundai,Electric,SUV,3271,40000-50000,64,30.0,0.05
+2022-08-01,California,Kia,Electric,SUV,2862,38000-48000,64,30.0,0.05
+2022-08-01,California,Audi,Electric,SUV,2453,65000-75000,95,40.0,0.04
+2022-08-01,California,Mercedes,Electric,Sedan,2044,75000-85000,90,35.0,0.03
+2022-08-01,New York,Tesla,Electric,Sedan,12132,75000-85000,75,45.0,0.25
+2022-08-01,New York,Ford,Electric,Truck,2862,55000-65000,98,40.0,0.06
+2022-08-01,New York,Nissan,Electric,Hatchback,2453,35000-45000,40,25.0,0.05
+2022-08-01,New York,Hyundai,Electric,SUV,2181,40000-50000,64,30.0,0.04
+2022-08-01,New York,BYD,Electric,Sedan,1908,45000-55000,60,35.0,0.04
+2022-08-01,New York,Volkswagen,Electric,SUV,1635,45000-55000,77,35.0,0.03
+2022-08-01,New York,Kia,Electric,SUV,1499,38000-48000,64,30.0,0.03
+2022-08-01,New York,Audi,Electric,SUV,1226,65000-75000,95,40.0,0.03
+2022-08-01,New York,Mercedes,Electric,Sedan,1090,75000-85000,90,35.0,0.02
+2022-08-01,New York,Rivian,Electric,Truck,954,70000-80000,135,50.0,0.02
+2022-08-01,Texas,Tesla,Electric,SUV,9133,85000-95000,100,60.0,0.22
+2022-08-01,Texas,Ford,Electric,Truck,4634,55000-65000,98,40.0,0.11
+2022-08-01,Texas,BYD,Electric,Sedan,3135,45000-55000,60,35.0,0.08
+2022-08-01,Texas,Nissan,Electric,Hatchback,2453,35000-45000,40,25.0,0.06
+2022-08-01,Texas,Hyundai,Electric,SUV,2181,40000-50000,64,30.0,0.05
+2022-08-01,Texas,Volkswagen,Electric,SUV,1908,45000-55000,77,35.0,0.05
+2022-08-01,Texas,Kia,Electric,SUV,1635,38000-48000,64,30.0,0.04
+2022-08-01,Texas,Rivian,Electric,Truck,1499,70000-80000,135,50.0,0.04
+2022-08-01,Texas,Chevrolet,Electric,SUV,1226,40000-50000,65,30.0,0.03
+2022-08-01,Texas,Audi,Electric,SUV,1090,65000-75000,95,40.0,0.03
+2022-08-01,Florida,Tesla,Electric,Sedan,7634,75000-85000,75,45.0,0.24
+2022-08-01,Florida,BYD,Electric,Sedan,3817,45000-55000,60,35.0,0.12
+2022-08-01,Florida,Nissan,Electric,Hatchback,2590,35000-45000,40,25.0,0.08
+2022-08-01,Florida,Ford,Electric,Truck,1908,55000-65000,98,40.0,0.06
+2022-08-01,Florida,Hyundai,Electric,SUV,1635,40000-50000,64,30.0,0.05
+2022-08-01,Florida,Volkswagen,Electric,SUV,1363,45000-55000,77,35.0,0.04
+2022-08-01,Florida,Kia,Electric,SUV,1226,38000-48000,64,30.0,0.04
+2022-08-01,Florida,Chevrolet,Electric,SUV,954,40000-50000,65,30.0,0.03
+2022-08-01,Florida,Audi,Electric,SUV,817,65000-75000,95,40.0,0.03
+2022-08-01,Florida,Mercedes,Electric,Sedan,681,75000-85000,90,35.0,0.02
+2022-08-01,Washington,Tesla,Electric,SUV,4634,85000-95000,100,60.0,0.26
+2022-08-01,Washington,BYD,Electric,Sedan,2317,45000-55000,60,35.0,0.13
+2022-08-01,Washington,Nissan,Electric,Hatchback,1499,35000-45000,40,25.0,0.08
+2022-08-01,Washington,Hyundai,Electric,SUV,1226,40000-50000,64,30.0,0.07
+2022-08-01,Washington,Volkswagen,Electric,SUV,1090,45000-55000,77,35.0,0.06
+2022-08-01,Washington,Ford,Electric,Truck,954,55000-65000,98,40.0,0.05
+2022-08-01,Washington,Kia,Electric,SUV,817,38000-48000,64,30.0,0.05
+2022-08-01,Washington,Audi,Electric,SUV,681,65000-75000,95,40.0,0.04
+2022-08-01,Washington,Chevrolet,Electric,SUV,545,40000-50000,65,30.0,0.03
+2022-08-01,Washington,Rivian,Electric,Truck,408,70000-80000,135,50.0,0.02
+2022-08-01,Washington,Mercedes,Electric,Sedan,272,75000-85000,90,35.0,0.02
+2022-08-01,Arizona,Tesla,Electric,Sedan,3817,75000-85000,75,45.0,0.25
+2022-08-01,Arizona,BYD,Electric,Sedan,1908,45000-55000,60,35.0,0.12
+2022-08-01,Arizona,Nissan,Electric,Hatchback,1226,35000-45000,40,25.0,0.08
+2022-08-01,Arizona,Hyundai,Electric,SUV,954,40000-50000,64,30.0,0.06
+2022-08-01,Arizona,Ford,Electric,Truck,817,55000-65000,98,40.0,0.05
+2022-08-01,Arizona,Volkswagen,Electric,SUV,681,45000-55000,77,35.0,0.04
+2022-08-01,Arizona,Kia,Electric,SUV,545,38000-48000,64,30.0,0.04
+2022-08-01,Arizona,Chevrolet,Electric,SUV,408,40000-50000,65,30.0,0.03
+2022-08-01,Arizona,Audi,Electric,SUV,272,65000-75000,95,40.0,0.02
+2022-08-01,Arizona,Rivian,Electric,Truck,272,70000-80000,135,50.0,0.02
+2022-08-01,Arizona,Mercedes,Electric,Sedan,136,75000-85000,90,35.0,0.01
+2022-09-01,California,Tesla,Electric,Sedan,17549,75000-85000,75,45.0,0.28
+2022-09-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2022-09-01,California,BYD,Electric,Sedan,9406,45000-55000,60,35.0,0.15
+2022-09-01,California,Nissan,Electric,Hatchback,6317,35000-45000,40,25.0,0.1
+2022-09-01,California,Ford,Electric,Truck,4492,55000-65000,98,40.0,0.07
+2022-09-01,California,Volkswagen,Electric,SUV,3931,45000-55000,77,35.0,0.06
+2022-09-01,California,Hyundai,Electric,SUV,3369,40000-50000,64,30.0,0.05
+2022-09-01,California,Kia,Electric,SUV,2948,38000-48000,64,30.0,0.05
+2022-09-01,California,Audi,Electric,SUV,2527,65000-75000,95,40.0,0.04
+2022-09-01,California,Mercedes,Electric,Sedan,2105,75000-85000,90,35.0,0.03
+2022-09-01,New York,Tesla,Electric,Sedan,12495,75000-85000,75,45.0,0.25
+2022-09-01,New York,Ford,Electric,Truck,2948,55000-65000,98,40.0,0.06
+2022-09-01,New York,Nissan,Electric,Hatchback,2527,35000-45000,40,25.0,0.05
+2022-09-01,New York,Hyundai,Electric,SUV,2246,40000-50000,64,30.0,0.04
+2022-09-01,New York,BYD,Electric,Sedan,1965,45000-55000,60,35.0,0.04
+2022-09-01,New York,Volkswagen,Electric,SUV,1684,45000-55000,77,35.0,0.03
+2022-09-01,New York,Kia,Electric,SUV,1544,38000-48000,64,30.0,0.03
+2022-09-01,New York,Audi,Electric,SUV,1263,65000-75000,95,40.0,0.03
+2022-09-01,New York,Mercedes,Electric,Sedan,1123,75000-85000,90,35.0,0.02
+2022-09-01,New York,Rivian,Electric,Truck,982,70000-80000,135,50.0,0.02
+2022-09-01,Texas,Tesla,Electric,SUV,9406,85000-95000,100,60.0,0.22
+2022-09-01,Texas,Ford,Electric,Truck,4773,55000-65000,98,40.0,0.11
+2022-09-01,Texas,BYD,Electric,Sedan,3229,45000-55000,60,35.0,0.08
+2022-09-01,Texas,Nissan,Electric,Hatchback,2527,35000-45000,40,25.0,0.06
+2022-09-01,Texas,Hyundai,Electric,SUV,2246,40000-50000,64,30.0,0.05
+2022-09-01,Texas,Volkswagen,Electric,SUV,1965,45000-55000,77,35.0,0.05
+2022-09-01,Texas,Kia,Electric,SUV,1684,38000-48000,64,30.0,0.04
+2022-09-01,Texas,Rivian,Electric,Truck,1544,70000-80000,135,50.0,0.04
+2022-09-01,Texas,Chevrolet,Electric,SUV,1263,40000-50000,65,30.0,0.03
+2022-09-01,Texas,Audi,Electric,SUV,1123,65000-75000,95,40.0,0.03
+2022-09-01,Florida,Tesla,Electric,Sedan,7862,75000-85000,75,45.0,0.24
+2022-09-01,Florida,BYD,Electric,Sedan,3931,45000-55000,60,35.0,0.12
+2022-09-01,Florida,Nissan,Electric,Hatchback,2667,35000-45000,40,25.0,0.08
+2022-09-01,Florida,Ford,Electric,Truck,1965,55000-65000,98,40.0,0.06
+2022-09-01,Florida,Hyundai,Electric,SUV,1684,40000-50000,64,30.0,0.05
+2022-09-01,Florida,Volkswagen,Electric,SUV,1403,45000-55000,77,35.0,0.04
+2022-09-01,Florida,Kia,Electric,SUV,1263,38000-48000,64,30.0,0.04
+2022-09-01,Florida,Chevrolet,Electric,SUV,982,40000-50000,65,30.0,0.03
+2022-09-01,Florida,Audi,Electric,SUV,842,65000-75000,95,40.0,0.03
+2022-09-01,Florida,Mercedes,Electric,Sedan,701,75000-85000,90,35.0,0.02
+2022-09-01,Washington,Tesla,Electric,SUV,4773,85000-95000,100,60.0,0.26
+2022-09-01,Washington,BYD,Electric,Sedan,2386,45000-55000,60,35.0,0.13
+2022-09-01,Washington,Nissan,Electric,Hatchback,1544,35000-45000,40,25.0,0.08
+2022-09-01,Washington,Hyundai,Electric,SUV,1263,40000-50000,64,30.0,0.07
+2022-09-01,Washington,Volkswagen,Electric,SUV,1123,45000-55000,77,35.0,0.06
+2022-09-01,Washington,Ford,Electric,Truck,982,55000-65000,98,40.0,0.05
+2022-09-01,Washington,Kia,Electric,SUV,842,38000-48000,64,30.0,0.05
+2022-09-01,Washington,Audi,Electric,SUV,701,65000-75000,95,40.0,0.04
+2022-09-01,Washington,Chevrolet,Electric,SUV,561,40000-50000,65,30.0,0.03
+2022-09-01,Washington,Rivian,Electric,Truck,421,70000-80000,135,50.0,0.02
+2022-09-01,Washington,Mercedes,Electric,Sedan,280,75000-85000,90,35.0,0.02
+2022-09-01,Arizona,Tesla,Electric,Sedan,3931,75000-85000,75,45.0,0.25
+2022-09-01,Arizona,BYD,Electric,Sedan,1965,45000-55000,60,35.0,0.12
+2022-09-01,Arizona,Nissan,Electric,Hatchback,1263,35000-45000,40,25.0,0.08
+2022-09-01,Arizona,Hyundai,Electric,SUV,982,40000-50000,64,30.0,0.06
+2022-09-01,Arizona,Ford,Electric,Truck,842,55000-65000,98,40.0,0.05
+2022-09-01,Arizona,Volkswagen,Electric,SUV,701,45000-55000,77,35.0,0.04
+2022-09-01,Arizona,Kia,Electric,SUV,561,38000-48000,64,30.0,0.04
+2022-09-01,Arizona,Chevrolet,Electric,SUV,421,40000-50000,65,30.0,0.03
+2022-09-01,Arizona,Audi,Electric,SUV,280,65000-75000,95,40.0,0.02
+2022-09-01,Arizona,Rivian,Electric,Truck,280,70000-80000,135,50.0,0.02
+2022-09-01,Arizona,Mercedes,Electric,Sedan,140,75000-85000,90,35.0,0.01
+2022-10-01,California,Tesla,Electric,Sedan,17998,75000-85000,75,45.0,0.28
+2022-10-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2022-10-01,California,BYD,Electric,Sedan,9647,45000-55000,60,35.0,0.15
+2022-10-01,California,Nissan,Electric,Hatchback,6479,35000-45000,40,25.0,0.1
+2022-10-01,California,Ford,Electric,Truck,4607,55000-65000,98,40.0,0.07
+2022-10-01,California,Volkswagen,Electric,SUV,4031,45000-55000,77,35.0,0.06
+2022-10-01,California,Hyundai,Electric,SUV,3455,40000-50000,64,30.0,0.05
+2022-10-01,California,Kia,Electric,SUV,3023,38000-48000,64,30.0,0.05
+2022-10-01,California,Audi,Electric,SUV,2591,65000-75000,95,40.0,0.04
+2022-10-01,California,Mercedes,Electric,Sedan,2159,75000-85000,90,35.0,0.03
+2022-10-01,New York,Tesla,Electric,Sedan,12814,75000-85000,75,45.0,0.25
+2022-10-01,New York,Ford,Electric,Truck,3023,55000-65000,98,40.0,0.06
+2022-10-01,New York,Nissan,Electric,Hatchback,2591,35000-45000,40,25.0,0.05
+2022-10-01,New York,Hyundai,Electric,SUV,2303,40000-50000,64,30.0,0.04
+2022-10-01,New York,BYD,Electric,Sedan,2015,45000-55000,60,35.0,0.04
+2022-10-01,New York,Volkswagen,Electric,SUV,1727,45000-55000,77,35.0,0.03
+2022-10-01,New York,Kia,Electric,SUV,1583,38000-48000,64,30.0,0.03
+2022-10-01,New York,Audi,Electric,SUV,1295,65000-75000,95,40.0,0.03
+2022-10-01,New York,Mercedes,Electric,Sedan,1151,75000-85000,90,35.0,0.02
+2022-10-01,New York,Rivian,Electric,Truck,1007,70000-80000,135,50.0,0.02
+2022-10-01,Texas,Tesla,Electric,SUV,9647,85000-95000,100,60.0,0.22
+2022-10-01,Texas,Ford,Electric,Truck,4895,55000-65000,98,40.0,0.11
+2022-10-01,Texas,BYD,Electric,Sedan,3311,45000-55000,60,35.0,0.08
+2022-10-01,Texas,Nissan,Electric,Hatchback,2591,35000-45000,40,25.0,0.06
+2022-10-01,Texas,Hyundai,Electric,SUV,2303,40000-50000,64,30.0,0.05
+2022-10-01,Texas,Volkswagen,Electric,SUV,2015,45000-55000,77,35.0,0.05
+2022-10-01,Texas,Kia,Electric,SUV,1727,38000-48000,64,30.0,0.04
+2022-10-01,Texas,Rivian,Electric,Truck,1583,70000-80000,135,50.0,0.04
+2022-10-01,Texas,Chevrolet,Electric,SUV,1295,40000-50000,65,30.0,0.03
+2022-10-01,Texas,Audi,Electric,SUV,1151,65000-75000,95,40.0,0.03
+2022-10-01,Florida,Tesla,Electric,Sedan,8063,75000-85000,75,45.0,0.24
+2022-10-01,Florida,BYD,Electric,Sedan,4031,45000-55000,60,35.0,0.12
+2022-10-01,Florida,Nissan,Electric,Hatchback,2735,35000-45000,40,25.0,0.08
+2022-10-01,Florida,Ford,Electric,Truck,2015,55000-65000,98,40.0,0.06
+2022-10-01,Florida,Hyundai,Electric,SUV,1727,40000-50000,64,30.0,0.05
+2022-10-01,Florida,Volkswagen,Electric,SUV,1439,45000-55000,77,35.0,0.04
+2022-10-01,Florida,Kia,Electric,SUV,1295,38000-48000,64,30.0,0.04
+2022-10-01,Florida,Chevrolet,Electric,SUV,1007,40000-50000,65,30.0,0.03
+2022-10-01,Florida,Audi,Electric,SUV,863,65000-75000,95,40.0,0.03
+2022-10-01,Florida,Mercedes,Electric,Sedan,719,75000-85000,90,35.0,0.02
+2022-10-01,Washington,Tesla,Electric,SUV,4895,85000-95000,100,60.0,0.26
+2022-10-01,Washington,BYD,Electric,Sedan,2447,45000-55000,60,35.0,0.13
+2022-10-01,Washington,Nissan,Electric,Hatchback,1583,35000-45000,40,25.0,0.08
+2022-10-01,Washington,Hyundai,Electric,SUV,1295,40000-50000,64,30.0,0.07
+2022-10-01,Washington,Volkswagen,Electric,SUV,1151,45000-55000,77,35.0,0.06
+2022-10-01,Washington,Ford,Electric,Truck,1007,55000-65000,98,40.0,0.05
+2022-10-01,Washington,Kia,Electric,SUV,863,38000-48000,64,30.0,0.05
+2022-10-01,Washington,Audi,Electric,SUV,719,65000-75000,95,40.0,0.04
+2022-10-01,Washington,Chevrolet,Electric,SUV,575,40000-50000,65,30.0,0.03
+2022-10-01,Washington,Rivian,Electric,Truck,431,70000-80000,135,50.0,0.02
+2022-10-01,Washington,Mercedes,Electric,Sedan,287,75000-85000,90,35.0,0.02
+2022-10-01,Arizona,Tesla,Electric,Sedan,4031,75000-85000,75,45.0,0.25
+2022-10-01,Arizona,BYD,Electric,Sedan,2015,45000-55000,60,35.0,0.12
+2022-10-01,Arizona,Nissan,Electric,Hatchback,1295,35000-45000,40,25.0,0.08
+2022-10-01,Arizona,Hyundai,Electric,SUV,1007,40000-50000,64,30.0,0.06
+2022-10-01,Arizona,Ford,Electric,Truck,863,55000-65000,98,40.0,0.05
+2022-10-01,Arizona,Volkswagen,Electric,SUV,719,45000-55000,77,35.0,0.04
+2022-10-01,Arizona,Kia,Electric,SUV,575,38000-48000,64,30.0,0.04
+2022-10-01,Arizona,Chevrolet,Electric,SUV,431,40000-50000,65,30.0,0.03
+2022-10-01,Arizona,Audi,Electric,SUV,287,65000-75000,95,40.0,0.02
+2022-10-01,Arizona,Rivian,Electric,Truck,287,70000-80000,135,50.0,0.02
+2022-10-01,Arizona,Mercedes,Electric,Sedan,143,75000-85000,90,35.0,0.01
+2022-11-01,California,Tesla,Electric,Sedan,18865,75000-85000,75,45.0,0.28
+2022-11-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2022-11-01,California,BYD,Electric,Sedan,10111,45000-55000,60,35.0,0.15
+2022-11-01,California,Nissan,Electric,Hatchback,6791,35000-45000,40,25.0,0.1
+2022-11-01,California,Ford,Electric,Truck,4829,55000-65000,98,40.0,0.07
+2022-11-01,California,Volkswagen,Electric,SUV,4225,45000-55000,77,35.0,0.06
+2022-11-01,California,Hyundai,Electric,SUV,3622,40000-50000,64,30.0,0.05
+2022-11-01,California,Kia,Electric,SUV,3169,38000-48000,64,30.0,0.05
+2022-11-01,California,Audi,Electric,SUV,2716,65000-75000,95,40.0,0.04
+2022-11-01,California,Mercedes,Electric,Sedan,2263,75000-85000,90,35.0,0.03
+2022-11-01,New York,Tesla,Electric,Sedan,13431,75000-85000,75,45.0,0.25
+2022-11-01,New York,Ford,Electric,Truck,3169,55000-65000,98,40.0,0.06
+2022-11-01,New York,Nissan,Electric,Hatchback,2716,35000-45000,40,25.0,0.05
+2022-11-01,New York,Hyundai,Electric,SUV,2414,40000-50000,64,30.0,0.04
+2022-11-01,New York,BYD,Electric,Sedan,2112,45000-55000,60,35.0,0.04
+2022-11-01,New York,Volkswagen,Electric,SUV,1811,45000-55000,77,35.0,0.03
+2022-11-01,New York,Kia,Electric,SUV,1660,38000-48000,64,30.0,0.03
+2022-11-01,New York,Audi,Electric,SUV,1358,65000-75000,95,40.0,0.03
+2022-11-01,New York,Mercedes,Electric,Sedan,1207,75000-85000,90,35.0,0.02
+2022-11-01,New York,Rivian,Electric,Truck,1056,70000-80000,135,50.0,0.02
+2022-11-01,Texas,Tesla,Electric,SUV,10111,85000-95000,100,60.0,0.22
+2022-11-01,Texas,Ford,Electric,Truck,5131,55000-65000,98,40.0,0.11
+2022-11-01,Texas,BYD,Electric,Sedan,3471,45000-55000,60,35.0,0.08
+2022-11-01,Texas,Nissan,Electric,Hatchback,2716,35000-45000,40,25.0,0.06
+2022-11-01,Texas,Hyundai,Electric,SUV,2414,40000-50000,64,30.0,0.05
+2022-11-01,Texas,Volkswagen,Electric,SUV,2112,45000-55000,77,35.0,0.05
+2022-11-01,Texas,Kia,Electric,SUV,1811,38000-48000,64,30.0,0.04
+2022-11-01,Texas,Rivian,Electric,Truck,1660,70000-80000,135,50.0,0.04
+2022-11-01,Texas,Chevrolet,Electric,SUV,1358,40000-50000,65,30.0,0.03
+2022-11-01,Texas,Audi,Electric,SUV,1207,65000-75000,95,40.0,0.03
+2022-11-01,Florida,Tesla,Electric,Sedan,8451,75000-85000,75,45.0,0.24
+2022-11-01,Florida,BYD,Electric,Sedan,4225,45000-55000,60,35.0,0.12
+2022-11-01,Florida,Nissan,Electric,Hatchback,2867,35000-45000,40,25.0,0.08
+2022-11-01,Florida,Ford,Electric,Truck,2112,55000-65000,98,40.0,0.06
+2022-11-01,Florida,Hyundai,Electric,SUV,1811,40000-50000,64,30.0,0.05
+2022-11-01,Florida,Volkswagen,Electric,SUV,1509,45000-55000,77,35.0,0.04
+2022-11-01,Florida,Kia,Electric,SUV,1358,38000-48000,64,30.0,0.04
+2022-11-01,Florida,Chevrolet,Electric,SUV,1056,40000-50000,65,30.0,0.03
+2022-11-01,Florida,Audi,Electric,SUV,905,65000-75000,95,40.0,0.03
+2022-11-01,Florida,Mercedes,Electric,Sedan,754,75000-85000,90,35.0,0.02
+2022-11-01,Washington,Tesla,Electric,SUV,5131,85000-95000,100,60.0,0.26
+2022-11-01,Washington,BYD,Electric,Sedan,2565,45000-55000,60,35.0,0.13
+2022-11-01,Washington,Nissan,Electric,Hatchback,1660,35000-45000,40,25.0,0.08
+2022-11-01,Washington,Hyundai,Electric,SUV,1358,40000-50000,64,30.0,0.07
+2022-11-01,Washington,Volkswagen,Electric,SUV,1207,45000-55000,77,35.0,0.06
+2022-11-01,Washington,Ford,Electric,Truck,1056,55000-65000,98,40.0,0.05
+2022-11-01,Washington,Kia,Electric,SUV,905,38000-48000,64,30.0,0.05
+2022-11-01,Washington,Audi,Electric,SUV,754,65000-75000,95,40.0,0.04
+2022-11-01,Washington,Chevrolet,Electric,SUV,603,40000-50000,65,30.0,0.03
+2022-11-01,Washington,Rivian,Electric,Truck,452,70000-80000,135,50.0,0.02
+2022-11-01,Washington,Mercedes,Electric,Sedan,301,75000-85000,90,35.0,0.02
+2022-11-01,Arizona,Tesla,Electric,Sedan,4225,75000-85000,75,45.0,0.25
+2022-11-01,Arizona,BYD,Electric,Sedan,2112,45000-55000,60,35.0,0.12
+2022-11-01,Arizona,Nissan,Electric,Hatchback,1358,35000-45000,40,25.0,0.08
+2022-11-01,Arizona,Hyundai,Electric,SUV,1056,40000-50000,64,30.0,0.06
+2022-11-01,Arizona,Ford,Electric,Truck,905,55000-65000,98,40.0,0.05
+2022-11-01,Arizona,Volkswagen,Electric,SUV,754,45000-55000,77,35.0,0.04
+2022-11-01,Arizona,Kia,Electric,SUV,603,38000-48000,64,30.0,0.04
+2022-11-01,Arizona,Chevrolet,Electric,SUV,452,40000-50000,65,30.0,0.03
+2022-11-01,Arizona,Audi,Electric,SUV,301,65000-75000,95,40.0,0.02
+2022-11-01,Arizona,Rivian,Electric,Truck,301,70000-80000,135,50.0,0.02
+2022-11-01,Arizona,Mercedes,Electric,Sedan,150,75000-85000,90,35.0,0.01
+2022-12-01,California,Tesla,Electric,Sedan,19551,75000-85000,75,45.0,0.28
+2022-12-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2022-12-01,California,BYD,Electric,Sedan,10479,45000-55000,60,35.0,0.15
+2022-12-01,California,Nissan,Electric,Hatchback,7038,35000-45000,40,25.0,0.1
+2022-12-01,California,Ford,Electric,Truck,5005,55000-65000,98,40.0,0.07
+2022-12-01,California,Volkswagen,Electric,SUV,4379,45000-55000,77,35.0,0.06
+2022-12-01,California,Hyundai,Electric,SUV,3753,40000-50000,64,30.0,0.05
+2022-12-01,California,Kia,Electric,SUV,3284,38000-48000,64,30.0,0.05
+2022-12-01,California,Audi,Electric,SUV,2815,65000-75000,95,40.0,0.04
+2022-12-01,California,Mercedes,Electric,Sedan,2346,75000-85000,90,35.0,0.03
+2022-12-01,New York,Tesla,Electric,Sedan,13920,75000-85000,75,45.0,0.25
+2022-12-01,New York,Ford,Electric,Truck,3284,55000-65000,98,40.0,0.06
+2022-12-01,New York,Nissan,Electric,Hatchback,2815,35000-45000,40,25.0,0.05
+2022-12-01,New York,Hyundai,Electric,SUV,2502,40000-50000,64,30.0,0.04
+2022-12-01,New York,BYD,Electric,Sedan,2189,45000-55000,60,35.0,0.04
+2022-12-01,New York,Volkswagen,Electric,SUV,1876,45000-55000,77,35.0,0.03
+2022-12-01,New York,Kia,Electric,SUV,1720,38000-48000,64,30.0,0.03
+2022-12-01,New York,Audi,Electric,SUV,1407,65000-75000,95,40.0,0.03
+2022-12-01,New York,Mercedes,Electric,Sedan,1251,75000-85000,90,35.0,0.02
+2022-12-01,New York,Rivian,Electric,Truck,1094,70000-80000,135,50.0,0.02
+2022-12-01,Texas,Tesla,Electric,SUV,10479,85000-95000,100,60.0,0.22
+2022-12-01,Texas,Ford,Electric,Truck,5317,55000-65000,98,40.0,0.11
+2022-12-01,Texas,BYD,Electric,Sedan,3597,45000-55000,60,35.0,0.08
+2022-12-01,Texas,Nissan,Electric,Hatchback,2815,35000-45000,40,25.0,0.06
+2022-12-01,Texas,Hyundai,Electric,SUV,2502,40000-50000,64,30.0,0.05
+2022-12-01,Texas,Volkswagen,Electric,SUV,2189,45000-55000,77,35.0,0.05
+2022-12-01,Texas,Kia,Electric,SUV,1876,38000-48000,64,30.0,0.04
+2022-12-01,Texas,Rivian,Electric,Truck,1720,70000-80000,135,50.0,0.04
+2022-12-01,Texas,Chevrolet,Electric,SUV,1407,40000-50000,65,30.0,0.03
+2022-12-01,Texas,Audi,Electric,SUV,1251,65000-75000,95,40.0,0.03
+2022-12-01,Florida,Tesla,Electric,Sedan,8759,75000-85000,75,45.0,0.24
+2022-12-01,Florida,BYD,Electric,Sedan,4379,45000-55000,60,35.0,0.12
+2022-12-01,Florida,Nissan,Electric,Hatchback,2971,35000-45000,40,25.0,0.08
+2022-12-01,Florida,Ford,Electric,Truck,2189,55000-65000,98,40.0,0.06
+2022-12-01,Florida,Hyundai,Electric,SUV,1876,40000-50000,64,30.0,0.05
+2022-12-01,Florida,Volkswagen,Electric,SUV,1564,45000-55000,77,35.0,0.04
+2022-12-01,Florida,Kia,Electric,SUV,1407,38000-48000,64,30.0,0.04
+2022-12-01,Florida,Chevrolet,Electric,SUV,1094,40000-50000,65,30.0,0.03
+2022-12-01,Florida,Audi,Electric,SUV,938,65000-75000,95,40.0,0.03
+2022-12-01,Florida,Mercedes,Electric,Sedan,782,75000-85000,90,35.0,0.02
+2022-12-01,Washington,Tesla,Electric,SUV,5317,85000-95000,100,60.0,0.26
+2022-12-01,Washington,BYD,Electric,Sedan,2658,45000-55000,60,35.0,0.13
+2022-12-01,Washington,Nissan,Electric,Hatchback,1720,35000-45000,40,25.0,0.08
+2022-12-01,Washington,Hyundai,Electric,SUV,1407,40000-50000,64,30.0,0.07
+2022-12-01,Washington,Volkswagen,Electric,SUV,1251,45000-55000,77,35.0,0.06
+2022-12-01,Washington,Ford,Electric,Truck,1094,55000-65000,98,40.0,0.05
+2022-12-01,Washington,Kia,Electric,SUV,938,38000-48000,64,30.0,0.05
+2022-12-01,Washington,Audi,Electric,SUV,782,65000-75000,95,40.0,0.04
+2022-12-01,Washington,Chevrolet,Electric,SUV,625,40000-50000,65,30.0,0.03
+2022-12-01,Washington,Rivian,Electric,Truck,469,70000-80000,135,50.0,0.02
+2022-12-01,Washington,Mercedes,Electric,Sedan,312,75000-85000,90,35.0,0.02
+2022-12-01,Arizona,Tesla,Electric,Sedan,4379,75000-85000,75,45.0,0.25
+2022-12-01,Arizona,BYD,Electric,Sedan,2189,45000-55000,60,35.0,0.12
+2022-12-01,Arizona,Nissan,Electric,Hatchback,1407,35000-45000,40,25.0,0.08
+2022-12-01,Arizona,Hyundai,Electric,SUV,1094,40000-50000,64,30.0,0.06
+2022-12-01,Arizona,Ford,Electric,Truck,938,55000-65000,98,40.0,0.05
+2022-12-01,Arizona,Volkswagen,Electric,SUV,782,45000-55000,77,35.0,0.04
+2022-12-01,Arizona,Kia,Electric,SUV,625,38000-48000,64,30.0,0.04
+2022-12-01,Arizona,Chevrolet,Electric,SUV,469,40000-50000,65,30.0,0.03
+2022-12-01,Arizona,Audi,Electric,SUV,312,65000-75000,95,40.0,0.02
+2022-12-01,Arizona,Rivian,Electric,Truck,312,70000-80000,135,50.0,0.02
+2022-12-01,Arizona,Mercedes,Electric,Sedan,156,75000-85000,90,35.0,0.01
+2023-01-01,California,Tesla,Electric,Sedan,19919,75000-85000,75,45.0,0.28
+2023-01-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2023-01-01,California,BYD,Electric,Sedan,10676,45000-55000,60,35.0,0.15
+2023-01-01,California,Nissan,Electric,Hatchback,7170,35000-45000,40,25.0,0.1
+2023-01-01,California,Ford,Electric,Truck,5099,55000-65000,98,40.0,0.07
+2023-01-01,California,Volkswagen,Electric,SUV,4461,45000-55000,77,35.0,0.06
+2023-01-01,California,Hyundai,Electric,SUV,3824,40000-50000,64,30.0,0.05
+2023-01-01,California,Kia,Electric,SUV,3346,38000-48000,64,30.0,0.05
+2023-01-01,California,Audi,Electric,SUV,2868,65000-75000,95,40.0,0.04
+2023-01-01,California,Mercedes,Electric,Sedan,2390,75000-85000,90,35.0,0.03
+2023-01-01,New York,Tesla,Electric,Sedan,14182,75000-85000,75,45.0,0.25
+2023-01-01,New York,Ford,Electric,Truck,3346,55000-65000,98,40.0,0.06
+2023-01-01,New York,Nissan,Electric,Hatchback,2868,35000-45000,40,25.0,0.05
+2023-01-01,New York,Hyundai,Electric,SUV,2549,40000-50000,64,30.0,0.04
+2023-01-01,New York,BYD,Electric,Sedan,2230,45000-55000,60,35.0,0.04
+2023-01-01,New York,Volkswagen,Electric,SUV,1912,45000-55000,77,35.0,0.03
+2023-01-01,New York,Kia,Electric,SUV,1752,38000-48000,64,30.0,0.03
+2023-01-01,New York,Audi,Electric,SUV,1434,65000-75000,95,40.0,0.03
+2023-01-01,New York,Mercedes,Electric,Sedan,1274,75000-85000,90,35.0,0.02
+2023-01-01,New York,Rivian,Electric,Truck,1115,70000-80000,135,50.0,0.02
+2023-01-01,Texas,Tesla,Electric,SUV,10676,85000-95000,100,60.0,0.22
+2023-01-01,Texas,Ford,Electric,Truck,5417,55000-65000,98,40.0,0.11
+2023-01-01,Texas,BYD,Electric,Sedan,3665,45000-55000,60,35.0,0.08
+2023-01-01,Texas,Nissan,Electric,Hatchback,2868,35000-45000,40,25.0,0.06
+2023-01-01,Texas,Hyundai,Electric,SUV,2549,40000-50000,64,30.0,0.05
+2023-01-01,Texas,Volkswagen,Electric,SUV,2230,45000-55000,77,35.0,0.05
+2023-01-01,Texas,Kia,Electric,SUV,1912,38000-48000,64,30.0,0.04
+2023-01-01,Texas,Rivian,Electric,Truck,1752,70000-80000,135,50.0,0.04
+2023-01-01,Texas,Chevrolet,Electric,SUV,1434,40000-50000,65,30.0,0.03
+2023-01-01,Texas,Audi,Electric,SUV,1274,65000-75000,95,40.0,0.03
+2023-01-01,Florida,Tesla,Electric,Sedan,8923,75000-85000,75,45.0,0.24
+2023-01-01,Florida,BYD,Electric,Sedan,4461,45000-55000,60,35.0,0.12
+2023-01-01,Florida,Nissan,Electric,Hatchback,3027,35000-45000,40,25.0,0.08
+2023-01-01,Florida,Ford,Electric,Truck,2230,55000-65000,98,40.0,0.06
+2023-01-01,Florida,Hyundai,Electric,SUV,1912,40000-50000,64,30.0,0.05
+2023-01-01,Florida,Volkswagen,Electric,SUV,1593,45000-55000,77,35.0,0.04
+2023-01-01,Florida,Kia,Electric,SUV,1434,38000-48000,64,30.0,0.04
+2023-01-01,Florida,Chevrolet,Electric,SUV,1115,40000-50000,65,30.0,0.03
+2023-01-01,Florida,Audi,Electric,SUV,956,65000-75000,95,40.0,0.03
+2023-01-01,Florida,Mercedes,Electric,Sedan,796,75000-85000,90,35.0,0.02
+2023-01-01,Washington,Tesla,Electric,SUV,5417,85000-95000,100,60.0,0.26
+2023-01-01,Washington,BYD,Electric,Sedan,2708,45000-55000,60,35.0,0.13
+2023-01-01,Washington,Nissan,Electric,Hatchback,1752,35000-45000,40,25.0,0.08
+2023-01-01,Washington,Hyundai,Electric,SUV,1434,40000-50000,64,30.0,0.07
+2023-01-01,Washington,Volkswagen,Electric,SUV,1274,45000-55000,77,35.0,0.06
+2023-01-01,Washington,Ford,Electric,Truck,1115,55000-65000,98,40.0,0.05
+2023-01-01,Washington,Kia,Electric,SUV,956,38000-48000,64,30.0,0.05
+2023-01-01,Washington,Audi,Electric,SUV,796,65000-75000,95,40.0,0.04
+2023-01-01,Washington,Chevrolet,Electric,SUV,637,40000-50000,65,30.0,0.03
+2023-01-01,Washington,Rivian,Electric,Truck,478,70000-80000,135,50.0,0.02
+2023-01-01,Washington,Mercedes,Electric,Sedan,318,75000-85000,90,35.0,0.02
+2023-01-01,Arizona,Tesla,Electric,Sedan,4461,75000-85000,75,45.0,0.25
+2023-01-01,Arizona,BYD,Electric,Sedan,2230,45000-55000,60,35.0,0.12
+2023-01-01,Arizona,Nissan,Electric,Hatchback,1434,35000-45000,40,25.0,0.08
+2023-01-01,Arizona,Hyundai,Electric,SUV,1115,40000-50000,64,30.0,0.06
+2023-01-01,Arizona,Ford,Electric,Truck,956,55000-65000,98,40.0,0.05
+2023-01-01,Arizona,Volkswagen,Electric,SUV,796,45000-55000,77,35.0,0.04
+2023-01-01,Arizona,Kia,Electric,SUV,637,38000-48000,64,30.0,0.04
+2023-01-01,Arizona,Chevrolet,Electric,SUV,478,40000-50000,65,30.0,0.03
+2023-01-01,Arizona,Audi,Electric,SUV,318,65000-75000,95,40.0,0.02
+2023-01-01,Arizona,Rivian,Electric,Truck,318,70000-80000,135,50.0,0.02
+2023-01-01,Arizona,Mercedes,Electric,Sedan,159,75000-85000,90,35.0,0.01
+2023-02-01,California,Tesla,Electric,Sedan,20483,75000-85000,75,45.0,0.28
+2023-02-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2023-02-01,California,BYD,Electric,Sedan,10978,45000-55000,60,35.0,0.15
+2023-02-01,California,Nissan,Electric,Hatchback,7373,35000-45000,40,25.0,0.1
+2023-02-01,California,Ford,Electric,Truck,5243,55000-65000,98,40.0,0.07
+2023-02-01,California,Volkswagen,Electric,SUV,4588,45000-55000,77,35.0,0.06
+2023-02-01,California,Hyundai,Electric,SUV,3932,40000-50000,64,30.0,0.05
+2023-02-01,California,Kia,Electric,SUV,3441,38000-48000,64,30.0,0.05
+2023-02-01,California,Audi,Electric,SUV,2949,65000-75000,95,40.0,0.04
+2023-02-01,California,Mercedes,Electric,Sedan,2457,75000-85000,90,35.0,0.03
+2023-02-01,New York,Tesla,Electric,Sedan,14584,75000-85000,75,45.0,0.25
+2023-02-01,New York,Ford,Electric,Truck,3441,55000-65000,98,40.0,0.06
+2023-02-01,New York,Nissan,Electric,Hatchback,2949,35000-45000,40,25.0,0.05
+2023-02-01,New York,Hyundai,Electric,SUV,2621,40000-50000,64,30.0,0.04
+2023-02-01,New York,BYD,Electric,Sedan,2294,45000-55000,60,35.0,0.04
+2023-02-01,New York,Volkswagen,Electric,SUV,1966,45000-55000,77,35.0,0.03
+2023-02-01,New York,Kia,Electric,SUV,1802,38000-48000,64,30.0,0.03
+2023-02-01,New York,Audi,Electric,SUV,1474,65000-75000,95,40.0,0.03
+2023-02-01,New York,Mercedes,Electric,Sedan,1310,75000-85000,90,35.0,0.02
+2023-02-01,New York,Rivian,Electric,Truck,1147,70000-80000,135,50.0,0.02
+2023-02-01,Texas,Tesla,Electric,SUV,10978,85000-95000,100,60.0,0.22
+2023-02-01,Texas,Ford,Electric,Truck,5571,55000-65000,98,40.0,0.11
+2023-02-01,Texas,BYD,Electric,Sedan,3768,45000-55000,60,35.0,0.08
+2023-02-01,Texas,Nissan,Electric,Hatchback,2949,35000-45000,40,25.0,0.06
+2023-02-01,Texas,Hyundai,Electric,SUV,2621,40000-50000,64,30.0,0.05
+2023-02-01,Texas,Volkswagen,Electric,SUV,2294,45000-55000,77,35.0,0.05
+2023-02-01,Texas,Kia,Electric,SUV,1966,38000-48000,64,30.0,0.04
+2023-02-01,Texas,Rivian,Electric,Truck,1802,70000-80000,135,50.0,0.04
+2023-02-01,Texas,Chevrolet,Electric,SUV,1474,40000-50000,65,30.0,0.03
+2023-02-01,Texas,Audi,Electric,SUV,1310,65000-75000,95,40.0,0.03
+2023-02-01,Florida,Tesla,Electric,Sedan,9176,75000-85000,75,45.0,0.24
+2023-02-01,Florida,BYD,Electric,Sedan,4588,45000-55000,60,35.0,0.12
+2023-02-01,Florida,Nissan,Electric,Hatchback,3113,35000-45000,40,25.0,0.08
+2023-02-01,Florida,Ford,Electric,Truck,2294,55000-65000,98,40.0,0.06
+2023-02-01,Florida,Hyundai,Electric,SUV,1966,40000-50000,64,30.0,0.05
+2023-02-01,Florida,Volkswagen,Electric,SUV,1638,45000-55000,77,35.0,0.04
+2023-02-01,Florida,Kia,Electric,SUV,1474,38000-48000,64,30.0,0.04
+2023-02-01,Florida,Chevrolet,Electric,SUV,1147,40000-50000,65,30.0,0.03
+2023-02-01,Florida,Audi,Electric,SUV,983,65000-75000,95,40.0,0.03
+2023-02-01,Florida,Mercedes,Electric,Sedan,819,75000-85000,90,35.0,0.02
+2023-02-01,Washington,Tesla,Electric,SUV,5571,85000-95000,100,60.0,0.26
+2023-02-01,Washington,BYD,Electric,Sedan,2785,45000-55000,60,35.0,0.13
+2023-02-01,Washington,Nissan,Electric,Hatchback,1802,35000-45000,40,25.0,0.08
+2023-02-01,Washington,Hyundai,Electric,SUV,1474,40000-50000,64,30.0,0.07
+2023-02-01,Washington,Volkswagen,Electric,SUV,1310,45000-55000,77,35.0,0.06
+2023-02-01,Washington,Ford,Electric,Truck,1147,55000-65000,98,40.0,0.05
+2023-02-01,Washington,Kia,Electric,SUV,983,38000-48000,64,30.0,0.05
+2023-02-01,Washington,Audi,Electric,SUV,819,65000-75000,95,40.0,0.04
+2023-02-01,Washington,Chevrolet,Electric,SUV,655,40000-50000,65,30.0,0.03
+2023-02-01,Washington,Rivian,Electric,Truck,491,70000-80000,135,50.0,0.02
+2023-02-01,Washington,Mercedes,Electric,Sedan,327,75000-85000,90,35.0,0.02
+2023-02-01,Arizona,Tesla,Electric,Sedan,4588,75000-85000,75,45.0,0.25
+2023-02-01,Arizona,BYD,Electric,Sedan,2294,45000-55000,60,35.0,0.12
+2023-02-01,Arizona,Nissan,Electric,Hatchback,1474,35000-45000,40,25.0,0.08
+2023-02-01,Arizona,Hyundai,Electric,SUV,1147,40000-50000,64,30.0,0.06
+2023-02-01,Arizona,Ford,Electric,Truck,983,55000-65000,98,40.0,0.05
+2023-02-01,Arizona,Volkswagen,Electric,SUV,819,45000-55000,77,35.0,0.04
+2023-02-01,Arizona,Kia,Electric,SUV,655,38000-48000,64,30.0,0.04
+2023-02-01,Arizona,Chevrolet,Electric,SUV,491,40000-50000,65,30.0,0.03
+2023-02-01,Arizona,Audi,Electric,SUV,327,65000-75000,95,40.0,0.02
+2023-02-01,Arizona,Rivian,Electric,Truck,327,70000-80000,135,50.0,0.02
+2023-02-01,Arizona,Mercedes,Electric,Sedan,163,75000-85000,90,35.0,0.01
+2023-03-01,California,Tesla,Electric,Sedan,21364,75000-85000,75,45.0,0.28
+2023-03-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2023-03-01,California,BYD,Electric,Sedan,11451,45000-55000,60,35.0,0.15
+2023-03-01,California,Nissan,Electric,Hatchback,7691,35000-45000,40,25.0,0.1
+2023-03-01,California,Ford,Electric,Truck,5469,55000-65000,98,40.0,0.07
+2023-03-01,California,Volkswagen,Electric,SUV,4785,45000-55000,77,35.0,0.06
+2023-03-01,California,Hyundai,Electric,SUV,4102,40000-50000,64,30.0,0.05
+2023-03-01,California,Kia,Electric,SUV,3589,38000-48000,64,30.0,0.05
+2023-03-01,California,Audi,Electric,SUV,3076,65000-75000,95,40.0,0.04
+2023-03-01,California,Mercedes,Electric,Sedan,2563,75000-85000,90,35.0,0.03
+2023-03-01,New York,Tesla,Electric,Sedan,15211,75000-85000,75,45.0,0.25
+2023-03-01,New York,Ford,Electric,Truck,3589,55000-65000,98,40.0,0.06
+2023-03-01,New York,Nissan,Electric,Hatchback,3076,35000-45000,40,25.0,0.05
+2023-03-01,New York,Hyundai,Electric,SUV,2734,40000-50000,64,30.0,0.04
+2023-03-01,New York,BYD,Electric,Sedan,2392,45000-55000,60,35.0,0.04
+2023-03-01,New York,Volkswagen,Electric,SUV,2051,45000-55000,77,35.0,0.03
+2023-03-01,New York,Kia,Electric,SUV,1880,38000-48000,64,30.0,0.03
+2023-03-01,New York,Audi,Electric,SUV,1538,65000-75000,95,40.0,0.03
+2023-03-01,New York,Mercedes,Electric,Sedan,1367,75000-85000,90,35.0,0.02
+2023-03-01,New York,Rivian,Electric,Truck,1196,70000-80000,135,50.0,0.02
+2023-03-01,Texas,Tesla,Electric,SUV,11451,85000-95000,100,60.0,0.22
+2023-03-01,Texas,Ford,Electric,Truck,5811,55000-65000,98,40.0,0.11
+2023-03-01,Texas,BYD,Electric,Sedan,3931,45000-55000,60,35.0,0.08
+2023-03-01,Texas,Nissan,Electric,Hatchback,3076,35000-45000,40,25.0,0.06
+2023-03-01,Texas,Hyundai,Electric,SUV,2734,40000-50000,64,30.0,0.05
+2023-03-01,Texas,Volkswagen,Electric,SUV,2392,45000-55000,77,35.0,0.05
+2023-03-01,Texas,Kia,Electric,SUV,2051,38000-48000,64,30.0,0.04
+2023-03-01,Texas,Rivian,Electric,Truck,1880,70000-80000,135,50.0,0.04
+2023-03-01,Texas,Chevrolet,Electric,SUV,1538,40000-50000,65,30.0,0.03
+2023-03-01,Texas,Audi,Electric,SUV,1367,65000-75000,95,40.0,0.03
+2023-03-01,Florida,Tesla,Electric,Sedan,9571,75000-85000,75,45.0,0.24
+2023-03-01,Florida,BYD,Electric,Sedan,4785,45000-55000,60,35.0,0.12
+2023-03-01,Florida,Nissan,Electric,Hatchback,3247,35000-45000,40,25.0,0.08
+2023-03-01,Florida,Ford,Electric,Truck,2392,55000-65000,98,40.0,0.06
+2023-03-01,Florida,Hyundai,Electric,SUV,2051,40000-50000,64,30.0,0.05
+2023-03-01,Florida,Volkswagen,Electric,SUV,1709,45000-55000,77,35.0,0.04
+2023-03-01,Florida,Kia,Electric,SUV,1538,38000-48000,64,30.0,0.04
+2023-03-01,Florida,Chevrolet,Electric,SUV,1196,40000-50000,65,30.0,0.03
+2023-03-01,Florida,Audi,Electric,SUV,1025,65000-75000,95,40.0,0.03
+2023-03-01,Florida,Mercedes,Electric,Sedan,854,75000-85000,90,35.0,0.02
+2023-03-01,Washington,Tesla,Electric,SUV,5811,85000-95000,100,60.0,0.26
+2023-03-01,Washington,BYD,Electric,Sedan,2905,45000-55000,60,35.0,0.13
+2023-03-01,Washington,Nissan,Electric,Hatchback,1880,35000-45000,40,25.0,0.08
+2023-03-01,Washington,Hyundai,Electric,SUV,1538,40000-50000,64,30.0,0.07
+2023-03-01,Washington,Volkswagen,Electric,SUV,1367,45000-55000,77,35.0,0.06
+2023-03-01,Washington,Ford,Electric,Truck,1196,55000-65000,98,40.0,0.05
+2023-03-01,Washington,Kia,Electric,SUV,1025,38000-48000,64,30.0,0.05
+2023-03-01,Washington,Audi,Electric,SUV,854,65000-75000,95,40.0,0.04
+2023-03-01,Washington,Chevrolet,Electric,SUV,683,40000-50000,65,30.0,0.03
+2023-03-01,Washington,Rivian,Electric,Truck,512,70000-80000,135,50.0,0.02
+2023-03-01,Washington,Mercedes,Electric,Sedan,341,75000-85000,90,35.0,0.02
+2023-03-01,Arizona,Tesla,Electric,Sedan,4785,75000-85000,75,45.0,0.25
+2023-03-01,Arizona,BYD,Electric,Sedan,2392,45000-55000,60,35.0,0.12
+2023-03-01,Arizona,Nissan,Electric,Hatchback,1538,35000-45000,40,25.0,0.08
+2023-03-01,Arizona,Hyundai,Electric,SUV,1196,40000-50000,64,30.0,0.06
+2023-03-01,Arizona,Ford,Electric,Truck,1025,55000-65000,98,40.0,0.05
+2023-03-01,Arizona,Volkswagen,Electric,SUV,854,45000-55000,77,35.0,0.04
+2023-03-01,Arizona,Kia,Electric,SUV,683,38000-48000,64,30.0,0.04
+2023-03-01,Arizona,Chevrolet,Electric,SUV,512,40000-50000,65,30.0,0.03
+2023-03-01,Arizona,Audi,Electric,SUV,341,65000-75000,95,40.0,0.02
+2023-03-01,Arizona,Rivian,Electric,Truck,341,70000-80000,135,50.0,0.02
+2023-03-01,Arizona,Mercedes,Electric,Sedan,170,75000-85000,90,35.0,0.01
+2023-04-01,California,Tesla,Electric,Sedan,22006,75000-85000,75,45.0,0.28
+2023-04-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2023-04-01,California,BYD,Electric,Sedan,11795,45000-55000,60,35.0,0.15
+2023-04-01,California,Nissan,Electric,Hatchback,7922,35000-45000,40,25.0,0.1
+2023-04-01,California,Ford,Electric,Truck,5633,55000-65000,98,40.0,0.07
+2023-04-01,California,Volkswagen,Electric,SUV,4929,45000-55000,77,35.0,0.06
+2023-04-01,California,Hyundai,Electric,SUV,4225,40000-50000,64,30.0,0.05
+2023-04-01,California,Kia,Electric,SUV,3697,38000-48000,64,30.0,0.05
+2023-04-01,California,Audi,Electric,SUV,3168,65000-75000,95,40.0,0.04
+2023-04-01,California,Mercedes,Electric,Sedan,2640,75000-85000,90,35.0,0.03
+2023-04-01,New York,Tesla,Electric,Sedan,15668,75000-85000,75,45.0,0.25
+2023-04-01,New York,Ford,Electric,Truck,3697,55000-65000,98,40.0,0.06
+2023-04-01,New York,Nissan,Electric,Hatchback,3168,35000-45000,40,25.0,0.05
+2023-04-01,New York,Hyundai,Electric,SUV,2816,40000-50000,64,30.0,0.04
+2023-04-01,New York,BYD,Electric,Sedan,2464,45000-55000,60,35.0,0.04
+2023-04-01,New York,Volkswagen,Electric,SUV,2112,45000-55000,77,35.0,0.03
+2023-04-01,New York,Kia,Electric,SUV,1936,38000-48000,64,30.0,0.03
+2023-04-01,New York,Audi,Electric,SUV,1584,65000-75000,95,40.0,0.03
+2023-04-01,New York,Mercedes,Electric,Sedan,1408,75000-85000,90,35.0,0.02
+2023-04-01,New York,Rivian,Electric,Truck,1232,70000-80000,135,50.0,0.02
+2023-04-01,Texas,Tesla,Electric,SUV,11795,85000-95000,100,60.0,0.22
+2023-04-01,Texas,Ford,Electric,Truck,5985,55000-65000,98,40.0,0.11
+2023-04-01,Texas,BYD,Electric,Sedan,4049,45000-55000,60,35.0,0.08
+2023-04-01,Texas,Nissan,Electric,Hatchback,3168,35000-45000,40,25.0,0.06
+2023-04-01,Texas,Hyundai,Electric,SUV,2816,40000-50000,64,30.0,0.05
+2023-04-01,Texas,Volkswagen,Electric,SUV,2464,45000-55000,77,35.0,0.05
+2023-04-01,Texas,Kia,Electric,SUV,2112,38000-48000,64,30.0,0.04
+2023-04-01,Texas,Rivian,Electric,Truck,1936,70000-80000,135,50.0,0.04
+2023-04-01,Texas,Chevrolet,Electric,SUV,1584,40000-50000,65,30.0,0.03
+2023-04-01,Texas,Audi,Electric,SUV,1408,65000-75000,95,40.0,0.03
+2023-04-01,Florida,Tesla,Electric,Sedan,9859,75000-85000,75,45.0,0.24
+2023-04-01,Florida,BYD,Electric,Sedan,4929,45000-55000,60,35.0,0.12
+2023-04-01,Florida,Nissan,Electric,Hatchback,3345,35000-45000,40,25.0,0.08
+2023-04-01,Florida,Ford,Electric,Truck,2464,55000-65000,98,40.0,0.06
+2023-04-01,Florida,Hyundai,Electric,SUV,2112,40000-50000,64,30.0,0.05
+2023-04-01,Florida,Volkswagen,Electric,SUV,1760,45000-55000,77,35.0,0.04
+2023-04-01,Florida,Kia,Electric,SUV,1584,38000-48000,64,30.0,0.04
+2023-04-01,Florida,Chevrolet,Electric,SUV,1232,40000-50000,65,30.0,0.03
+2023-04-01,Florida,Audi,Electric,SUV,1056,65000-75000,95,40.0,0.03
+2023-04-01,Florida,Mercedes,Electric,Sedan,880,75000-85000,90,35.0,0.02
+2023-04-01,Washington,Tesla,Electric,SUV,5985,85000-95000,100,60.0,0.26
+2023-04-01,Washington,BYD,Electric,Sedan,2992,45000-55000,60,35.0,0.13
+2023-04-01,Washington,Nissan,Electric,Hatchback,1936,35000-45000,40,25.0,0.08
+2023-04-01,Washington,Hyundai,Electric,SUV,1584,40000-50000,64,30.0,0.07
+2023-04-01,Washington,Volkswagen,Electric,SUV,1408,45000-55000,77,35.0,0.06
+2023-04-01,Washington,Ford,Electric,Truck,1232,55000-65000,98,40.0,0.05
+2023-04-01,Washington,Kia,Electric,SUV,1056,38000-48000,64,30.0,0.05
+2023-04-01,Washington,Audi,Electric,SUV,880,65000-75000,95,40.0,0.04
+2023-04-01,Washington,Chevrolet,Electric,SUV,704,40000-50000,65,30.0,0.03
+2023-04-01,Washington,Rivian,Electric,Truck,528,70000-80000,135,50.0,0.02
+2023-04-01,Washington,Mercedes,Electric,Sedan,352,75000-85000,90,35.0,0.02
+2023-04-01,Arizona,Tesla,Electric,Sedan,4929,75000-85000,75,45.0,0.25
+2023-04-01,Arizona,BYD,Electric,Sedan,2464,45000-55000,60,35.0,0.12
+2023-04-01,Arizona,Nissan,Electric,Hatchback,1584,35000-45000,40,25.0,0.08
+2023-04-01,Arizona,Hyundai,Electric,SUV,1232,40000-50000,64,30.0,0.06
+2023-04-01,Arizona,Ford,Electric,Truck,1056,55000-65000,98,40.0,0.05
+2023-04-01,Arizona,Volkswagen,Electric,SUV,880,45000-55000,77,35.0,0.04
+2023-04-01,Arizona,Kia,Electric,SUV,704,38000-48000,64,30.0,0.04
+2023-04-01,Arizona,Chevrolet,Electric,SUV,528,40000-50000,65,30.0,0.03
+2023-04-01,Arizona,Audi,Electric,SUV,352,65000-75000,95,40.0,0.02
+2023-04-01,Arizona,Rivian,Electric,Truck,352,70000-80000,135,50.0,0.02
+2023-04-01,Arizona,Mercedes,Electric,Sedan,176,75000-85000,90,35.0,0.01
+2023-05-01,California,Tesla,Electric,Sedan,22357,75000-85000,75,45.0,0.28
+2023-05-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2023-05-01,California,BYD,Electric,Sedan,11983,45000-55000,60,35.0,0.15
+2023-05-01,California,Nissan,Electric,Hatchback,8048,35000-45000,40,25.0,0.1
+2023-05-01,California,Ford,Electric,Truck,5723,55000-65000,98,40.0,0.07
+2023-05-01,California,Volkswagen,Electric,SUV,5008,45000-55000,77,35.0,0.06
+2023-05-01,California,Hyundai,Electric,SUV,4292,40000-50000,64,30.0,0.05
+2023-05-01,California,Kia,Electric,SUV,3756,38000-48000,64,30.0,0.05
+2023-05-01,California,Audi,Electric,SUV,3219,65000-75000,95,40.0,0.04
+2023-05-01,California,Mercedes,Electric,Sedan,2682,75000-85000,90,35.0,0.03
+2023-05-01,New York,Tesla,Electric,Sedan,15918,75000-85000,75,45.0,0.25
+2023-05-01,New York,Ford,Electric,Truck,3756,55000-65000,98,40.0,0.06
+2023-05-01,New York,Nissan,Electric,Hatchback,3219,35000-45000,40,25.0,0.05
+2023-05-01,New York,Hyundai,Electric,SUV,2861,40000-50000,64,30.0,0.04
+2023-05-01,New York,BYD,Electric,Sedan,2504,45000-55000,60,35.0,0.04
+2023-05-01,New York,Volkswagen,Electric,SUV,2146,45000-55000,77,35.0,0.03
+2023-05-01,New York,Kia,Electric,SUV,1967,38000-48000,64,30.0,0.03
+2023-05-01,New York,Audi,Electric,SUV,1609,65000-75000,95,40.0,0.03
+2023-05-01,New York,Mercedes,Electric,Sedan,1430,75000-85000,90,35.0,0.02
+2023-05-01,New York,Rivian,Electric,Truck,1252,70000-80000,135,50.0,0.02
+2023-05-01,Texas,Tesla,Electric,SUV,11983,85000-95000,100,60.0,0.22
+2023-05-01,Texas,Ford,Electric,Truck,6081,55000-65000,98,40.0,0.11
+2023-05-01,Texas,BYD,Electric,Sedan,4113,45000-55000,60,35.0,0.08
+2023-05-01,Texas,Nissan,Electric,Hatchback,3219,35000-45000,40,25.0,0.06
+2023-05-01,Texas,Hyundai,Electric,SUV,2861,40000-50000,64,30.0,0.05
+2023-05-01,Texas,Volkswagen,Electric,SUV,2504,45000-55000,77,35.0,0.05
+2023-05-01,Texas,Kia,Electric,SUV,2146,38000-48000,64,30.0,0.04
+2023-05-01,Texas,Rivian,Electric,Truck,1967,70000-80000,135,50.0,0.04
+2023-05-01,Texas,Chevrolet,Electric,SUV,1609,40000-50000,65,30.0,0.03
+2023-05-01,Texas,Audi,Electric,SUV,1430,65000-75000,95,40.0,0.03
+2023-05-01,Florida,Tesla,Electric,Sedan,10016,75000-85000,75,45.0,0.24
+2023-05-01,Florida,BYD,Electric,Sedan,5008,45000-55000,60,35.0,0.12
+2023-05-01,Florida,Nissan,Electric,Hatchback,3398,35000-45000,40,25.0,0.08
+2023-05-01,Florida,Ford,Electric,Truck,2504,55000-65000,98,40.0,0.06
+2023-05-01,Florida,Hyundai,Electric,SUV,2146,40000-50000,64,30.0,0.05
+2023-05-01,Florida,Volkswagen,Electric,SUV,1788,45000-55000,77,35.0,0.04
+2023-05-01,Florida,Kia,Electric,SUV,1609,38000-48000,64,30.0,0.04
+2023-05-01,Florida,Chevrolet,Electric,SUV,1252,40000-50000,65,30.0,0.03
+2023-05-01,Florida,Audi,Electric,SUV,1073,65000-75000,95,40.0,0.03
+2023-05-01,Florida,Mercedes,Electric,Sedan,894,75000-85000,90,35.0,0.02
+2023-05-01,Washington,Tesla,Electric,SUV,6081,85000-95000,100,60.0,0.26
+2023-05-01,Washington,BYD,Electric,Sedan,3040,45000-55000,60,35.0,0.13
+2023-05-01,Washington,Nissan,Electric,Hatchback,1967,35000-45000,40,25.0,0.08
+2023-05-01,Washington,Hyundai,Electric,SUV,1609,40000-50000,64,30.0,0.07
+2023-05-01,Washington,Volkswagen,Electric,SUV,1430,45000-55000,77,35.0,0.06
+2023-05-01,Washington,Ford,Electric,Truck,1252,55000-65000,98,40.0,0.05
+2023-05-01,Washington,Kia,Electric,SUV,1073,38000-48000,64,30.0,0.05
+2023-05-01,Washington,Audi,Electric,SUV,894,65000-75000,95,40.0,0.04
+2023-05-01,Washington,Chevrolet,Electric,SUV,715,40000-50000,65,30.0,0.03
+2023-05-01,Washington,Rivian,Electric,Truck,536,70000-80000,135,50.0,0.02
+2023-05-01,Washington,Mercedes,Electric,Sedan,357,75000-85000,90,35.0,0.02
+2023-05-01,Arizona,Tesla,Electric,Sedan,5008,75000-85000,75,45.0,0.25
+2023-05-01,Arizona,BYD,Electric,Sedan,2504,45000-55000,60,35.0,0.12
+2023-05-01,Arizona,Nissan,Electric,Hatchback,1609,35000-45000,40,25.0,0.08
+2023-05-01,Arizona,Hyundai,Electric,SUV,1252,40000-50000,64,30.0,0.06
+2023-05-01,Arizona,Ford,Electric,Truck,1073,55000-65000,98,40.0,0.05
+2023-05-01,Arizona,Volkswagen,Electric,SUV,894,45000-55000,77,35.0,0.04
+2023-05-01,Arizona,Kia,Electric,SUV,715,38000-48000,64,30.0,0.04
+2023-05-01,Arizona,Chevrolet,Electric,SUV,536,40000-50000,65,30.0,0.03
+2023-05-01,Arizona,Audi,Electric,SUV,357,65000-75000,95,40.0,0.02
+2023-05-01,Arizona,Rivian,Electric,Truck,357,70000-80000,135,50.0,0.02
+2023-05-01,Arizona,Mercedes,Electric,Sedan,178,75000-85000,90,35.0,0.01
+2023-06-01,California,Tesla,Electric,Sedan,23182,75000-85000,75,45.0,0.28
+2023-06-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2023-06-01,California,BYD,Electric,Sedan,12425,45000-55000,60,35.0,0.15
+2023-06-01,California,Nissan,Electric,Hatchback,8345,35000-45000,40,25.0,0.1
+2023-06-01,California,Ford,Electric,Truck,5934,55000-65000,98,40.0,0.07
+2023-06-01,California,Volkswagen,Electric,SUV,5192,45000-55000,77,35.0,0.06
+2023-06-01,California,Hyundai,Electric,SUV,4451,40000-50000,64,30.0,0.05
+2023-06-01,California,Kia,Electric,SUV,3894,38000-48000,64,30.0,0.05
+2023-06-01,California,Audi,Electric,SUV,3338,65000-75000,95,40.0,0.04
+2023-06-01,California,Mercedes,Electric,Sedan,2781,75000-85000,90,35.0,0.03
+2023-06-01,New York,Tesla,Electric,Sedan,16505,75000-85000,75,45.0,0.25
+2023-06-01,New York,Ford,Electric,Truck,3894,55000-65000,98,40.0,0.06
+2023-06-01,New York,Nissan,Electric,Hatchback,3338,35000-45000,40,25.0,0.05
+2023-06-01,New York,Hyundai,Electric,SUV,2967,40000-50000,64,30.0,0.04
+2023-06-01,New York,BYD,Electric,Sedan,2596,45000-55000,60,35.0,0.04
+2023-06-01,New York,Volkswagen,Electric,SUV,2225,45000-55000,77,35.0,0.03
+2023-06-01,New York,Kia,Electric,SUV,2040,38000-48000,64,30.0,0.03
+2023-06-01,New York,Audi,Electric,SUV,1669,65000-75000,95,40.0,0.03
+2023-06-01,New York,Mercedes,Electric,Sedan,1483,75000-85000,90,35.0,0.02
+2023-06-01,New York,Rivian,Electric,Truck,1298,70000-80000,135,50.0,0.02
+2023-06-01,Texas,Tesla,Electric,SUV,12425,85000-95000,100,60.0,0.22
+2023-06-01,Texas,Ford,Electric,Truck,6305,55000-65000,98,40.0,0.11
+2023-06-01,Texas,BYD,Electric,Sedan,4265,45000-55000,60,35.0,0.08
+2023-06-01,Texas,Nissan,Electric,Hatchback,3338,35000-45000,40,25.0,0.06
+2023-06-01,Texas,Hyundai,Electric,SUV,2967,40000-50000,64,30.0,0.05
+2023-06-01,Texas,Volkswagen,Electric,SUV,2596,45000-55000,77,35.0,0.05
+2023-06-01,Texas,Kia,Electric,SUV,2225,38000-48000,64,30.0,0.04
+2023-06-01,Texas,Rivian,Electric,Truck,2040,70000-80000,135,50.0,0.04
+2023-06-01,Texas,Chevrolet,Electric,SUV,1669,40000-50000,65,30.0,0.03
+2023-06-01,Texas,Audi,Electric,SUV,1483,65000-75000,95,40.0,0.03
+2023-06-01,Florida,Tesla,Electric,Sedan,10385,75000-85000,75,45.0,0.24
+2023-06-01,Florida,BYD,Electric,Sedan,5192,45000-55000,60,35.0,0.12
+2023-06-01,Florida,Nissan,Electric,Hatchback,3523,35000-45000,40,25.0,0.08
+2023-06-01,Florida,Ford,Electric,Truck,2596,55000-65000,98,40.0,0.06
+2023-06-01,Florida,Hyundai,Electric,SUV,2225,40000-50000,64,30.0,0.05
+2023-06-01,Florida,Volkswagen,Electric,SUV,1854,45000-55000,77,35.0,0.04
+2023-06-01,Florida,Kia,Electric,SUV,1669,38000-48000,64,30.0,0.04
+2023-06-01,Florida,Chevrolet,Electric,SUV,1298,40000-50000,65,30.0,0.03
+2023-06-01,Florida,Audi,Electric,SUV,1112,65000-75000,95,40.0,0.03
+2023-06-01,Florida,Mercedes,Electric,Sedan,927,75000-85000,90,35.0,0.02
+2023-06-01,Washington,Tesla,Electric,SUV,6305,85000-95000,100,60.0,0.26
+2023-06-01,Washington,BYD,Electric,Sedan,3152,45000-55000,60,35.0,0.13
+2023-06-01,Washington,Nissan,Electric,Hatchback,2040,35000-45000,40,25.0,0.08
+2023-06-01,Washington,Hyundai,Electric,SUV,1669,40000-50000,64,30.0,0.07
+2023-06-01,Washington,Volkswagen,Electric,SUV,1483,45000-55000,77,35.0,0.06
+2023-06-01,Washington,Ford,Electric,Truck,1298,55000-65000,98,40.0,0.05
+2023-06-01,Washington,Kia,Electric,SUV,1112,38000-48000,64,30.0,0.05
+2023-06-01,Washington,Audi,Electric,SUV,927,65000-75000,95,40.0,0.04
+2023-06-01,Washington,Chevrolet,Electric,SUV,741,40000-50000,65,30.0,0.03
+2023-06-01,Washington,Rivian,Electric,Truck,556,70000-80000,135,50.0,0.02
+2023-06-01,Washington,Mercedes,Electric,Sedan,370,75000-85000,90,35.0,0.02
+2023-06-01,Arizona,Tesla,Electric,Sedan,5192,75000-85000,75,45.0,0.25
+2023-06-01,Arizona,BYD,Electric,Sedan,2596,45000-55000,60,35.0,0.12
+2023-06-01,Arizona,Nissan,Electric,Hatchback,1669,35000-45000,40,25.0,0.08
+2023-06-01,Arizona,Hyundai,Electric,SUV,1298,40000-50000,64,30.0,0.06
+2023-06-01,Arizona,Ford,Electric,Truck,1112,55000-65000,98,40.0,0.05
+2023-06-01,Arizona,Volkswagen,Electric,SUV,927,45000-55000,77,35.0,0.04
+2023-06-01,Arizona,Kia,Electric,SUV,741,38000-48000,64,30.0,0.04
+2023-06-01,Arizona,Chevrolet,Electric,SUV,556,40000-50000,65,30.0,0.03
+2023-06-01,Arizona,Audi,Electric,SUV,370,65000-75000,95,40.0,0.02
+2023-06-01,Arizona,Rivian,Electric,Truck,370,70000-80000,135,50.0,0.02
+2023-06-01,Arizona,Mercedes,Electric,Sedan,185,75000-85000,90,35.0,0.01
+2023-07-01,California,Tesla,Electric,Sedan,23605,75000-85000,75,45.0,0.28
+2023-07-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2023-07-01,California,BYD,Electric,Sedan,12652,45000-55000,60,35.0,0.15
+2023-07-01,California,Nissan,Electric,Hatchback,8498,35000-45000,40,25.0,0.1
+2023-07-01,California,Ford,Electric,Truck,6043,55000-65000,98,40.0,0.07
+2023-07-01,California,Volkswagen,Electric,SUV,5287,45000-55000,77,35.0,0.06
+2023-07-01,California,Hyundai,Electric,SUV,4532,40000-50000,64,30.0,0.05
+2023-07-01,California,Kia,Electric,SUV,3965,38000-48000,64,30.0,0.05
+2023-07-01,California,Audi,Electric,SUV,3399,65000-75000,95,40.0,0.04
+2023-07-01,California,Mercedes,Electric,Sedan,2832,75000-85000,90,35.0,0.03
+2023-07-01,New York,Tesla,Electric,Sedan,16807,75000-85000,75,45.0,0.25
+2023-07-01,New York,Ford,Electric,Truck,3965,55000-65000,98,40.0,0.06
+2023-07-01,New York,Nissan,Electric,Hatchback,3399,35000-45000,40,25.0,0.05
+2023-07-01,New York,Hyundai,Electric,SUV,3021,40000-50000,64,30.0,0.04
+2023-07-01,New York,BYD,Electric,Sedan,2643,45000-55000,60,35.0,0.04
+2023-07-01,New York,Volkswagen,Electric,SUV,2266,45000-55000,77,35.0,0.03
+2023-07-01,New York,Kia,Electric,SUV,2077,38000-48000,64,30.0,0.03
+2023-07-01,New York,Audi,Electric,SUV,1699,65000-75000,95,40.0,0.03
+2023-07-01,New York,Mercedes,Electric,Sedan,1510,75000-85000,90,35.0,0.02
+2023-07-01,New York,Rivian,Electric,Truck,1321,70000-80000,135,50.0,0.02
+2023-07-01,Texas,Tesla,Electric,SUV,12652,85000-95000,100,60.0,0.22
+2023-07-01,Texas,Ford,Electric,Truck,6420,55000-65000,98,40.0,0.11
+2023-07-01,Texas,BYD,Electric,Sedan,4343,45000-55000,60,35.0,0.08
+2023-07-01,Texas,Nissan,Electric,Hatchback,3399,35000-45000,40,25.0,0.06
+2023-07-01,Texas,Hyundai,Electric,SUV,3021,40000-50000,64,30.0,0.05
+2023-07-01,Texas,Volkswagen,Electric,SUV,2643,45000-55000,77,35.0,0.05
+2023-07-01,Texas,Kia,Electric,SUV,2266,38000-48000,64,30.0,0.04
+2023-07-01,Texas,Rivian,Electric,Truck,2077,70000-80000,135,50.0,0.04
+2023-07-01,Texas,Chevrolet,Electric,SUV,1699,40000-50000,65,30.0,0.03
+2023-07-01,Texas,Audi,Electric,SUV,1510,65000-75000,95,40.0,0.03
+2023-07-01,Florida,Tesla,Electric,Sedan,10575,75000-85000,75,45.0,0.24
+2023-07-01,Florida,BYD,Electric,Sedan,5287,45000-55000,60,35.0,0.12
+2023-07-01,Florida,Nissan,Electric,Hatchback,3588,35000-45000,40,25.0,0.08
+2023-07-01,Florida,Ford,Electric,Truck,2643,55000-65000,98,40.0,0.06
+2023-07-01,Florida,Hyundai,Electric,SUV,2266,40000-50000,64,30.0,0.05
+2023-07-01,Florida,Volkswagen,Electric,SUV,1888,45000-55000,77,35.0,0.04
+2023-07-01,Florida,Kia,Electric,SUV,1699,38000-48000,64,30.0,0.04
+2023-07-01,Florida,Chevrolet,Electric,SUV,1321,40000-50000,65,30.0,0.03
+2023-07-01,Florida,Audi,Electric,SUV,1133,65000-75000,95,40.0,0.03
+2023-07-01,Florida,Mercedes,Electric,Sedan,944,75000-85000,90,35.0,0.02
+2023-07-01,Washington,Tesla,Electric,SUV,6420,85000-95000,100,60.0,0.26
+2023-07-01,Washington,BYD,Electric,Sedan,3210,45000-55000,60,35.0,0.13
+2023-07-01,Washington,Nissan,Electric,Hatchback,2077,35000-45000,40,25.0,0.08
+2023-07-01,Washington,Hyundai,Electric,SUV,1699,40000-50000,64,30.0,0.07
+2023-07-01,Washington,Volkswagen,Electric,SUV,1510,45000-55000,77,35.0,0.06
+2023-07-01,Washington,Ford,Electric,Truck,1321,55000-65000,98,40.0,0.05
+2023-07-01,Washington,Kia,Electric,SUV,1133,38000-48000,64,30.0,0.05
+2023-07-01,Washington,Audi,Electric,SUV,944,65000-75000,95,40.0,0.04
+2023-07-01,Washington,Chevrolet,Electric,SUV,755,40000-50000,65,30.0,0.03
+2023-07-01,Washington,Rivian,Electric,Truck,566,70000-80000,135,50.0,0.02
+2023-07-01,Washington,Mercedes,Electric,Sedan,377,75000-85000,90,35.0,0.02
+2023-07-01,Arizona,Tesla,Electric,Sedan,5287,75000-85000,75,45.0,0.25
+2023-07-01,Arizona,BYD,Electric,Sedan,2643,45000-55000,60,35.0,0.12
+2023-07-01,Arizona,Nissan,Electric,Hatchback,1699,35000-45000,40,25.0,0.08
+2023-07-01,Arizona,Hyundai,Electric,SUV,1321,40000-50000,64,30.0,0.06
+2023-07-01,Arizona,Ford,Electric,Truck,1133,55000-65000,98,40.0,0.05
+2023-07-01,Arizona,Volkswagen,Electric,SUV,944,45000-55000,77,35.0,0.04
+2023-07-01,Arizona,Kia,Electric,SUV,755,38000-48000,64,30.0,0.04
+2023-07-01,Arizona,Chevrolet,Electric,SUV,566,40000-50000,65,30.0,0.03
+2023-07-01,Arizona,Audi,Electric,SUV,377,65000-75000,95,40.0,0.02
+2023-07-01,Arizona,Rivian,Electric,Truck,377,70000-80000,135,50.0,0.02
+2023-07-01,Arizona,Mercedes,Electric,Sedan,188,75000-85000,90,35.0,0.01
+2023-08-01,California,Tesla,Electric,Sedan,24574,75000-85000,75,45.0,0.28
+2023-08-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2023-08-01,California,BYD,Electric,Sedan,13172,45000-55000,60,35.0,0.15
+2023-08-01,California,Nissan,Electric,Hatchback,8846,35000-45000,40,25.0,0.1
+2023-08-01,California,Ford,Electric,Truck,6291,55000-65000,98,40.0,0.07
+2023-08-01,California,Volkswagen,Electric,SUV,5504,45000-55000,77,35.0,0.06
+2023-08-01,California,Hyundai,Electric,SUV,4718,40000-50000,64,30.0,0.05
+2023-08-01,California,Kia,Electric,SUV,4128,38000-48000,64,30.0,0.05
+2023-08-01,California,Audi,Electric,SUV,3538,65000-75000,95,40.0,0.04
+2023-08-01,California,Mercedes,Electric,Sedan,2948,75000-85000,90,35.0,0.03
+2023-08-01,New York,Tesla,Electric,Sedan,17497,75000-85000,75,45.0,0.25
+2023-08-01,New York,Ford,Electric,Truck,4128,55000-65000,98,40.0,0.06
+2023-08-01,New York,Nissan,Electric,Hatchback,3538,35000-45000,40,25.0,0.05
+2023-08-01,New York,Hyundai,Electric,SUV,3145,40000-50000,64,30.0,0.04
+2023-08-01,New York,BYD,Electric,Sedan,2752,45000-55000,60,35.0,0.04
+2023-08-01,New York,Volkswagen,Electric,SUV,2359,45000-55000,77,35.0,0.03
+2023-08-01,New York,Kia,Electric,SUV,2162,38000-48000,64,30.0,0.03
+2023-08-01,New York,Audi,Electric,SUV,1769,65000-75000,95,40.0,0.03
+2023-08-01,New York,Mercedes,Electric,Sedan,1572,75000-85000,90,35.0,0.02
+2023-08-01,New York,Rivian,Electric,Truck,1376,70000-80000,135,50.0,0.02
+2023-08-01,Texas,Tesla,Electric,SUV,13172,85000-95000,100,60.0,0.22
+2023-08-01,Texas,Ford,Electric,Truck,6684,55000-65000,98,40.0,0.11
+2023-08-01,Texas,BYD,Electric,Sedan,4521,45000-55000,60,35.0,0.08
+2023-08-01,Texas,Nissan,Electric,Hatchback,3538,35000-45000,40,25.0,0.06
+2023-08-01,Texas,Hyundai,Electric,SUV,3145,40000-50000,64,30.0,0.05
+2023-08-01,Texas,Volkswagen,Electric,SUV,2752,45000-55000,77,35.0,0.05
+2023-08-01,Texas,Kia,Electric,SUV,2359,38000-48000,64,30.0,0.04
+2023-08-01,Texas,Rivian,Electric,Truck,2162,70000-80000,135,50.0,0.04
+2023-08-01,Texas,Chevrolet,Electric,SUV,1769,40000-50000,65,30.0,0.03
+2023-08-01,Texas,Audi,Electric,SUV,1572,65000-75000,95,40.0,0.03
+2023-08-01,Florida,Tesla,Electric,Sedan,11009,75000-85000,75,45.0,0.24
+2023-08-01,Florida,BYD,Electric,Sedan,5504,45000-55000,60,35.0,0.12
+2023-08-01,Florida,Nissan,Electric,Hatchback,3735,35000-45000,40,25.0,0.08
+2023-08-01,Florida,Ford,Electric,Truck,2752,55000-65000,98,40.0,0.06
+2023-08-01,Florida,Hyundai,Electric,SUV,2359,40000-50000,64,30.0,0.05
+2023-08-01,Florida,Volkswagen,Electric,SUV,1965,45000-55000,77,35.0,0.04
+2023-08-01,Florida,Kia,Electric,SUV,1769,38000-48000,64,30.0,0.04
+2023-08-01,Florida,Chevrolet,Electric,SUV,1376,40000-50000,65,30.0,0.03
+2023-08-01,Florida,Audi,Electric,SUV,1179,65000-75000,95,40.0,0.03
+2023-08-01,Florida,Mercedes,Electric,Sedan,982,75000-85000,90,35.0,0.02
+2023-08-01,Washington,Tesla,Electric,SUV,6684,85000-95000,100,60.0,0.26
+2023-08-01,Washington,BYD,Electric,Sedan,3342,45000-55000,60,35.0,0.13
+2023-08-01,Washington,Nissan,Electric,Hatchback,2162,35000-45000,40,25.0,0.08
+2023-08-01,Washington,Hyundai,Electric,SUV,1769,40000-50000,64,30.0,0.07
+2023-08-01,Washington,Volkswagen,Electric,SUV,1572,45000-55000,77,35.0,0.06
+2023-08-01,Washington,Ford,Electric,Truck,1376,55000-65000,98,40.0,0.05
+2023-08-01,Washington,Kia,Electric,SUV,1179,38000-48000,64,30.0,0.05
+2023-08-01,Washington,Audi,Electric,SUV,982,65000-75000,95,40.0,0.04
+2023-08-01,Washington,Chevrolet,Electric,SUV,786,40000-50000,65,30.0,0.03
+2023-08-01,Washington,Rivian,Electric,Truck,589,70000-80000,135,50.0,0.02
+2023-08-01,Washington,Mercedes,Electric,Sedan,393,75000-85000,90,35.0,0.02
+2023-08-01,Arizona,Tesla,Electric,Sedan,5504,75000-85000,75,45.0,0.25
+2023-08-01,Arizona,BYD,Electric,Sedan,2752,45000-55000,60,35.0,0.12
+2023-08-01,Arizona,Nissan,Electric,Hatchback,1769,35000-45000,40,25.0,0.08
+2023-08-01,Arizona,Hyundai,Electric,SUV,1376,40000-50000,64,30.0,0.06
+2023-08-01,Arizona,Ford,Electric,Truck,1179,55000-65000,98,40.0,0.05
+2023-08-01,Arizona,Volkswagen,Electric,SUV,982,45000-55000,77,35.0,0.04
+2023-08-01,Arizona,Kia,Electric,SUV,786,38000-48000,64,30.0,0.04
+2023-08-01,Arizona,Chevrolet,Electric,SUV,589,40000-50000,65,30.0,0.03
+2023-08-01,Arizona,Audi,Electric,SUV,393,65000-75000,95,40.0,0.02
+2023-08-01,Arizona,Rivian,Electric,Truck,393,70000-80000,135,50.0,0.02
+2023-08-01,Arizona,Mercedes,Electric,Sedan,196,75000-85000,90,35.0,0.01
+2023-09-01,California,Tesla,Electric,Sedan,24733,75000-85000,75,45.0,0.28
+2023-09-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2023-09-01,California,BYD,Electric,Sedan,13256,45000-55000,60,35.0,0.15
+2023-09-01,California,Nissan,Electric,Hatchback,8903,35000-45000,40,25.0,0.1
+2023-09-01,California,Ford,Electric,Truck,6331,55000-65000,98,40.0,0.07
+2023-09-01,California,Volkswagen,Electric,SUV,5540,45000-55000,77,35.0,0.06
+2023-09-01,California,Hyundai,Electric,SUV,4748,40000-50000,64,30.0,0.05
+2023-09-01,California,Kia,Electric,SUV,4155,38000-48000,64,30.0,0.05
+2023-09-01,California,Audi,Electric,SUV,3561,65000-75000,95,40.0,0.04
+2023-09-01,California,Mercedes,Electric,Sedan,2967,75000-85000,90,35.0,0.03
+2023-09-01,New York,Tesla,Electric,Sedan,17609,75000-85000,75,45.0,0.25
+2023-09-01,New York,Ford,Electric,Truck,4155,55000-65000,98,40.0,0.06
+2023-09-01,New York,Nissan,Electric,Hatchback,3561,35000-45000,40,25.0,0.05
+2023-09-01,New York,Hyundai,Electric,SUV,3165,40000-50000,64,30.0,0.04
+2023-09-01,New York,BYD,Electric,Sedan,2770,45000-55000,60,35.0,0.04
+2023-09-01,New York,Volkswagen,Electric,SUV,2374,45000-55000,77,35.0,0.03
+2023-09-01,New York,Kia,Electric,SUV,2176,38000-48000,64,30.0,0.03
+2023-09-01,New York,Audi,Electric,SUV,1780,65000-75000,95,40.0,0.03
+2023-09-01,New York,Mercedes,Electric,Sedan,1582,75000-85000,90,35.0,0.02
+2023-09-01,New York,Rivian,Electric,Truck,1385,70000-80000,135,50.0,0.02
+2023-09-01,Texas,Tesla,Electric,SUV,13256,85000-95000,100,60.0,0.22
+2023-09-01,Texas,Ford,Electric,Truck,6727,55000-65000,98,40.0,0.11
+2023-09-01,Texas,BYD,Electric,Sedan,4550,45000-55000,60,35.0,0.08
+2023-09-01,Texas,Nissan,Electric,Hatchback,3561,35000-45000,40,25.0,0.06
+2023-09-01,Texas,Hyundai,Electric,SUV,3165,40000-50000,64,30.0,0.05
+2023-09-01,Texas,Volkswagen,Electric,SUV,2770,45000-55000,77,35.0,0.05
+2023-09-01,Texas,Kia,Electric,SUV,2374,38000-48000,64,30.0,0.04
+2023-09-01,Texas,Rivian,Electric,Truck,2176,70000-80000,135,50.0,0.04
+2023-09-01,Texas,Chevrolet,Electric,SUV,1780,40000-50000,65,30.0,0.03
+2023-09-01,Texas,Audi,Electric,SUV,1582,65000-75000,95,40.0,0.03
+2023-09-01,Florida,Tesla,Electric,Sedan,11080,75000-85000,75,45.0,0.24
+2023-09-01,Florida,BYD,Electric,Sedan,5540,45000-55000,60,35.0,0.12
+2023-09-01,Florida,Nissan,Electric,Hatchback,3759,35000-45000,40,25.0,0.08
+2023-09-01,Florida,Ford,Electric,Truck,2770,55000-65000,98,40.0,0.06
+2023-09-01,Florida,Hyundai,Electric,SUV,2374,40000-50000,64,30.0,0.05
+2023-09-01,Florida,Volkswagen,Electric,SUV,1978,45000-55000,77,35.0,0.04
+2023-09-01,Florida,Kia,Electric,SUV,1780,38000-48000,64,30.0,0.04
+2023-09-01,Florida,Chevrolet,Electric,SUV,1385,40000-50000,65,30.0,0.03
+2023-09-01,Florida,Audi,Electric,SUV,1187,65000-75000,95,40.0,0.03
+2023-09-01,Florida,Mercedes,Electric,Sedan,989,75000-85000,90,35.0,0.02
+2023-09-01,Washington,Tesla,Electric,SUV,6727,85000-95000,100,60.0,0.26
+2023-09-01,Washington,BYD,Electric,Sedan,3363,45000-55000,60,35.0,0.13
+2023-09-01,Washington,Nissan,Electric,Hatchback,2176,35000-45000,40,25.0,0.08
+2023-09-01,Washington,Hyundai,Electric,SUV,1780,40000-50000,64,30.0,0.07
+2023-09-01,Washington,Volkswagen,Electric,SUV,1582,45000-55000,77,35.0,0.06
+2023-09-01,Washington,Ford,Electric,Truck,1385,55000-65000,98,40.0,0.05
+2023-09-01,Washington,Kia,Electric,SUV,1187,38000-48000,64,30.0,0.05
+2023-09-01,Washington,Audi,Electric,SUV,989,65000-75000,95,40.0,0.04
+2023-09-01,Washington,Chevrolet,Electric,SUV,791,40000-50000,65,30.0,0.03
+2023-09-01,Washington,Rivian,Electric,Truck,593,70000-80000,135,50.0,0.02
+2023-09-01,Washington,Mercedes,Electric,Sedan,395,75000-85000,90,35.0,0.02
+2023-09-01,Arizona,Tesla,Electric,Sedan,5540,75000-85000,75,45.0,0.25
+2023-09-01,Arizona,BYD,Electric,Sedan,2770,45000-55000,60,35.0,0.12
+2023-09-01,Arizona,Nissan,Electric,Hatchback,1780,35000-45000,40,25.0,0.08
+2023-09-01,Arizona,Hyundai,Electric,SUV,1385,40000-50000,64,30.0,0.06
+2023-09-01,Arizona,Ford,Electric,Truck,1187,55000-65000,98,40.0,0.05
+2023-09-01,Arizona,Volkswagen,Electric,SUV,989,45000-55000,77,35.0,0.04
+2023-09-01,Arizona,Kia,Electric,SUV,791,38000-48000,64,30.0,0.04
+2023-09-01,Arizona,Chevrolet,Electric,SUV,593,40000-50000,65,30.0,0.03
+2023-09-01,Arizona,Audi,Electric,SUV,395,65000-75000,95,40.0,0.02
+2023-09-01,Arizona,Rivian,Electric,Truck,395,70000-80000,135,50.0,0.02
+2023-09-01,Arizona,Mercedes,Electric,Sedan,197,75000-85000,90,35.0,0.01
+2023-10-01,California,Tesla,Electric,Sedan,25465,75000-85000,75,45.0,0.28
+2023-10-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2023-10-01,California,BYD,Electric,Sedan,13649,45000-55000,60,35.0,0.15
+2023-10-01,California,Nissan,Electric,Hatchback,9167,35000-45000,40,25.0,0.1
+2023-10-01,California,Ford,Electric,Truck,6519,55000-65000,98,40.0,0.07
+2023-10-01,California,Volkswagen,Electric,SUV,5704,45000-55000,77,35.0,0.06
+2023-10-01,California,Hyundai,Electric,SUV,4889,40000-50000,64,30.0,0.05
+2023-10-01,California,Kia,Electric,SUV,4278,38000-48000,64,30.0,0.05
+2023-10-01,California,Audi,Electric,SUV,3667,65000-75000,95,40.0,0.04
+2023-10-01,California,Mercedes,Electric,Sedan,3055,75000-85000,90,35.0,0.03
+2023-10-01,New York,Tesla,Electric,Sedan,18131,75000-85000,75,45.0,0.25
+2023-10-01,New York,Ford,Electric,Truck,4278,55000-65000,98,40.0,0.06
+2023-10-01,New York,Nissan,Electric,Hatchback,3667,35000-45000,40,25.0,0.05
+2023-10-01,New York,Hyundai,Electric,SUV,3259,40000-50000,64,30.0,0.04
+2023-10-01,New York,BYD,Electric,Sedan,2852,45000-55000,60,35.0,0.04
+2023-10-01,New York,Volkswagen,Electric,SUV,2444,45000-55000,77,35.0,0.03
+2023-10-01,New York,Kia,Electric,SUV,2240,38000-48000,64,30.0,0.03
+2023-10-01,New York,Audi,Electric,SUV,1833,65000-75000,95,40.0,0.03
+2023-10-01,New York,Mercedes,Electric,Sedan,1629,75000-85000,90,35.0,0.02
+2023-10-01,New York,Rivian,Electric,Truck,1426,70000-80000,135,50.0,0.02
+2023-10-01,Texas,Tesla,Electric,SUV,13649,85000-95000,100,60.0,0.22
+2023-10-01,Texas,Ford,Electric,Truck,6926,55000-65000,98,40.0,0.11
+2023-10-01,Texas,BYD,Electric,Sedan,4685,45000-55000,60,35.0,0.08
+2023-10-01,Texas,Nissan,Electric,Hatchback,3667,35000-45000,40,25.0,0.06
+2023-10-01,Texas,Hyundai,Electric,SUV,3259,40000-50000,64,30.0,0.05
+2023-10-01,Texas,Volkswagen,Electric,SUV,2852,45000-55000,77,35.0,0.05
+2023-10-01,Texas,Kia,Electric,SUV,2444,38000-48000,64,30.0,0.04
+2023-10-01,Texas,Rivian,Electric,Truck,2240,70000-80000,135,50.0,0.04
+2023-10-01,Texas,Chevrolet,Electric,SUV,1833,40000-50000,65,30.0,0.03
+2023-10-01,Texas,Audi,Electric,SUV,1629,65000-75000,95,40.0,0.03
+2023-10-01,Florida,Tesla,Electric,Sedan,11408,75000-85000,75,45.0,0.24
+2023-10-01,Florida,BYD,Electric,Sedan,5704,45000-55000,60,35.0,0.12
+2023-10-01,Florida,Nissan,Electric,Hatchback,3870,35000-45000,40,25.0,0.08
+2023-10-01,Florida,Ford,Electric,Truck,2852,55000-65000,98,40.0,0.06
+2023-10-01,Florida,Hyundai,Electric,SUV,2444,40000-50000,64,30.0,0.05
+2023-10-01,Florida,Volkswagen,Electric,SUV,2037,45000-55000,77,35.0,0.04
+2023-10-01,Florida,Kia,Electric,SUV,1833,38000-48000,64,30.0,0.04
+2023-10-01,Florida,Chevrolet,Electric,SUV,1426,40000-50000,65,30.0,0.03
+2023-10-01,Florida,Audi,Electric,SUV,1222,65000-75000,95,40.0,0.03
+2023-10-01,Florida,Mercedes,Electric,Sedan,1018,75000-85000,90,35.0,0.02
+2023-10-01,Washington,Tesla,Electric,SUV,6926,85000-95000,100,60.0,0.26
+2023-10-01,Washington,BYD,Electric,Sedan,3463,45000-55000,60,35.0,0.13
+2023-10-01,Washington,Nissan,Electric,Hatchback,2240,35000-45000,40,25.0,0.08
+2023-10-01,Washington,Hyundai,Electric,SUV,1833,40000-50000,64,30.0,0.07
+2023-10-01,Washington,Volkswagen,Electric,SUV,1629,45000-55000,77,35.0,0.06
+2023-10-01,Washington,Ford,Electric,Truck,1426,55000-65000,98,40.0,0.05
+2023-10-01,Washington,Kia,Electric,SUV,1222,38000-48000,64,30.0,0.05
+2023-10-01,Washington,Audi,Electric,SUV,1018,65000-75000,95,40.0,0.04
+2023-10-01,Washington,Chevrolet,Electric,SUV,814,40000-50000,65,30.0,0.03
+2023-10-01,Washington,Rivian,Electric,Truck,611,70000-80000,135,50.0,0.02
+2023-10-01,Washington,Mercedes,Electric,Sedan,407,75000-85000,90,35.0,0.02
+2023-10-01,Arizona,Tesla,Electric,Sedan,5704,75000-85000,75,45.0,0.25
+2023-10-01,Arizona,BYD,Electric,Sedan,2852,45000-55000,60,35.0,0.12
+2023-10-01,Arizona,Nissan,Electric,Hatchback,1833,35000-45000,40,25.0,0.08
+2023-10-01,Arizona,Hyundai,Electric,SUV,1426,40000-50000,64,30.0,0.06
+2023-10-01,Arizona,Ford,Electric,Truck,1222,55000-65000,98,40.0,0.05
+2023-10-01,Arizona,Volkswagen,Electric,SUV,1018,45000-55000,77,35.0,0.04
+2023-10-01,Arizona,Kia,Electric,SUV,814,38000-48000,64,30.0,0.04
+2023-10-01,Arizona,Chevrolet,Electric,SUV,611,40000-50000,65,30.0,0.03
+2023-10-01,Arizona,Audi,Electric,SUV,407,65000-75000,95,40.0,0.02
+2023-10-01,Arizona,Rivian,Electric,Truck,407,70000-80000,135,50.0,0.02
+2023-10-01,Arizona,Mercedes,Electric,Sedan,203,75000-85000,90,35.0,0.01
+2023-11-01,California,Tesla,Electric,Sedan,26160,75000-85000,75,45.0,0.28
+2023-11-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2023-11-01,California,BYD,Electric,Sedan,14022,45000-55000,60,35.0,0.15
+2023-11-01,California,Nissan,Electric,Hatchback,9417,35000-45000,40,25.0,0.1
+2023-11-01,California,Ford,Electric,Truck,6697,55000-65000,98,40.0,0.07
+2023-11-01,California,Volkswagen,Electric,SUV,5859,45000-55000,77,35.0,0.06
+2023-11-01,California,Hyundai,Electric,SUV,5022,40000-50000,64,30.0,0.05
+2023-11-01,California,Kia,Electric,SUV,4394,38000-48000,64,30.0,0.05
+2023-11-01,California,Audi,Electric,SUV,3767,65000-75000,95,40.0,0.04
+2023-11-01,California,Mercedes,Electric,Sedan,3139,75000-85000,90,35.0,0.03
+2023-11-01,New York,Tesla,Electric,Sedan,18626,75000-85000,75,45.0,0.25
+2023-11-01,New York,Ford,Electric,Truck,4394,55000-65000,98,40.0,0.06
+2023-11-01,New York,Nissan,Electric,Hatchback,3767,35000-45000,40,25.0,0.05
+2023-11-01,New York,Hyundai,Electric,SUV,3348,40000-50000,64,30.0,0.04
+2023-11-01,New York,BYD,Electric,Sedan,2929,45000-55000,60,35.0,0.04
+2023-11-01,New York,Volkswagen,Electric,SUV,2511,45000-55000,77,35.0,0.03
+2023-11-01,New York,Kia,Electric,SUV,2302,38000-48000,64,30.0,0.03
+2023-11-01,New York,Audi,Electric,SUV,1883,65000-75000,95,40.0,0.03
+2023-11-01,New York,Mercedes,Electric,Sedan,1674,75000-85000,90,35.0,0.02
+2023-11-01,New York,Rivian,Electric,Truck,1464,70000-80000,135,50.0,0.02
+2023-11-01,Texas,Tesla,Electric,SUV,14022,85000-95000,100,60.0,0.22
+2023-11-01,Texas,Ford,Electric,Truck,7115,55000-65000,98,40.0,0.11
+2023-11-01,Texas,BYD,Electric,Sedan,4813,45000-55000,60,35.0,0.08
+2023-11-01,Texas,Nissan,Electric,Hatchback,3767,35000-45000,40,25.0,0.06
+2023-11-01,Texas,Hyundai,Electric,SUV,3348,40000-50000,64,30.0,0.05
+2023-11-01,Texas,Volkswagen,Electric,SUV,2929,45000-55000,77,35.0,0.05
+2023-11-01,Texas,Kia,Electric,SUV,2511,38000-48000,64,30.0,0.04
+2023-11-01,Texas,Rivian,Electric,Truck,2302,70000-80000,135,50.0,0.04
+2023-11-01,Texas,Chevrolet,Electric,SUV,1883,40000-50000,65,30.0,0.03
+2023-11-01,Texas,Audi,Electric,SUV,1674,65000-75000,95,40.0,0.03
+2023-11-01,Florida,Tesla,Electric,Sedan,11719,75000-85000,75,45.0,0.24
+2023-11-01,Florida,BYD,Electric,Sedan,5859,45000-55000,60,35.0,0.12
+2023-11-01,Florida,Nissan,Electric,Hatchback,3976,35000-45000,40,25.0,0.08
+2023-11-01,Florida,Ford,Electric,Truck,2929,55000-65000,98,40.0,0.06
+2023-11-01,Florida,Hyundai,Electric,SUV,2511,40000-50000,64,30.0,0.05
+2023-11-01,Florida,Volkswagen,Electric,SUV,2092,45000-55000,77,35.0,0.04
+2023-11-01,Florida,Kia,Electric,SUV,1883,38000-48000,64,30.0,0.04
+2023-11-01,Florida,Chevrolet,Electric,SUV,1464,40000-50000,65,30.0,0.03
+2023-11-01,Florida,Audi,Electric,SUV,1255,65000-75000,95,40.0,0.03
+2023-11-01,Florida,Mercedes,Electric,Sedan,1046,75000-85000,90,35.0,0.02
+2023-11-01,Washington,Tesla,Electric,SUV,7115,85000-95000,100,60.0,0.26
+2023-11-01,Washington,BYD,Electric,Sedan,3557,45000-55000,60,35.0,0.13
+2023-11-01,Washington,Nissan,Electric,Hatchback,2302,35000-45000,40,25.0,0.08
+2023-11-01,Washington,Hyundai,Electric,SUV,1883,40000-50000,64,30.0,0.07
+2023-11-01,Washington,Volkswagen,Electric,SUV,1674,45000-55000,77,35.0,0.06
+2023-11-01,Washington,Ford,Electric,Truck,1464,55000-65000,98,40.0,0.05
+2023-11-01,Washington,Kia,Electric,SUV,1255,38000-48000,64,30.0,0.05
+2023-11-01,Washington,Audi,Electric,SUV,1046,65000-75000,95,40.0,0.04
+2023-11-01,Washington,Chevrolet,Electric,SUV,837,40000-50000,65,30.0,0.03
+2023-11-01,Washington,Rivian,Electric,Truck,627,70000-80000,135,50.0,0.02
+2023-11-01,Washington,Mercedes,Electric,Sedan,418,75000-85000,90,35.0,0.02
+2023-11-01,Arizona,Tesla,Electric,Sedan,5859,75000-85000,75,45.0,0.25
+2023-11-01,Arizona,BYD,Electric,Sedan,2929,45000-55000,60,35.0,0.12
+2023-11-01,Arizona,Nissan,Electric,Hatchback,1883,35000-45000,40,25.0,0.08
+2023-11-01,Arizona,Hyundai,Electric,SUV,1464,40000-50000,64,30.0,0.06
+2023-11-01,Arizona,Ford,Electric,Truck,1255,55000-65000,98,40.0,0.05
+2023-11-01,Arizona,Volkswagen,Electric,SUV,1046,45000-55000,77,35.0,0.04
+2023-11-01,Arizona,Kia,Electric,SUV,837,38000-48000,64,30.0,0.04
+2023-11-01,Arizona,Chevrolet,Electric,SUV,627,40000-50000,65,30.0,0.03
+2023-11-01,Arizona,Audi,Electric,SUV,418,65000-75000,95,40.0,0.02
+2023-11-01,Arizona,Rivian,Electric,Truck,418,70000-80000,135,50.0,0.02
+2023-11-01,Arizona,Mercedes,Electric,Sedan,209,75000-85000,90,35.0,0.01
+2023-12-01,California,Tesla,Electric,Sedan,26761,75000-85000,75,45.0,0.28
+2023-12-01,Tesla,Electric,SUV,8900,0,100,60,0.2,
+2023-12-01,California,BYD,Electric,Sedan,14344,45000-55000,60,35.0,0.15
+2023-12-01,California,Nissan,Electric,Hatchback,9634,35000-45000,40,25.0,0.1
+2023-12-01,California,Ford,Electric,Truck,6850,55000-65000,98,40.0,0.07
+2023-12-01,California,Volkswagen,Electric,SUV,5994,45000-55000,77,35.0,0.06
+2023-12-01,California,Hyundai,Electric,SUV,5138,40000-50000,64,30.0,0.05
+2023-12-01,California,Kia,Electric,SUV,4495,38000-48000,64,30.0,0.05
+2023-12-01,California,Audi,Electric,SUV,3853,65000-75000,95,40.0,0.04
+2023-12-01,California,Mercedes,Electric,Sedan,3211,75000-85000,90,35.0,0.03
+2023-12-01,New York,Tesla,Electric,Sedan,19054,75000-85000,75,45.0,0.25
+2023-12-01,New York,Ford,Electric,Truck,4495,55000-65000,98,40.0,0.06
+2023-12-01,New York,Nissan,Electric,Hatchback,3853,35000-45000,40,25.0,0.05
+2023-12-01,New York,Hyundai,Electric,SUV,3425,40000-50000,64,30.0,0.04
+2023-12-01,New York,BYD,Electric,Sedan,2997,45000-55000,60,35.0,0.04
+2023-12-01,New York,Volkswagen,Electric,SUV,2569,45000-55000,77,35.0,0.03
+2023-12-01,New York,Kia,Electric,SUV,2355,38000-48000,64,30.0,0.03
+2023-12-01,New York,Audi,Electric,SUV,1926,65000-75000,95,40.0,0.03
+2023-12-01,New York,Mercedes,Electric,Sedan,1712,75000-85000,90,35.0,0.02
+2023-12-01,New York,Rivian,Electric,Truck,1498,70000-80000,135,50.0,0.02
+2023-12-01,Texas,Tesla,Electric,SUV,14344,85000-95000,100,60.0,0.22
+2023-12-01,Texas,Ford,Electric,Truck,7279,55000-65000,98,40.0,0.11
+2023-12-01,Texas,BYD,Electric,Sedan,4924,45000-55000,60,35.0,0.08
+2023-12-01,Texas,Nissan,Electric,Hatchback,3853,35000-45000,40,25.0,0.06
+2023-12-01,Texas,Hyundai,Electric,SUV,3425,40000-50000,64,30.0,0.05
+2023-12-01,Texas,Volkswagen,Electric,SUV,2997,45000-55000,77,35.0,0.05
+2023-12-01,Texas,Kia,Electric,SUV,2569,38000-48000,64,30.0,0.04
+2023-12-01,Texas,Rivian,Electric,Truck,2355,70000-80000,135,50.0,0.04
+2023-12-01,Texas,Chevrolet,Electric,SUV,1926,40000-50000,65,30.0,0.03
+2023-12-01,Texas,Audi,Electric,SUV,1712,65000-75000,95,40.0,0.03
+2023-12-01,Florida,Tesla,Electric,Sedan,11989,75000-85000,75,45.0,0.24
+2023-12-01,Florida,BYD,Electric,Sedan,5994,45000-55000,60,35.0,0.12
+2023-12-01,Florida,Nissan,Electric,Hatchback,4067,35000-45000,40,25.0,0.08
+2023-12-01,Florida,Ford,Electric,Truck,2997,55000-65000,98,40.0,0.06
+2023-12-01,Florida,Hyundai,Electric,SUV,2569,40000-50000,64,30.0,0.05
+2023-12-01,Florida,Volkswagen,Electric,SUV,2140,45000-55000,77,35.0,0.04
+2023-12-01,Florida,Kia,Electric,SUV,1926,38000-48000,64,30.0,0.04
+2023-12-01,Florida,Chevrolet,Electric,SUV,1498,40000-50000,65,30.0,0.03
+2023-12-01,Florida,Audi,Electric,SUV,1284,65000-75000,95,40.0,0.03
+2023-12-01,Florida,Mercedes,Electric,Sedan,1070,75000-85000,90,35.0,0.02
+2023-12-01,Washington,Tesla,Electric,SUV,7279,85000-95000,100,60.0,0.26
+2023-12-01,Washington,BYD,Electric,Sedan,3639,45000-55000,60,35.0,0.13
+2023-12-01,Washington,Nissan,Electric,Hatchback,2355,35000-45000,40,25.0,0.08
+2023-12-01,Washington,Hyundai,Electric,SUV,1926,40000-50000,64,30.0,0.07
+2023-12-01,Washington,Volkswagen,Electric,SUV,1712,45000-55000,77,35.0,0.06
+2023-12-01,Washington,Ford,Electric,Truck,1498,55000-65000,98,40.0,0.05
+2023-12-01,Washington,Kia,Electric,SUV,1284,38000-48000,64,30.0,0.05
+2023-12-01,Washington,Audi,Electric,SUV,1070,65000-75000,95,40.0,0.04
+2023-12-01,Washington,Chevrolet,Electric,SUV,856,40000-50000,65,30.0,0.03
+2023-12-01,Washington,Rivian,Electric,Truck,642,70000-80000,135,50.0,0.02
+2023-12-01,Washington,Mercedes,Electric,Sedan,428,75000-85000,90,35.0,0.02
+2023-12-01,Arizona,Tesla,Electric,Sedan,5994,75000-85000,75,45.0,0.25
+2023-12-01,Arizona,BYD,Electric,Sedan,2997,45000-55000,60,35.0,0.12
+2023-12-01,Arizona,Nissan,Electric,Hatchback,1926,35000-45000,40,25.0,0.08
+2023-12-01,Arizona,Hyundai,Electric,SUV,1498,40000-50000,64,30.0,0.06
+2023-12-01,Arizona,Ford,Electric,Truck,1284,55000-65000,98,40.0,0.05
+2023-12-01,Arizona,Volkswagen,Electric,SUV,1070,45000-55000,77,35.0,0.04
+2023-12-01,Arizona,Kia,Electric,SUV,856,38000-48000,64,30.0,0.04
+2023-12-01,Arizona,Chevrolet,Electric,SUV,642,40000-50000,65,30.0,0.03
+2023-12-01,Arizona,Audi,Electric,SUV,428,65000-75000,95,40.0,0.02
+2023-12-01,Arizona,Rivian,Electric,Truck,428,70000-80000,135,50.0,0.02
+2023-12-01,Arizona,Mercedes,Electric,Sedan,214,75000-85000,90,35.0,0.01

@@ -1,0 +1,25 @@
+state,city,total_stations,fast_chargers,slow_chargers,avg_power_kw,utilization_rate,date_installed
+California,Los Angeles,1250,850,400,150,0.78,2022-03-15
+California,San Francisco,980,720,260,145,0.82,2022-01-20
+California,San Diego,750,550,200,140,0.75,2022-02-10
+California,San Jose,620,480,140,155,0.80,2022-04-05
+New York,New York City,890,650,240,135,0.85,2021-12-10
+New York,Buffalo,320,240,80,120,0.70,2022-03-20
+New York,Rochester,280,200,80,125,0.68,2022-05-15
+New York,Albany,240,180,60,115,0.65,2022-06-10
+Texas,Houston,680,480,200,130,0.72,2022-02-25
+Texas,Dallas,590,420,170,125,0.70,2022-03-10
+Texas,Austin,520,380,140,135,0.75,2022-04-20
+Texas,San Antonio,440,320,120,120,0.68,2022-05-05
+Florida,Miami,560,400,160,125,0.73,2022-01-30
+Florida,Orlando,420,300,120,120,0.70,2022-03-15
+Florida,Tampa,380,270,110,115,0.68,2022-04-10
+Florida,Jacksonville,320,220,100,110,0.65,2022-05-20
+Washington,Seattle,780,580,200,140,0.81,2021-11-15
+Washington,Spokane,180,130,50,115,0.62,2022-04-25
+Washington,Tacoma,220,160,60,120,0.66,2022-03-30
+Washington,Vancouver,160,120,40,110,0.60,2022-05-10
+Arizona,Phoenix,420,300,120,125,0.71,2022-02-15
+Arizona,Tucson,280,200,80,115,0.65,2022-04-05
+Arizona,Mesa,180,130,50,110,0.60,2022-05-15
+Arizona,Chandler,150,110,40,105,0.58,2022-06-01
