@@ -195,21 +195,150 @@ docker-compose up --build
 
 ---
 
-## Contributing
+## 🏗️ Architecture Diagrams
 
-This project demonstrates elite engineering practices including Lakehouse data modeling, batch ETL pipelines, and analytical storytelling. Designed for Senior Analytics Engineer / BI Architect roles.
+### 📊 Data Pipeline Architecture
 
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
+```mermaid
+graph LR
+    A[Raw Data Sources] --> B[Bronze Layer]
+    B --> C[Silver Layer]
+    C --> D[Gold Layer]
+    D --> E[Analytics Dashboard]
+    D --> F[ML Models]
+    D --> G[REST API]
+    
+    subgraph "Data Layers"
+        B
+        B1[EV Sales CSV]
+        B2[Charging Stations CSV]
+        B3[Market Metrics CSV]
+    end
+    
+    subgraph "Processing"
+        C1[Data Cleaning]
+        C2[Schema Normalization]
+        C3[Deduplication]
+    end
+    
+    subgraph "Analytics"
+        D1[State Performance]
+        D2[Manufacturer Insights]
+        D3[Infrastructure Readiness]
+        D4[Master Analytics]
+    end
+```
 
----
+### 🔄 Data Flow Diagram
 
-## License
+```mermaid
+flowchart TD
+    A[External Data Sources] --> B{Data Ingestion}
+    B --> C[Bronze Storage]
+    C --> D{ETL Processing}
+    D --> E[Silver Storage]
+    E --> F[Feature Engineering]
+    F --> G[Gold Storage]
+    G --> H[Analytics Services]
+    H --> I[ML Pipeline]
+    H --> J[API Layer]
+    H --> K[Dashboard]
+    
+    subgraph "Quality Checks"
+        Q1[Data Validation]
+        Q2[Schema Verification]
+        Q3[Health Scoring]
+    end
+    
+    D -.-> Q1
+    E -.-> Q2
+    G -.-> Q3
+```
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### 🚀 Deployment Architecture
+
+```mermaid
+graph TB
+    subgraph "Development Environment"
+        A[Local Machine]
+        A1[Python 3.9+]
+        A2[Git Repository]
+        A3[Docker Desktop]
+    end
+    
+    subgraph "Application Stack"
+        B[Streamlit Dashboard]
+            B1[Port 8501]
+        C[FastAPI Backend]
+            C1[Port 8000]
+        D[Apache Spark Engine]
+        E[ML Models]
+            E1[XGBoost]
+            E2[Prophet]
+    end
+    
+    subgraph "Data Storage"
+        F[Local File System]
+            F1[Parquet Files]
+            F2[CSV Files]
+            F3[Log Files]
+    end
+    
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    B --> F
+    C --> F
+    D --> F
+    E --> F
+```
+
+### 📱 System Components Diagram
+
+```mermaid
+graph LR
+    subgraph "Frontend Layer"
+        A[Streamlit Dashboard]
+            A1[KPI Cards]
+            A2[Interactive Charts]
+            A3[Real-time Ticker]
+            A4[Executive Reports]
+    end
+    
+    subgraph "Backend Services"
+        B[API Gateway]
+            B1[FastAPI Routes]
+            B2[Authentication]
+            B3[Rate Limiting]
+        C[Business Logic]
+            C1[KPI Engine]
+            C2[Insight Engine]
+            C3[Alert Service]
+        D[Data Processing]
+            D1[Spark ETL]
+            D2[ML Pipeline]
+            D3[Quality Monitor]
+    end
+    
+    subgraph "Data Layer"
+        E[Medallion Architecture]
+            E1[Bronze - Raw]
+            E2[Silver - Clean]
+            E3[Gold - Analytics]
+        F[Feature Store]
+        G[Configuration]
+            G1[Environment Variables]
+            G2[Path Management]
+    end
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    D --> F
+    D --> G
+```
 
 ---
 
