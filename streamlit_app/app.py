@@ -29,14 +29,20 @@ st.set_page_config(
 
 # Make app look good
 theme.apply_custom_css()
-with open("assets/style.css") as f:
+with open(config.ASSETS_DIR / "style.css", encoding="utf-8") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # --- DATA LOADING ---
 @st.cache_data
 def load_all_gold_data():
     """Load all specific Gold tables for the platform."""
-    if not (config.GOLD_DIR / "state_performance_gold.parquet").exists():
+    required_files = [
+        config.GOLD_DIR / "master_analytics_gold.parquet",
+        config.GOLD_DIR / "state_performance_gold.parquet",
+        config.GOLD_DIR / "manufacturer_gold.parquet",
+        config.GOLD_DIR / "infrastructure_gold.parquet",
+    ]
+    if not all(path.exists() for path in required_files):
         spark_engine.run_pipeline()
     
     return {
@@ -48,10 +54,11 @@ def load_all_gold_data():
 
 def main():
     # --- HEADER & TICKER ---
+    ticker_update = streaming_service.get_ticker_update()
     ticker_items = [
-        f"US MKT INDEX: {streaming_service.get_ticker_update()['market_index']} ({streaming_service.get_ticker_update()['index_change']}%)",
-        f"TOP MOVER: {streaming_service.get_ticker_update()['top_mover']}",
-        f"MOMENTUM: {streaming_service.get_ticker_update()['momentum_score']}/100"
+        f"US MKT INDEX: {ticker_update['market_index']} ({ticker_update['index_change']}%)",
+        f"TOP MOVER: {ticker_update['top_mover']}",
+        f"MOMENTUM: {ticker_update['momentum_score']}/100"
     ]
     live_ticker(ticker_items)
     
