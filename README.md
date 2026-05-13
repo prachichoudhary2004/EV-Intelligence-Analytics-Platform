@@ -1,4 +1,4 @@
-# ⚡ Enterprise EV Market Intelligence Platform
+# ⚡ EV Market Intelligence Platform
 
 ### Introduction
 
