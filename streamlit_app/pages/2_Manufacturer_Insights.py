@@ -9,6 +9,36 @@ import os
 
 # Add parent so imports work
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config.config import config
+
+
+@st.cache_data
+def _load_manufacturer_gold():
+    master = pd.read_parquet(config.GOLD_DIR / "master_analytics_gold.parquet")
+    manufacturer = pd.read_parquet(config.GOLD_DIR / "manufacturer_gold.parquet")
+    return master, manufacturer
+
+
+def _render_manufacturer_page():
+    st.set_page_config(page_title="Manufacturer Insights - EV Intelligence", page_icon="🏭", layout="wide")
+    st.title("Manufacturer Insights")
+    master, manufacturer = _load_manufacturer_gold()
+    selected = st.selectbox("Select manufacturer", sorted(master["manufacturer"].dropna().unique()))
+    data = master[master["manufacturer"] == selected]
+
+    c1, c2, c3 = st.columns(3)
+    c1.metric("Sales", f"{data['sales_amount'].sum():,.0f}")
+    c2.metric("Revenue", f"${data['revenue'].sum():,.0f}")
+    market_share = (data["sales_amount"].sum() / max(master["sales_amount"].sum(), 1)) * 100
+    c3.metric("Market Share", f"{market_share:.2f}%")
+
+    by_state = data.groupby("state", as_index=False)["sales_amount"].sum().sort_values("sales_amount", ascending=False)
+    st.bar_chart(by_state, x="state", y="sales_amount")
+    st.dataframe(manufacturer.sort_values("sales_amount", ascending=False), use_container_width=True)
+
+
+_render_manufacturer_page()
+st.stop()
 
 st.set_page_config(
     page_title="Manufacturer Insights - EV Intelligence",

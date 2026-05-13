@@ -9,6 +9,29 @@ import os
 
 # Add parent so imports work
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config.config import config
+from models.forecaster import forecaster
+
+
+@st.cache_data
+def _load_master():
+    df = pd.read_parquet(config.GOLD_DIR / "master_analytics_gold.parquet")
+    df["date"] = pd.to_datetime(df["date"], errors="coerce")
+    return df
+
+
+def _render_forecasting_page():
+    st.set_page_config(page_title="Forecasting - EV Intelligence", page_icon="📈", layout="wide")
+    st.title("Forecasting")
+    master = _load_master()
+    periods = st.slider("Forecast periods (months)", min_value=3, max_value=24, value=12)
+    forecast_df = forecaster.forecast_prophet(master, periods=periods)
+    st.line_chart(forecast_df, x="ds", y=["yhat", "yhat_lower", "yhat_upper"])
+    st.dataframe(forecast_df.tail(periods), use_container_width=True)
+
+
+_render_forecasting_page()
+st.stop()
 
 st.set_page_config(
     page_title="Forecasting - EV Intelligence",

@@ -9,6 +9,39 @@ import os
 
 # Add parent so imports work
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config.config import config
+
+
+@st.cache_data
+def _load_state_gold():
+    master = pd.read_parquet(config.GOLD_DIR / "master_analytics_gold.parquet")
+    state_perf = pd.read_parquet(config.GOLD_DIR / "state_performance_gold.parquet")
+    master["date"] = pd.to_datetime(master["date"], errors="coerce")
+    return master, state_perf
+
+
+def _render_state_page():
+    st.set_page_config(page_title="State Analytics - EV Intelligence", page_icon="🗺️", layout="wide")
+    st.title("State Analytics")
+    master, state_perf = _load_state_gold()
+    selected_state = st.selectbox("Select state", sorted(master["state"].dropna().unique()))
+    state_data = master[master["state"] == selected_state].sort_values("date")
+
+    c1, c2, c3 = st.columns(3)
+    c1.metric("Sales", f"{state_data['sales_amount'].sum():,.0f}")
+    c2.metric("Revenue", f"${state_data['revenue'].sum():,.0f}")
+    c3.metric("Avg EV Penetration", f"{state_data['ev_penetration_rate'].mean() * 100:.2f}%")
+
+    trend = state_data.groupby("date", as_index=False)["sales_amount"].sum()
+    st.line_chart(trend, x="date", y="sales_amount")
+    st.dataframe(
+        state_perf.sort_values("sales_amount", ascending=False),
+        use_container_width=True
+    )
+
+
+_render_state_page()
+st.stop()
 
 st.set_page_config(
     page_title="State Analytics - EV Intelligence",
