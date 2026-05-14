@@ -20,7 +20,7 @@ class Config:
     ASSETS_DIR = BASE_DIR / "assets"
     
     # App Settings
-    APP_NAME = "Enterprise EV Market Intelligence Platform"
+    APP_NAME = "India EV Market Intelligence & Forecasting Platform"
     DEBUG = os.getenv("DEBUG", "False").lower() == "true"
     
     # Data Settings
@@ -33,10 +33,10 @@ class Config:
     TEST_SIZE = 0.2
     
     # UI Settings
-    THEME_COLOR = "#00FF41"
-    SECONDARY_COLOR = "#FF6B6B"
-    BACKGROUND_COLOR = "#0E1117"
-    CARD_COLOR = "#1E2139"
+    THEME_COLOR = "#3b82f6"
+    SECONDARY_COLOR = "#64748b"
+    BACKGROUND_COLOR = "#0b0f14"
+    CARD_COLOR = "#121826"
     
     @classmethod
     def ensure_dirs(cls):

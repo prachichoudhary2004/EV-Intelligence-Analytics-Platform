@@ -1,349 +1,136 @@
-# ⚡ EV Market Intelligence Platform
+# 🇮🇳 India EV Market Intelligence & Forecasting Platform
 
-### Introduction
+### **Enterprise Analytics Engineering | Medallion Lakehouse | Predictive Intelligence**
 
-Modern data engineering systems require scalable pipelines capable of ingesting raw data, transforming it into structured datasets, and delivering insights through analytics dashboards. Databricks provides a unified platform that integrates data engineering, analytics, and visualization.
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.95+-009688.svg)](https://fastapi.tiangolo.com/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.22+-FF4B4B.svg)](https://streamlit.io/)
+[![dbt](https://img.shields.io/badge/dbt-1.5+-FF694B.svg)](https://www.getdbt.com/)
 
-This project implements a complete end-to-end analytics pipeline using Databricks Lakehouse architecture to analyze Electric Vehicle (EV) market data. The pipeline processes raw market datasets, transforms them through multiple layers using Apache Spark, and produces analytics-ready datasets that power an interactive dashboard.
-
-### Dataset
-
-The platform analyzes comprehensive EV market data including:
-- **EV Sales Data**: Monthly sales figures by manufacturer, state, and vehicle type
-- **Charging Infrastructure**: Station locations, capacity, and deployment metrics
-- **Market Metrics**: Economic indicators, population data, and penetration rates
-
-*Data sources simulate real-world EV market intelligence from industry reports and public databases.*
-
-## Objectives of this Project
-
-### Primary Objectives
-1. **Enterprise Data Pipeline**: Build production-grade ETL pipeline following Medallion architecture
-2. **Real-time Analytics**: Deliver live market insights through interactive dashboards
-3. **Predictive Intelligence**: Implement ML forecasting for market trends and sales predictions
-4. **Executive Reporting**: Generate automated business narratives and strategic recommendations
-5. **Scalable Architecture**: Design systems that can handle enterprise data volumes
-
-### Technical Goals
-- Implement **Bronze-Silver-Gold** data layers for data quality and governance
-- Create **semantic KPI engine** for standardized business metrics
-- Build **ML operations** with model training, versioning, and monitoring
-- Develop **REST API** for external system integration
-- Design **responsive UI** with glassmorphism and real-time updates
-
-## Medallion Architecture Overview
-
-Following industry-standard pattern used in high-scale Databricks environments, the pipeline is organized into three distinct layers:
-
-### Bronze Layer (Raw)
-*   Stores raw data in its original format (CSV) from various sources: EV Sales, Charging Infrastructure, and Macro-Market Metrics.
-*   **Tables**: `bronze.ev_sales`, `bronze.charging_stations`, `bronze.market_metrics`.
-
-### Silver Layer (Structured)
-*   Cleaned, typed, and deduplicated records.
-*   Performs schema normalization and timestamp enrichment.
-*   **Tables**: `silver.ev_sales`, `silver.charging_stations`, `silver.market_metrics`.
-
-### Gold Layer (Analytical)
-*   Business-level datasets optimized for executive reporting and ML forecasting.
-*   **Gold.State_Performance**: Ranks states by EV adoption and revenue performance
-*   **Gold.Manufacturer_Insights**: Market share and competitive analysis metrics
-*   **Gold.Infrastructure_Readiness**: Charging network density and fast-charger ratios
-*   **Gold.Master_Analytics**: Fully joined feature store for ML modeling
+An end-to-end production-style analytics platform designed to track, analyze, and forecast the Electric Vehicle (EV) landscape in India. This project demonstrates a complete **Lakehouse Architecture**—from raw data ingestion using **Medallion logic** to ML-powered forecasting and executive-level dashboarding.
 
 ---
 
-## Key Platform Features
+## 🏗️ System Architecture
 
-*   **Interactive Executive Dashboard**: Premium glassmorphism UI with real-time tickers and state leaderboards
-*   **Semantic KPI Engine**: Centralized logic for CAGR, YoY Growth, and Penetration Indexes
-*   **Executive Narrative Engine**: Automated natural language summaries and strategic recommendations
-*   **Advanced ML Forecaster**: Hybrid pipeline using **XGBoost** and **Prophet** for sales predictions
-*   **Data Health Monitoring**: Integrated DQ checks, schema validation, and health scoring
-*   **Real-time Streaming**: Live market data simulation and ticker feeds
-*   **REST API Gateway**: Production-ready FastAPI backend for external consumption
+### **Medallion Data Flow**
+The platform follows the **Medallion Architecture** pattern, ensuring data quality and lineage at every stage. We simulate a Delta Lake environment using versioned Parquet storage.
+
+```mermaid
+graph LR
+    subgraph "Data Sources"
+        DS[Raw EV Sales CSV/API]
+        IS[Infrastructure Logs]
+    end
+
+    subgraph "Bronze Layer (Raw)"
+        B[(Bronze Parquet)]
+    end
+
+    subgraph "Silver Layer (Standardized)"
+        S[(Silver Parquet)]
+        DQ[Data Quality Gates]
+    end
+
+    subgraph "Gold Layer (Curated)"
+        G[(Gold Parquet)]
+        FT[Feature Store]
+    end
+
+    DS --> B
+    IS --> B
+    B --> DQ --> S
+    S --> G
+    S --> FT
+```
+
+### **Component Architecture**
+The system is modular, separating concerns between Data Engineering, ML Ops, and Business Intelligence.
+
+```mermaid
+graph TD
+    Pipeline[ETL Pipeline Runner] --> Spark[Spark Engine]
+    Spark --> Gold[(Gold Storage)]
+    
+    Gold --> KPI[Semantic KPI Engine]
+    Gold --> ML[Forecasting Engine]
+    
+    KPI --> Dashboard[Streamlit UI]
+    ML --> Dashboard
+    
+    KPI --> API[FastAPI Gateway]
+```
 
 ---
 
-## Technology Stack
+## 🚀 Key Features
 
-*   **Data Engineering**: Apache Spark (Pandas-simulated), Delta Lake (Parquet-simulated)
-*   **Backend**: FastAPI, Uvicorn
-*   **Machine Learning**: XGBoost, Facebook Prophet, Scikit-learn
-*   **Frontend**: Streamlit, Plotly, Custom Glassmorphism CSS
-*   **Monitoring**: Data quality checks, schema validation, health scoring
-*   **Deployment**: Docker, Docker Compose
+### 1. **Enterprise Dashboarding (Streamlit)**
+*   **Executive Intelligence**: Real-time tracking of National Sales, Revenue (₹ Cr), and Market Penetration.
+*   **Geospatial Drill-down**: Interactive mapping of EV adoption vs. charging density across 12+ Indian states.
+*   **OEM Benchmarking**: Market share and pricing analysis for top manufacturers (Tata Motors, Mahindra, etc.).
+
+### 2. **Analytics Engineering (dbt)**
+*   **Dimensional Modeling**: Structured SQL models to transform Silver tables into Gold-standard analytical views.
+*   **Lineage Tracking**: Built-in documentation of how raw metrics become final KPIs.
+*   **SCD Type 2**: Historical tracking of manufacturer metadata to handle evolving market landscapes.
+
+### 3. **Machine Learning & Forecasting**
+*   **Demand Projection**: Uses **Facebook Prophet** to model seasonality (festive spikes) and policy impact (FAME-II/III).
+*   **Model Monitoring**: Integrated ML Ops logs tracking MAPE and model freshness.
+
+### 4. **Programmatic Access (FastAPI)**
+*   **API Gateway**: Standardized JSON endpoints for third-party integration or internal microservices.
+*   **Live Ticker Service**: High-frequency status updates for market momentum and policy changes.
 
 ---
 
-## Getting Started
+## 🛠️ Tech Stack & Implementation Details
 
-### Prerequisites
-- Python 3.9+
-- Git
-- Docker (optional, for containerized deployment)
+| Layer | Technology | Role |
+| :--- | :--- | :--- |
+| **Storage** | Parquet / Delta Lake (Sim) | Optimized columnar storage with versioning support. |
+| **ETL** | PySpark / Pandas | High-performance data transformation and cleaning. |
+| **Transformation** | dbt (Core) | Analytics engineering and SQL documentation. |
+| **ML Engine** | FB Prophet | Time-series forecasting for multi-region demand. |
+| **API** | FastAPI | High-performance asynchronous endpoint management. |
+| **UI/UX** | Streamlit | Premium executive-grade analytical dashboard. |
 
-### Installation
+---
 
+## 🏁 Getting Started
+
+### **1. Environment Setup**
 ```bash
-# Clone the repository
-git clone https://github.com/prachichoudhary2004/EV-Intelligence-Analytics-Platform.git
-cd EV-Intelligence-Analytics-Platform
-
-# Install dependencies
+git clone https://github.com/your-username/india-ev-intelligence.git
+cd india-ev-intelligence
+python -m venv venv
+source venv/bin/activate  # Or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 ```
 
-### Run Platform
-
-1. **Initialize & Run ETL**: 
-   ```bash
-   python services/spark_engine.py
-   ```
-
-2. **Launch Dashboard**: 
-   ```bash
-   streamlit run streamlit_app/app.py
-   ```
-
-3. **Launch API**: 
-   ```bash
-   python -m uvicorn api.app:app --reload
-   ```
-
-### Access Points
-
-- **Dashboard**: http://localhost:8501
-- **API Documentation**: http://localhost:8000/docs
-- **API Endpoints**: 
-  - `GET /kpis/market` - Market KPIs
-  - `GET /forecast/prophet` - Sales forecasts
-  - `GET /analytics/benchmarks` - State benchmarks
-
----
-
-## Project Structure
-
+### **2. Execute the End-to-End Pipeline**
+Process raw data through the Medallion layers:
 ```bash
-EV-Intelligence-Analytics-Platform/
-├── api/                     # FastAPI REST endpoints
-├── components/              # Reusable UI components
-├── config/                  # Configuration management
-├── data/                    # Data layers (bronze, silver, gold)
-├── design_system/           # UI theme and styling
-├── models/                  # ML models and forecasting
-├── services/                # Business logic engines
-├── streamlit_app/          # Dashboard application
-├── utils/                   # Utility functions
-└── infrastructure/          # Deployment configurations
+python scripts/build_pipeline.py
 ```
 
----
-
-## Development & Testing
-
-### Running Tests
+### **3. Launch Services**
 ```bash
-# Run unit tests
-pytest tests/
+# Start the Analytical Dashboard
+python -m streamlit run streamlit_app/app.py
 
-# Run with coverage
-pytest --cov=services tests/
-```
-
-### Code Quality
-```bash
-# Format code
-black .
-
-# Lint code
-flake8 .
+# (Optional) Start the API Gateway
+python -m uvicorn api.app:app --port 8000
 ```
 
 ---
 
-## Documentation
-
-*   [Architecture Deep Dive](ARCHITECTURE.md)
-*   [System Design Specifications](SYSTEM_DESIGN.md)
-*   [Product Roadmap](ROADMAP.md)
-
----
-
-## Deployment
-
-### Docker Deployment
-```bash
-# Build and run with Docker Compose
-docker-compose up --build
-```
-
-### Production Considerations
-- Environment variables configured via `.env` file
-- Logs written to `logs/` directory
-- Data persistence through Parquet files
-- API secured with authentication (production)
+## 📈 Business Impact & Analyst Insights
+The platform provides actionable intelligence for policy makers and investors:
+*   **Infrastructure Sensitivity**: Identifies states where charging station growth lags behind vehicle adoption by >15%.
+*   **Revenue Modeling**: Estimates market size in ₹ Crores based on segment-wise average transaction prices.
+*   **Seasonal Forecasting**: Predicts demand surges during Oct-Nov to assist in supply chain planning.
 
 ---
-
-## Performance Metrics
-
-- **ETL Pipeline**: Processes 24 months of data in <30 seconds
-- **ML Models**: XGBoost R² > 0.85, Prophet MAPE < 15%
-- **Dashboard**: <2 second load time, real-time updates
-- **API**: <100ms response time for all endpoints
-
----
-
-## 🏗️ Architecture Diagrams
-
-### 📊 Data Pipeline Architecture
-
-```mermaid
-graph LR
-    A[Raw Data Sources] --> B[Bronze Layer]
-    B --> C[Silver Layer]
-    C --> D[Gold Layer]
-    D --> E[Analytics Dashboard]
-    D --> F[ML Models]
-    D --> G[REST API]
-    
-    subgraph "Data Layers"
-        B
-        B1[EV Sales CSV]
-        B2[Charging Stations CSV]
-        B3[Market Metrics CSV]
-    end
-    
-    subgraph "Processing"
-        C1[Data Cleaning]
-        C2[Schema Normalization]
-        C3[Deduplication]
-    end
-    
-    subgraph "Analytics"
-        D1[State Performance]
-        D2[Manufacturer Insights]
-        D3[Infrastructure Readiness]
-        D4[Master Analytics]
-    end
-```
-
-### 🔄 Data Flow Diagram
-
-```mermaid
-flowchart TD
-    A[External Data Sources] --> B{Data Ingestion}
-    B --> C[Bronze Storage]
-    C --> D{ETL Processing}
-    D --> E[Silver Storage]
-    E --> F[Feature Engineering]
-    F --> G[Gold Storage]
-    G --> H[Analytics Services]
-    H --> I[ML Pipeline]
-    H --> J[API Layer]
-    H --> K[Dashboard]
-    
-    subgraph "Quality Checks"
-        Q1[Data Validation]
-        Q2[Schema Verification]
-        Q3[Health Scoring]
-    end
-    
-    D -.-> Q1
-    E -.-> Q2
-    G -.-> Q3
-```
-
-### 🚀 Deployment Architecture
-
-```mermaid
-graph TB
-    subgraph "Development Environment"
-        A[Local Machine]
-        A1[Python 3.9+]
-        A2[Git Repository]
-        A3[Docker Desktop]
-    end
-    
-    subgraph "Application Stack"
-        B[Streamlit Dashboard]
-            B1[Port 8501]
-        C[FastAPI Backend]
-            C1[Port 8000]
-        D[Apache Spark Engine]
-        E[ML Models]
-            E1[XGBoost]
-            E2[Prophet]
-    end
-    
-    subgraph "Data Storage"
-        F[Local File System]
-            F1[Parquet Files]
-            F2[CSV Files]
-            F3[Log Files]
-    end
-    
-    A --> B
-    A --> C
-    A --> D
-    A --> E
-    B --> F
-    C --> F
-    D --> F
-    E --> F
-```
-
-### 📱 System Components Diagram
-
-```mermaid
-graph LR
-    subgraph "Frontend Layer"
-        A[Streamlit Dashboard]
-            A1[KPI Cards]
-            A2[Interactive Charts]
-            A3[Real-time Ticker]
-            A4[Executive Reports]
-    end
-    
-    subgraph "Backend Services"
-        B[API Gateway]
-            B1[FastAPI Routes]
-            B2[Authentication]
-            B3[Rate Limiting]
-        C[Business Logic]
-            C1[KPI Engine]
-            C2[Insight Engine]
-            C3[Alert Service]
-        D[Data Processing]
-            D1[Spark ETL]
-            D2[ML Pipeline]
-            D3[Quality Monitor]
-    end
-    
-    subgraph "Data Layer"
-        E[Medallion Architecture]
-            E1[Bronze - Raw]
-            E2[Silver - Clean]
-            E3[Gold - Analytics]
-        F[Feature Store]
-        G[Configuration]
-            G1[Environment Variables]
-            G2[Path Management]
-    end
-    
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    D --> F
-    D --> G
-```
-
----
-
-## Acknowledgments
-
-- Inspired by Databricks Lakehouse Architecture patterns
-- Built with modern data engineering best practices
-- Designed for enterprise-scale analytics workloads
+*Developed as a Flagship Portfolio Piece to demonstrate modern Data Engineering & Analytics Engineering best practices.*

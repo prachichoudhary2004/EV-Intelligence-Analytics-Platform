@@ -1,36 +1,43 @@
 import random
-import time
 from datetime import datetime
-from utils.logger import logger
+
 
 class StreamingService:
-    """
-    Fakes real-time data for testing our dashboard.
-    """
-    def __init__(self):
-        self.manufacturers = ["Tesla", "BYD", "Rivian", "Lucid", "Ford", "GM"]
-        self.states = ["California", "Texas", "Florida", "New York", "Washington"]
+    """Lightweight 'live strip' numbers — plausible India EV headlines, not a real feed."""
 
-    def generate_live_sale(self):
-        """Make up a fake sale event."""
-        sale = {
-            "timestamp": datetime.now().strftime("%H:%M:%S"),
-            "manufacturer": random.choice(self.manufacturers),
-            "state": random.choice(self.states),
-            "units": random.randint(1, 5),
-            "price": random.randint(35000, 120000)
-        }
-        return sale
+    def __init__(self):
+        self.manufacturers = [
+            "Tata Motors",
+            "Mahindra Electric",
+            "Ola Electric",
+            "Ather Energy",
+            "MG Motor",
+            "BYD India",
+            "TVS iQube",
+            "Hero Electric",
+        ]
+        self.states = [
+            "Maharashtra",
+            "Karnataka",
+            "Delhi",
+            "Tamil Nadu",
+            "Gujarat",
+            "Telangana",
+            "Uttar Pradesh",
+            "Kerala",
+        ]
 
     def get_ticker_update(self):
-        """Create fake market data for ticker."""
-        update = {
-            "market_index": round(random.uniform(100, 150), 2),
-            "index_change": round(random.uniform(-2, 2), 2),
-            "top_mover": random.choice(self.manufacturers),
-            "momentum_score": random.randint(1, 100)
+        """Stable keys — UI expects these names even if you fork `StreamingService`."""
+        return {
+            "fast_charger_share": float(round(random.uniform(0.34, 0.58), 4)),
+            "two_wheeler_mix": float(round(random.uniform(0.42, 0.62), 4)),
+            "top_state": random.choice(self.states),
+            "policy_watch": random.choice(
+                ["FAME-II utilisation tracking", "state subsidy caps", "public charging uptime"]
+            ),
+            "oem_pulse": random.choice(self.manufacturers),
         }
-        return update
 
-# Use this anywhere
+
 streaming_service = StreamingService()
