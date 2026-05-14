@@ -1,4 +1,4 @@
-# 🇮🇳 India EV Market Intelligence Platform (Lakehouse + dbt)
+# India EV Market Intelligence Platform 
 
 ### **Enterprise Analytics Engineering | Medallion Lakehouse | Predictive Intelligence**
 
@@ -211,4 +211,3 @@ pip install -r requirements.txt
 *   **Docker**: Multi-stage build provided in `Dockerfile` for streamlined deployment.
 
 ---
-*Developed as a Flagship Portfolio Piece to demonstrate modern Data Engineering & Analytics Engineering excellence.*
