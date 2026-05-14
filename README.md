@@ -3,7 +3,6 @@
 ## **Overview**
 ![Project Hero](assets/dashboard_hero.png)
 
-
 An end-to-end production-grade data engineering and predictive analytics pipeline designed to transform raw Indian EV market data into actionable business intelligence. The platform implements a **Lakehouse Medallion Architecture** to enable scalable processing, historical tracking (SCD Type 2), and AI-driven demand forecasting for executive decision-making.
 
 ---
@@ -17,97 +16,83 @@ An end-to-end production-grade data engineering and predictive analytics pipelin
 
 ---
 
-## **Architecture**
-**Flow**: Raw Data → Bronze Layer → Silver Layer → Gold Layer (dbt) → KPI Layer → Dashboard
+## **Architecture & Data Flow**
+
+### **The Medallion Workflow**
+The platform follows the **Medallion Architecture** pattern, simulating a Delta Lake environment with strictly decoupled layers.
 
 ```mermaid
-graph LR
-    subgraph "Ingestion"
-        RAW[Raw Data] --> BRZ[(Bronze Layer)]
+graph TD
+    subgraph "Ingestion (Bronze)"
+        RAW[Raw Data Scripts] --> B1[(Bronze: Sales)]
+        RAW --> B2[(Bronze: Infra)]
     end
 
-    subgraph "Processing (Spark/Pandas)"
-        BRZ --> SIL[(Silver Layer)]
-        SIL --> DQ[Data Quality Gates]
+    subgraph "Transformation (Silver)"
+        B1 --> S1[(Silver: Sales Standardized)]
+        B2 --> S2[(Silver: Infra Standardized)]
+        S1 & S2 --> DQ{Data Quality Gates}
     end
 
-    subgraph "Analytics Engineering (dbt)"
-        SIL --> DIM[Dimension Models]
-        SIL --> FCT[Fact Tables]
-        DIM --> SNP[SCD Type 2 Snapshots]
+    subgraph "Analytics Engineering (Gold - dbt)"
+        DQ --> FCT[Fact: FactSales]
+        DQ --> DIM[Dim: DimManufacturer]
+        DIM --> SNP[SCD Type 2: Snapshots]
     end
 
-    subgraph "Consumption"
-        FCT --> KPI[KPI Engine]
+    subgraph "Consumption & Intelligence"
+        FCT --> KPI[Semantic KPI Engine]
         SNP --> KPI
-        KPI --> Dashboard[Executive UI]
+        KPI --> Dash[Executive Dashboard]
         KPI --> API[FastAPI Gateway]
+        FCT --> ML[Prophet Forecasting]
     end
 ```
+
+---
+
+## **Dashboard Showcase**
+
+### **1. Executive Dashboard**
+*Comprehensive overview of national KPIs, revenue trends (₹ Cr), and market momentum.*
+![Executive Dashboard](assets/executive_dashboard.png)
+
+### **2. Location Analytics**
+*Geospatial drill-down into state-level adoption vs. charging density benchmarking.*
+![Location Analytics](assets/location_analytics.png)
+
+### **3. Manufacturer Insights**
+*OEM market share analysis, pricing vs. volume benchmarks, and revenue modeling.*
+![Manufacturer Insights](assets/manufacturer_insights.png)
+
+### **4. Demand Forecasting**
+*AI-powered 12-month projections with confidence intervals for strategic planning.*
+![Demand Forecasting](assets/demand_forecasting.png)
 
 ---
 
 ## **Data Layers**
 
 ### **Bronze Layer**
-The raw ingestion layer storing source data without transformation, preserving high-fidelity historical state.
-*   **Tables**:
-    *   `bronze.ev_sales`: National and state-level registration logs.
-    *   `bronze.charging_infra`: Public and private charger density data.
-    *   `bronze.market_benchmarks`: Economic indicators and policy (FAME-II) tracking.
+Raw ingestion layer storing source data without transformation, preserving high-fidelity historical state.
+*   **Tables**: `bronze.ev_sales`, `bronze.charging_infra`, `bronze.market_benchmarks`.
 
 ### **Silver Layer**
-Cleaned and structured datasets using standardized transformations.
-*   **Transformations**:
-    *   Schema enforcement and type casting.
-    *   Currency normalization (Standardizing to ₹ Crores).
-    *   Geographic normalization (State-level mapping).
-    *   Null handling and outlier detection.
-*   **Tables**:
-    *   `silver.ev_sales_standardized`
-    *   `silver.charging_infra_standardized`
+Cleaned and structured datasets with unit normalization (₹ Crores) and geographic standardization.
+*   **Features**: Null handling, outlier detection, and schema enforcement.
 
 ### **Gold Layer (dbt)**
-Curated analytical layer built using dbt models and snapshots for reliable reporting.
-*   **Dimension Tables (SCD Type 2)**:
-    *   `DimManufacturer`: Historical tracking of OEM market entry and product lines.
-    *   `DimState`: Geographic metadata and infrastructure readiness.
-*   **Fact Table**:
-    *   `FactSales`: Transactional grain for multi-dimensional analysis.
-*   **Features**:
-    *   Historical tracking using `dbt_valid_from` and `dbt_valid_to`.
-    *   Current state filtering via high-watermark timestamps.
+Curated analytical layer built using dbt models for reliable reporting.
+*   **Dimension Tables (SCD Type 2)**: Historical tracking of OEM data.
+*   **Fact Table**: `FactSales` optimized for multi-dimensional consumption.
 
 ---
 
-## **KPI Layer**
-Semantic models built to provide reusable and scalable metrics across the platform.
-*   **Core Metrics**:
-    *   **Total EV Sales**: Absolute volume tracking.
-    *   **Market Revenue (₹ Cr)**: Calculated based on segment-weighted transaction prices.
-    *   **EV Penetration (%)**: Adoption rate relative to total vehicle registrations.
-    *   **Infra Readiness Score**: Ratio of charging stations to EV population.
-*   **Dimensional KPIs**:
-    *   State-wise adoption growth.
-    *   Manufacturer market share (%) and YoY momentum.
-
----
-
-## **Dashboard**
-Executive-level visualizations built to deliver instant market clarity:
-*   **Revenue Trends**: Real-time monitoring of market value growth.
-*   **Geospatial Benchmarking**: State-level performance heatmaps.
-*   **Predictive Projections**: AI-powered 12-month demand forecasting.
-*   **OEM Leaderboard**: Competitive analysis of the EV landscape.
-
----
-
-## **Pipeline Flow**
-1.  **Ingestion**: Raw data is ingested into the Bronze layer via automated scripts.
-2.  **Standardization**: Spark-based transformations generate the Silver layer with clean schemas.
-3.  **Modeling**: dbt builds Gold dimension/fact tables and handles SCD Type 2 logic.
-4.  **Forecasting**: The ML engine pulls from the Gold layer to generate Prophet projections.
-5.  **Visualization**: Streamlit consumes the KPI layer for real-time reporting.
+## **KPI Engine & Analytics**
+*   **Total EV Sales**: Absolute volume tracking.
+*   **Market Revenue**: Calculated based on segment-weighted transaction prices.
+*   **EV Penetration (%)**: Adoption rate relative to vehicle registrations.
+*   **Infra Score**: Ratio of charging stations to EV population.
 
 ---
 
@@ -117,16 +102,12 @@ Executive-level visualizations built to deliver instant market clarity:
 pip install -r requirements.txt
 ```
 ### 2. Run Data Pipeline
-Processes all layers from Bronze to Gold:
 ```bash
 python scripts/build_pipeline.py
 ```
-### 3. Launch Platform
+### 3. Launch Services
 ```bash
-# Dashboard
 python -m streamlit run streamlit_app/app.py
-
-# API Gateway
 python -m uvicorn api.app:app --port 8000
 ```
 
@@ -135,17 +116,15 @@ python -m uvicorn api.app:app --port 8000
 ## **Tech Stack**
 | Category | Technology |
 | :--- | :--- |
-| **Storage/Lakehouse** | Delta Lake (Sim), Parquet |
-| **Compute/ETL** | PySpark, Pandas |
-| **Analytics Engineering**| dbt (Core) |
-| **Forecasting** | Facebook Prophet |
-| **API** | FastAPI |
-| **UI** | Streamlit, Plotly |
+| **Storage** | Delta Lake (Sim), Parquet |
+| **ETL** | PySpark, Pandas |
+| **Engineering**| dbt (Core) |
+| **ML Engine** | Facebook Prophet |
+| **API/UI** | FastAPI, Streamlit |
 
 ---
 
 ## **Business Impact**
-*   **Strategic Growth**: Identifies under-penetrated states with high infrastructure potential.
-*   **Revenue Optimization**: Enables segment-wise revenue forecasting for OEM planning.
-*   **Operational Efficiency**: Automates the E2E data flow, reducing manual reporting latency.
-*   **Decision Support**: Provides a single source of truth for Indian EV market intelligence.
+*   **Strategic Growth**: Identifies under-penetrated states with high ROI potential.
+*   **Revenue Modeling**: Estimates market size for OEM planning and investment.
+*   **Operational Efficiency**: Automates E2E reporting, reducing latency from data to insight.
