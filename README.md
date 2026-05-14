@@ -1,4 +1,4 @@
-# 🇮🇳 India EV Market Intelligence Platform (Lakehouse + dbt)
+# India EV Market Intelligence Platform 
 
 An end-to-end production-grade data engineering and predictive analytics pipeline designed to transform raw Indian EV market data into actionable business intelligence. The platform implements a **Lakehouse Medallion Architecture** to enable scalable processing, historical tracking (SCD Type 2), and AI-driven demand forecasting for executive decision-making.
 
@@ -135,4 +135,3 @@ python -m uvicorn api.app:app --port 8000
 *   **Predictive Edge**: Enables proactive infrastructure deployment by forecasting 12-month demand surges.
 
 ---
-*Developed as a Flagship Portfolio Piece to demonstrate modern Data Engineering & Analytics Engineering excellence.*
