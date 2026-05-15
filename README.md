@@ -56,6 +56,25 @@ Following industry-standard patterns used in high-scale Databricks environments,
 
 ---
 
+## 🗂️ Datasets & Schema
+
+The platform is powered by highly realistic, simulated datasets representing the Indian EV market from April 2021 to April 2024. The data encompasses over 4,000+ sales records across 12 major Indian states, capturing the specific market dynamics of the 2-Wheeler (2W) and 4-Wheeler (4W) segments.
+
+### **1. EV Sales Data** (`ev_sales_data.csv`)
+Captures transactional data for EV adoption, segmented by manufacturer, state, and vehicle category.
+*   **Key Fields**: `date`, `state`, `manufacturer` (e.g., Tata Motors, Ola Electric, Ather Energy), `vehicle_segment` (2W/4W), `sales_amount`, `price_range`, `battery_capacity` (kWh), `charging_time` (hours), `market_share`.
+*   **Characteristics**: Incorporates exponential growth trends for 2W startups, steady scaling for 4W legacy automakers, OEM-specific market dominance factors, and regional festive season (Q3/Q4) sales spikes.
+
+### **2. Charging Infrastructure** (`charging_stations.csv`)
+Details the geographic distribution of EV charging stations to correlate infrastructure readiness with consumer adoption rates.
+*   **Key Fields**: `state`, `total_stations`, `fast_chargers`, `date_installed`.
+
+### **3. Market Metrics** (`market_metrics.csv`)
+Macro-economic indicators used for contextual analytics, KPI generation, and identifying policy momentum.
+*   **Key Fields**: `date`, `state`, `ev_penetration_rate`, `total_population`, `gdp_per_capita`, `gasoline_price`, `state_subsidy_index`, `charging_infrastructure_score`.
+
+---
+
 ## 📊 Dashboard Showcase
 
 ### **1. Executive Dashboard**
@@ -177,6 +196,9 @@ pip install -r requirements.txt
 1.  **Run ETL Pipeline**: `python scripts/build_pipeline.py`
 2.  **Launch Dashboard**: `python -m streamlit run streamlit_app/app.py`
 3.  **Launch API**: `python -m uvicorn api.app:app --reload`
+
+### **4. Detailed Documentation**
+For a comprehensive breakdown of the platform's features, data pipelines, and user personas, please read the [WORKFLOW.md](WORKFLOW.md) file included in this repository.
 
 ---
 
