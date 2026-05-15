@@ -63,8 +63,9 @@ def load_all_gold_data(_cache_tag: str, region_dir):
     ]
     if not all(path.exists() for path in required_files):
         import subprocess
+        import sys
         st.info("Initializing Data Lake... Generating Bronze, Silver, and Gold layers. Please wait a moment.")
-        subprocess.run(["python", "scripts/build_pipeline.py"], check=True)
+        subprocess.run([sys.executable, "scripts/build_pipeline.py"], check=True)
     return {
         "master": pd.read_parquet(region_dir / "master_analytics_gold.parquet"),
         "state_perf": pd.read_parquet(region_dir / "state_performance_gold.parquet"),
