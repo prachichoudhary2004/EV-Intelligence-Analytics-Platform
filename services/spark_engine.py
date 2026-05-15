@@ -120,22 +120,10 @@ class SparkEngine:
         market_silver = market_raw.copy()
         market_silver['date'] = pd.to_datetime(market_silver['date'])
         
-    def _write_delta_table(self, df: pd.DataFrame, path: str):
-        """Simulate writing to a Delta Table with versioning metadata."""
-        logger.info(f"Materializing Delta Table at: {path}")
-        os.makedirs(path, exist_ok=True)
-        df.to_parquet(os.path.join(path, "part-0000.parquet"), index=False)
-        # Create a dummy _delta_log to simulate Delta Lake structure
-        log_dir = os.path.join(path, "_delta_log")
-        os.makedirs(log_dir, exist_ok=True)
-        with open(os.path.join(log_dir, "000000.json"), "w") as f:
-            f.write('{"commitInfo":{"timestamp":'+str(int(time.time()*1000))+'}}\n')
-
-    def ingest_bronze_to_silver(self):
-        """Standardize Bronze raw data into Silver standardized layer."""
-        logger.info("Lakehouse: Processing Bronze to Silver...")
-        # ... logic remains same but we call _write_delta_table ...
-        # (Updating the actual call below)
+        # Write Silver Data
+        sales_silver.to_parquet(config.SILVER_DIR / "ev_sales_silver.parquet", index=False)
+        charging_silver.to_parquet(config.SILVER_DIR / "charging_stations_silver.parquet", index=False)
+        market_silver.to_parquet(config.SILVER_DIR / "market_metrics_silver.parquet", index=False)
 
     def enrich_silver_to_gold(self):
         """

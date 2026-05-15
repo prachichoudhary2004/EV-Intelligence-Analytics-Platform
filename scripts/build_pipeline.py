@@ -4,17 +4,17 @@ import subprocess
 
 import sys
 
-def run_cmd(cmd):
-    print(f"Running: {cmd}")
-    subprocess.run(cmd, shell=True, check=True)
+def run_cmd(cmd_list):
+    print(f"Running: {' '.join(cmd_list)}")
+    subprocess.run(cmd_list, check=True)
 
 print("--- STARTING PRODUCTION DATA PIPELINE (INDIA) ---")
 
 # 1. Generate Bronze Raw Data
-run_cmd(f"{sys.executable} scripts/generate_india_ev_data.py")
+run_cmd([sys.executable, "scripts/generate_india_ev_data.py"])
 
 # 2. Run Spark ETL Engine (Bronze -> Silver -> Gold)
-run_cmd(f"{sys.executable} services/spark_engine.py")
+run_cmd([sys.executable, "services/spark_engine.py"])
 
 # 3. Finalize Gold Layer
 os.makedirs("data/gold_india", exist_ok=True)
