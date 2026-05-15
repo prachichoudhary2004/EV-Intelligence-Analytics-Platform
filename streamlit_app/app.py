@@ -44,7 +44,10 @@ def _gold_cache_tag(region_dir, region_label) -> str:
         region_dir / "infrastructure_gold.parquet",
     ]
     try:
-        mtime = max(p.stat().st_mtime for p in paths if p.exists())
+        valid_paths = [p for p in paths if p.exists()]
+        if not valid_paths:
+            return f"{region_label}_0"
+        mtime = max(p.stat().st_mtime for p in valid_paths)
         return f"{region_label}_{mtime}"
     except OSError:
         return f"{region_label}_0"
@@ -59,7 +62,9 @@ def load_all_gold_data(_cache_tag: str, region_dir):
         region_dir / "infrastructure_gold.parquet",
     ]
     if not all(path.exists() for path in required_files):
-        spark_engine.run_pipeline()
+        import subprocess
+        st.info("Initializing Data Lake... Generating Bronze, Silver, and Gold layers. Please wait a moment.")
+        subprocess.run(["python", "scripts/build_pipeline.py"], check=True)
     return {
         "master": pd.read_parquet(region_dir / "master_analytics_gold.parquet"),
         "state_perf": pd.read_parquet(region_dir / "state_performance_gold.parquet"),
@@ -480,7 +485,7 @@ def main():
             master = data["master"]
         except Exception as e:
             st.error(f"Could not load gold tables: {e}")
-            st.info("Run: `python scripts/build_both.py` to prepare all regions.")
+            st.info("Run: `python scripts/build_pipeline.py` to prepare all regions.")
             return
 
         if page == "Executive Dashboard":
